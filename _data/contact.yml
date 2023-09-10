@@ -1,15 +1,17 @@
 #  The contact options.
 
 - type: github
-  icon: "fab fa-github"
+  icon: "fab fa-github" 
+  url:  "https://github.com/tis-starlight"
 
-- type: twitter
-  icon: "fab fa-twitter"
+- type: artstation
+  icon: "fab fa-artstation" 
+  url:  "https://www.artstation.com/tis-starlight"
 
-- type: email
-  icon: "fas fa-envelope"
-  noblank: true # open link in current tab
-
+- type: youtube
+  icon: "fab fa-youtube" 
+  url:  "https://www.youtube.com/channel/UClM7SQbs4f77roJSLOAYqiA"
+  
 - type: rss
   icon: "fas fa-rss"
   noblank: true
