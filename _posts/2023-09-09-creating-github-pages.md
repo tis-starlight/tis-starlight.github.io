@@ -4,7 +4,7 @@ title: A Guide to Creating Stunning GitHub Pages       # TITLE for the post
 
 date: 2023-09-09 04:35:00 +0500     # YYYY-MM-DD HH:MM:SS +/-TTTT // Add Future Date & Time for planned future release
 
-categories: [Programming, Markdown]             # [TOP_CATEGORIE, SUB_CATEGORIE] 
+categories: [Programming, Markdown]             # [TOP_CATEGORY, SUB_CATEGORY] 
 tags: [markdown, cheatsheet]   # [TAG] 'TAG' names should always be lowercase & seperated by comma
 
 # pin: true          # uncomment to to pin
