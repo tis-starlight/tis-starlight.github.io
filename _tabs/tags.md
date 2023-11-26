@@ -23,7 +23,7 @@ order: 3
 -   howto
 -   workflow
 -   
--   starlight
+-   starlight   (for author)
 -   tis.starlight
 -   
 -   concepts    (for discussing terminologies (e.g. texel density, etc...))
