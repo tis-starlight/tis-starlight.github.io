@@ -4,20 +4,21 @@ title: A Guide to Creating Stunning GitHub Pages       # TITLE for the post
 
 date: 2023-09-09 04:35:00 +0500     # YYYY-MM-DD HH:MM:SS +/-TTTT // Add Future Date & Time for planned future release
 
-categories: [Programming, Markdown]             # [TOP_CATEGORY, SUB_CATEGORY] 
+categories: [Programming Languages, Markdown]             # [TOP_CATEGORY, SUB_CATEGORY] 
 tags: [markdown, cheatsheet]   # [TAG] 'TAG' names should always be lowercase & seperated by comma
 
-# pin: true          # uncomment to to pin
+# pin: true         # uncomment to pin
+# toc: false        # uncomment to turn off Table Of Content for this post
 
-math: true         # (override) uncomment to use MathJax Mathematics
-mermaid: true      # (override) uncomment to use Mermaid diagram functionality
+math: true         # (override) comment or set bool false to turn off MathJax Mathematics for this post
+mermaid: true      # (override) comment or set bool false to turn off Mermaid diagram functionality for this post
 
 image:      
   path: /assets/img/posts/github-pages.png    # image path. forward slash (/)
   lqip: data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAAAwBACdASoTAAwAPpE6l0eloyIhMAgAsBIJbACdLwAB4LjlMEwvoUcJvrAA/uyLzhu0ckJdc/9vyKypFxOVVYxY2dqLVhr4pdnoyeektu9Rf+1NhD8Gwv2eBjh/zbzusFMe9KEDZb0MAVJ6KKsAAA==
   alt: Illustration of documentation workflow   # displayed under the image (caption) 
 
-render_with_liquid: false           # uncomment to use No Liquid Parsing
+render_with_liquid: false           # comment or set bool true to use Liquid Parsing
 
 ---
 
@@ -143,17 +144,11 @@ Eiffel Tower
 
 ## Links
 
-<http://127.0.0.1:4000>
-
 [**Starlight**](https://github.com/tis-starlight)
-
-<!-- 
 
 ## Footnote
 
-Click the hook will locate the footnote[^footnote], and here is another footnote[^fn-nth-2].
-
--->
+Click the hook will locate the footnote[^footnote-1], and here is another footnote[^footnote-2].
 
 ## Keyboard Input
 
@@ -297,7 +292,7 @@ Basically, you need to fill the [Front Matter](https://jekyllrb.com/docs/front-m
 ---
 title: TITLE
 date: YYYY-MM-DD HH:MM:SS +/-TTTT
-categories: [TOP_CATEGORIE, SUB_CATEGORIE]
+categories: [TOP_CATEGORY, SUB_CATEGORY]
 tags: [TAG]     # TAG names should always be lowercase
 ---
 ```
@@ -683,14 +678,10 @@ The following table shows how to get the two parameters we need in a given video
 | [https://www.**youtube**.com/watch?v=**mrNX55CWuZA**](https://www.youtube.com/watch?v=mrNX55CWuZA) | `youtube` | `mrNX55CWuZA` |
 | [https://www.**twitch**.tv/videos/**1889357157**](https://www.twitch.tv/videos/1889357157)         | `twitch`  | `1889357157`  |
 
-<!-- 
-
 ## Reverse Footnote
 
-[^footnote]: The footnote source
-[^fn-nth-2]: The 2nd footnote source
-
--->
+[^footnote-1]: The footnote source
+[^footnote-2]: The 2nd footnote source
 
 ## Learn More
 
