@@ -45,24 +45,46 @@ Game Development:
     - Multiplayer/Replication (Client-side & Server-side)
     - Unity3D engine
     - 
-    - 
-Programming:
+Programming Languages:
     - Concepts
     - References
     - Cheatsheets
-    - Data Structures & Algorithms
-    - Database
-    - Artificial Intelligence
-    - Operating Systems
-    - Markdown, HTML, CSS, Javascript, Bootstrap, PHP, SEO, XAMPP, mysql, sqlserver, oracle, GW Basic, Shell, etc...
+    - Lang [C++, C, Markdown, C#, HTML, CSS, Javascript, Bootstrap, PHP, sql, GW Basic, command prompt, Shell, ...
     - 
-C/C++:
+C++:
     - Concepts
     - References
     - Cheatsheets
     - Visual Studio & Vs Code
     - GUI Programming (Qt, dear ImGUI, Winapi, Winforms, SFML, ...)
     - Best Practices, naming conventions, refactoring, fixing memory leaks, ...
+    - 
+C:
+    - Concepts
+    - References
+    - Cheatsheets
+    - Visual Studio & Vs Code
+    - Best Practices, naming conventions, refactoring, ...
+    - 
+Data Structures & Algorithms:
+    - Concepts
+    - References
+    - Cheatsheets
+    - 
+Operating Systems:
+    - Concepts
+    - References
+    - Cheatsheets
+    - 
+Design & Analysis of Algorithms:
+    - Concepts
+    - References
+    - Cheatsheets
+    - 
+Fundamentals of Database Management System (DBMS) & Distributed Database Management System(DDMS):
+    - Concepts
+    - References
+    - Cheatsheets
     - 
 Assembly:
     - Concepts
@@ -125,7 +147,7 @@ Cybersecurity:
     - Reverse-Engineering
     - Game Hacking (exploits, cheats, ESP, wallhacks, aimbots, )
     - 
-Promt-engineering:
+Prompt-Engineering:
     - Concepts
     - References
     - ChatGPT, GoogleBard
