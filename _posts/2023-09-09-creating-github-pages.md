@@ -96,6 +96,21 @@ Eiffel Tower
 
 **bold**              <!-- or  __bold__ , <b> bold </b> -->
 
+## Improving Visibility
+
+Sometimes, Markdown content requires adding [HTML elements and CSS attributes](https://stackoverflow.com/questions/35465557/how-to-apply-color-on-text-in-markdown) like color and font sizes, and weight attributes. However, Natively Markdown or any Markdown parser/flavor does not support CSS styles.
+There are multiple ways to achieve this:
+
+- Using HTML and CSS: <span style="color:green;font-weight:400;font-size:20px">Hello World!</span>
+
+```html
+<span style="color:green;font-weight:400;font-size:20px"> Hello World! </span>
+```
+{: .nolineno }
+
+- Using Emojis:
+When you want to use pure Markdown (without nested HTML & CSS), you can use Emojis to draw attention to some fragment of the file, i.e. ⚠️WARNING⚠️, 🔴DANGER🔴 or 🔥NEW🔥.
+
 ## Block Quote
 
 ### Single-line quote
