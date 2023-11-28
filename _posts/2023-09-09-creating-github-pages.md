@@ -146,13 +146,9 @@ Eiffel Tower
 
 [**Starlight**](https://github.com/tis-starlight)
 
-<!--
-
 ## Footnote
 
 Click the hook will locate the footnote[^footnote-1], and here is another footnote[^footnote-2].
-
--->
 
 ## Keyboard Input
 
@@ -682,14 +678,10 @@ The following table shows how to get the two parameters we need in a given video
 | [https://www.**youtube**.com/watch?v=**mrNX55CWuZA**](https://www.youtube.com/watch?v=mrNX55CWuZA) | `youtube` | `mrNX55CWuZA` |
 | [https://www.**twitch**.tv/videos/**1889357157**](https://www.twitch.tv/videos/1889357157)         | `twitch`  | `1889357157`  |
 
-<!--
-
 ## Reverse Footnote
 
 [^footnote-1]: The footnote source
 [^footnote-2]: The 2nd footnote source
-
--->
 
 ## Learn More
 
