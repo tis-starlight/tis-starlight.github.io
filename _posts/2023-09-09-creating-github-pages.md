@@ -678,11 +678,6 @@ The following table shows how to get the two parameters we need in a given video
 | [https://www.**youtube**.com/watch?v=**mrNX55CWuZA**](https://www.youtube.com/watch?v=mrNX55CWuZA) | `youtube` | `mrNX55CWuZA` |
 | [https://www.**twitch**.tv/videos/**1889357157**](https://www.twitch.tv/videos/1889357157)         | `twitch`  | `1889357157`  |
 
-## Reverse Footnote
-
-[^footnote-1]: The footnote source
-[^footnote-2]: The 2nd footnote source
-
 ## Learn More
 
 - If you want to enhance your knowledge of Markdown, visit the [Markdown](https://www.markdownguide.org/).
@@ -706,3 +701,8 @@ The following table shows how to get the two parameters we need in a given video
 
 > These are not the only valuable resources available; there is a wealth of amazing work, content, and more to be found on the internet. Feel free to `search for additional sources` to deepen your knowledge.
 {: .prompt-tip }
+
+## Reverse Footnote
+
+[^footnote-1]: The footnote source
+[^footnote-2]: The 2nd footnote source
