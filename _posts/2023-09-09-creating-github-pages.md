@@ -678,6 +678,34 @@ The following table shows how to get the two parameters we need in a given video
 | [https://www.**youtube**.com/watch?v=**mrNX55CWuZA**](https://www.youtube.com/watch?v=mrNX55CWuZA) | `youtube` | `mrNX55CWuZA` |
 | [https://www.**twitch**.tv/videos/**1889357157**](https://www.twitch.tv/videos/1889357157)         | `twitch`  | `1889357157`  |
 
+## Installing Dependencies
+
+- Install [Git](https://git-scm.com/download/win)
+- Install [Ruby](https://rubyinstaller.org/)
+  + Add Environment Variable (<kbd>Advanced System Settings</kbd>><kbd>Environment Variables</kbd>><kbd>System Variables</kbd>): Variable Name = `ruby` Value = `C:\Path\to\Ruby\bin`
+  + [rubygem](https://rubygems.org/pages/download) is installed. (If you use [rubyinstaller](https://rubyinstaller.org/), ignore this step)
+
+> These steps must be followed in order to avoid errors such as `bundle: command not found`
+{: .prompt-warning }
+
+- Before running local server for the first time, go to the root directory of your site and run:
+
+```console
+$ bundle
+```
+
+## Running Local Server
+
+You may want to preview the site contents before publishing, so just run it by:
+
+```console
+$ bundle exec jekyll s
+```
+
+After a few seconds, the local service will be published at _<http://127.0.0.1:4000>_.
+
+Press <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop the server.
+
 ## Learn More
 
 - If you want to enhance your knowledge of Markdown, visit the [Markdown](https://www.markdownguide.org/).
