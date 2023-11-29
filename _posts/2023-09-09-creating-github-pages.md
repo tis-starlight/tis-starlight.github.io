@@ -38,6 +38,8 @@ This includes creating beautifully designed documentation, blog posts, and more,
 
 <!-- Markdown Emoji Cheatsheet https://github.com/ikatyang/emoji-cheat-sheet -->
 
+<!-- [comment]: A Markdown comment -->
+
 ## Markdown
 
 Markdown is a lightweight markup language that is used for formatting and structuring plain text documents. 
