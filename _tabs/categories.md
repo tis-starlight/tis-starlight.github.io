@@ -49,7 +49,8 @@ Programming Languages:
     - Concepts
     - References
     - Cheatsheets
-    - Lang [C++, C, Markdown, C#, HTML, CSS, Javascript, Bootstrap, PHP, sql, GW Basic, command prompt, Shell, ...
+    - Programming 101 [terms like: JIT debugger, linter, intellisense/code highlighting, checksum, hash, ...]
+    - Lang [C++, C, Markdown, C#, HTML, CSS, Javascript, Bootstrap, PHP, sql, GW Basic, command prompt, Shell, ...]
     - 
 C++:
     - Concepts
@@ -75,7 +76,8 @@ Operating Systems:
     - Concepts
     - References
     - Cheatsheets
-    - 
+    - Terms: ram, rom, main memory/primary memory, secondary memory (storage), architecture, threads, kernels, ...
+    -  
 Design & Analysis of Algorithms:
     - Concepts
     - References
@@ -110,7 +112,9 @@ Graphics Design/Video Editing:
     - Adobe Photoshop
     - Adobe Premier
     - Adobe After-Effects
-    -
+    - Canva.com
+    - [Creating logos, illustrations, icons, etc... and animate them in after-effects or any other tool.]
+    - 
 Sound Design:
     - Concepts & Terminology(MIDI, effects, modifiers, DAW, VST, VST3, head, thump, tail, ...)
     - References
@@ -179,5 +183,11 @@ Professional Practices:
     - Famous Quotes (shakespeare, ...)
     - Habits of Book Reading
     - Writing (Technical Writing, Academic Writing, face-to-face communication, books/novels (dramatic, mystery, history, philsophy, war, crime, sad, void of hope, memory,...), biography)
+    - 
+Digital Logic Design(DLD):
+    - Concepts
+    - References
+    - Cheatsheets
+    - Terms: signals(analog, digital), number system, conversions, logic gates, online logic emulators/simulators
     - 
 -->
