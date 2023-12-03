@@ -5,7 +5,7 @@ title: 0.1 - Computer Programs     # TITLE for the post
 date: 2023-12-03 02:25:00 +0500     # YYYY-MM-DD HH:MM:SS +/-TTTT // Add Future Date & Time for planned future release
 
 categories: [Programming Languages, -Programming 101]             # [TOP_CATEGORY, SUB_CATEGORY] 
-tags: [programs, codes, softwares]   # [TAG] 'TAG' names should always be lowercase & seperated by comma
+tags: [programs, codes, softwares, sdlc]   # [TAG] 'TAG' names should always be lowercase & seperated by comma
 
 # pin: true         # uncomment to pin
 # toc: false        # uncomment to turn off Table Of Content for this post
@@ -159,3 +159,78 @@ There are several types of software, broadly categorized into two main groups:
 - **Web Browsers**: Applications that allow users to access and navigate the internet. Examples include Google Chrome, Mozilla Firefox, and Microsoft Edge.
 - **Games and Entertainment Software**: Designed for entertainment purposes, including video games, media players, and streaming applications.
 - **Graphics and Multimedia Software**: Used for creating and editing visual and multimedia content. Examples include Adobe Photoshop for image editing, Adobe Premiere for video editing, and Audacity for audio editing.
+- **Integrated Development Environments (IDEs)**: Such as Visual Studio, Eclipse, and PyCharm, which provide tools for writing, testing, and debugging code.
+- **Compilers and Interpreters**: Programs that convert high-level programming code into machine code (compilers) or execute code directly (interpreters).
+
+## SDLC
+
+[SDLC](https://en.wikipedia.org/wiki/Software_development_process) stands for **Software Development Life Cycle**. It is a systematic process for planning, creating, testing, deploying, and maintaining software systems. The SDLC aims to produce high-quality software that meets or exceeds customer expectations, is delivered on time and within budget, and can be maintained and updated easily. The SDLC typically consists of several phases, and various models can be used to represent these phases. 
+
+The **Program Development Process** is a more general term that encompasses the activities involved in creating any type of computer program or software. The **SDLC** is a specific framework within the broader Program Development Process, providing a structured approach to software development.
+
+Different software development methodologies, such as _Waterfall_, _Agile_, and _DevOps_, may follow variations of the SDLC to address specific project requirements and team preferences. Each phase of the SDLC is important for delivering a successful software product.
+
+> The topic is covered in more detail in `Software Engineering`.
+{: .prompt-info }
+
+The common phases in the SDLC include:
+
+### 1. Planning
+
+- **Requirements Analysis**: Gather and analyze requirements from stakeholders to understand the system's purpose, features, and constraints.
+- **Feasibility Study**: Evaluate the project's technical, operational, and financial feasibility.
+
+### 2. Design
+
+- **System Design**: Define the overall system architecture and components.
+- **Detailed Design**: Specify in detail how the system will be implemented, including data structures, algorithms, and interfaces.
+
+### 3. Implementation (Coding)
+
+- Translate the design into code using a programming language.
+- Follow coding standards and best practices.
+- Conduct code reviews to ensure quality.
+
+### 4. Testing
+
+- **Unit Testing**: Test individual components in isolation.
+- **Integration Testing**: Test the interactions between integrated components.
+- **System Testing**: Test the entire system as a whole.
+- **User Acceptance Testing (UAT)**: Validate the system with end-users to ensure it meets their requirements.
+
+### 5. Deployment
+
+- Release the software to users or deploy it to a production environment.
+
+### 6. Maintenance
+
+- Address issues identified in the production environment.
+- Make enhancements and updates as needed.
+- Create and improve documentation that describes the program's functionality, purpose, and usage.
+
+## Version Control
+
+[Version control](https://en.wikipedia.org/wiki/Version_control) is a system that allows multiple people to work on a project simultaneously without interfering with each other's work. It enables tracking changes to files over time, facilitating collaboration among team members, and providing a history of how a project has evolved. **Version control systems (VCS)** are essential for software development, but they can also be used for managing any kind of files, including documents, images, and more.
+
+[Git](https://en.wikipedia.org/wiki/Git) is one of the most widely used distributed version control systems. It is popular for its speed, flexibility, and powerful branching and merging capabilities. Other version control systems include Mercurial, SVN (Subversion), and CVS (Concurrent Versions System).
+
+> The topic is covered in more detail in `Git`.
+{: .prompt-info }
+
+### Version Control Vs Source Control
+
+- **Version Control** is a broader concept that encompasses the management of different versions or revisions of a project, which may include not only source code but also other project-related files, such as documentation, configuration files, and more.
+- **Source control** is a more specific term that often focuses on the control and management of source code files. It emphasizes the role of version control in handling changes to the source code of a software project.
+
+### Key concepts
+
+- **Repository**: A repository is a storage location where all the files and their changes are stored. It can be centralized (stored on a single server) or distributed (each user has a local copy).
+- **Commit**: A commit is a snapshot of the changes made to the files at a particular point in time. Each commit is accompanied by a commit message that describes the changes made.
+- **Branch**: A branch is a separate line of development within a repository. It allows developers to work on different features or bug fixes simultaneously without affecting the main codebase.
+- **Merge**: Merging is the process of combining changes from one branch into another. This is typically done to incorporate features developed in separate branches into the main branch.
+- **Clone**: Cloning involves creating a copy of a repository, usually from a remote server. This allows users to work on their own local copy and synchronize changes with the remote repository.
+- **Pull/Push**: Pulling is the process of fetching changes from a remote repository and merging them into the local repository. Pushing is the opposite — it involves sending local changes to a remote repository.
+- **Conflict Resolution**: Conflicts occur when two or more people make changes to the same part of a file simultaneously. Version control systems provide tools to help users resolve these conflicts.
+- **History**: Version control systems maintain a detailed history of changes made to files. This history includes information about who made the changes, when they were made, and the purpose of the changes.
+- **Tagging**: Tagging involves assigning a meaningful label to a specific commit, usually to mark important points in development, such as releases or major milestones.
+- **Centralized vs. Distributed**: Centralized version control systems (e.g., SVN) have a single central repository. Distributed version control systems (e.g., Git, Mercurial) allow each user to have a complete copy of the repository, enabling offline work and faster operations.
