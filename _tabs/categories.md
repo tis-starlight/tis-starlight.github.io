@@ -40,7 +40,7 @@ Game Development:
     - VFX
     - SFX
     - Unreal engine Blueprints
-    - Unreal engine C++
+    - Unreal engine C++ (best practices, naming conventions, ...)
     - Game Logic/Coding Examples
     - Multiplayer/Replication (Client-side & Server-side)
     - Unity3D engine
