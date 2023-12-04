@@ -5,7 +5,7 @@ title: 0.1 - Computer Programs     # TITLE for the post
 date: 2023-12-03 02:25:00 +0500     # YYYY-MM-DD HH:MM:SS +/-TTTT // Add Future Date & Time for planned future release
 
 categories: [Programming Languages, -Programming 101]             # [TOP_CATEGORY, SUB_CATEGORY] 
-tags: [programs, codes, softwares, sdlc]   # [TAG] 'TAG' names should always be lowercase & seperated by comma
+tags: [programs, codes, softwares, sdlc, version control, source control]   # [TAG] 'TAG' names should always be lowercase & seperated by comma
 
 # pin: true         # uncomment to pin
 # toc: false        # uncomment to turn off Table Of Content for this post
