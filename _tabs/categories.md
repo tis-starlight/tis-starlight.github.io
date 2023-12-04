@@ -102,7 +102,12 @@ Git & Github:
     - Cheatsheats
     - Workflow (CI/CD)
     - Ways (Github Website, Github desktop, Github extension in VS code, Github in Visual Studio, Github command-line and GUI)
-    - 
+    -
+Theory of Automata & Compiler Construction:
+    - Concepts
+    - References
+    - Cheatsheets
+    - Terms: [Pumping lemma Test, Turing Test, Turing Complete, DFA, NFA, Grammar, Alphabet, machine ...]
 Graphics Design/Video Editing:
     - Concepts
     - References
@@ -127,7 +132,7 @@ Sound Design:
     - Unreal Engine MetaSound
     - 
 Lists:
-    - Online Tools list (converters, texture generators, art generators, checksum, hash, encoding/decoding, stylish text)
+    - Online Tools list [converters, texture generators, art generators, checksum, hash & hashing algorithms (SHA, ...) , encoding/decoding (Base64, ASCII, BCD, EBCDIC, UNICODE), stylish text]
     - Plugins/addons/extensions/scripts/macros list (unreal engine, blender, 3ds max, maya, zbrush, illustrator, photoshop, after effects, premier, media encoder, lightroom, character creator, daz3d, visual studio, visual studio code, unity)
     - Honorable Mentions (Books, Novels, Movies, Games, Songs)
     - List of Programming langauges
@@ -155,13 +160,15 @@ Prompt-Engineering:
     - Concepts
     - References
     - ChatGPT, GoogleBard
-    - Stable Diffusion
-    - Metaverse
+    - Stable Diffusion, Midjourney
+    - Metaverse, NFT, Cryptocurrency/Digital Currency
     - 
 Artificial Intelligence:
     - Concepts
     - References
     - Cheatsheets
+    - History of computers & Ai (ENIAC, UNIVAC, EDVAC, EDSAC, MARK1, ELIZA, enigma, ...)
+    - Computer organisation and architecture (memory, nibble, bit, byte, megabyte, ...)
     - Algorithms
     - Data Mining/Data Science/Machine Learning(ML)
     - Web Scraping
