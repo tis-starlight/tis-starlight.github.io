@@ -20,7 +20,7 @@ timezone: Asia/Karachi
 
 title: Starlight      # the main title
 
-tagline: Dedicated to creating immersive experiences and pushing creative boundaries.      # it will display as the sub-title
+tagline: Dedicated to creating immersive experiences and pushing creative boundaries. # it will display as the sub-title
 
 description: >-       # used by seo meta and the atom feed
   I am a game developer, 3D hobbyist with a passion for creating visually stunning and immersive gaming experiences. 
