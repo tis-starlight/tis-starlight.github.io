@@ -6,6 +6,8 @@ order: 1
 
 <!-- categories: [TOP_CATEGORY, SUB_CATEGORY]
 
+-- CV/Resume
+
 3D:                                                 // Top-Category
     - Concepts                                      // Sub-Category
     - References                                    //     |
