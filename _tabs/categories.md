@@ -136,7 +136,7 @@ Sound Design:
 Lists:
     - Online Tools list [converters, texture generators, art generators, checksum, hash & hashing algorithms (SHA, ...) , encoding/decoding (Base64, ASCII, BCD, EBCDIC, UNICODE), stylish text]
     - Plugins/addons/extensions/scripts/macros list (unreal engine, blender, 3ds max, maya, zbrush, illustrator, photoshop, after effects, premier, media encoder, lightroom, character creator, daz3d, visual studio, visual studio code, unity)
-    - Honorable Mentions (Books, Novels, Movies, Games, Songs)
+    - Honorable Mentions (Books, Novels, Movies, Games, Songs) // list of read books, novels (with their authors)
     - Encryption/ciphers (ceaser cipher, etc...)
     - List of Programming langauges
     - List of algorithms for AI, computer graphics, maze generating algorithms, etc...
