@@ -100,7 +100,7 @@ The following are the reasons why debugging is crucial in software development:
 - **Innovation**: By resolving issues, developers can focus on implementing new features and innovations rather than constantly addressing bugs.
 
 
-## Types of debugging
+## Types of Debugging
 
 There are several types of debugging techniques that developers use to identify and fix issues in software. The choice of debugging method depends on the nature of the problem, the development environment, and the tools available. Often, a combination of these debugging techniques is used to thoroughly assess and improve the quality of software. 
 
