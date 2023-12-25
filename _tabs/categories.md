@@ -51,7 +51,7 @@ Programming Languages:
     - Concepts
     - References
     - Cheatsheets
-    - Programming 101 [terms like: JIT debugger, linter, intellisense/code highlighting, checksum, hash, ...]
+    - Programming 101 [terms like: linter, intellisense/code highlighting, checksum, hash, ...]
     - Lang [C++, C, Markdown, C#, HTML, CSS, Javascript, Bootstrap, PHP, sql, GW Basic, command prompt, Shell, ...]
     - 
 C++:
@@ -137,7 +137,9 @@ Lists:
     - Online Tools list [converters, texture generators, art generators, checksum, hash & hashing algorithms (SHA, ...) , encoding/decoding (Base64, ASCII, BCD, EBCDIC, UNICODE), stylish text]
     - Plugins/addons/extensions/scripts/macros list (unreal engine, blender, 3ds max, maya, zbrush, illustrator, photoshop, after effects, premier, media encoder, lightroom, character creator, daz3d, visual studio, visual studio code, unity)
     - Honorable Mentions (Books, Novels, Movies, Games, Songs)
+    - Encryption/ciphers (ceaser cipher, etc...)
     - List of Programming langauges
+    - List of algorithms for AI, computer graphics, maze generating algorithms, etc...
     - List of compilers, assemblers/disassemblers, interpreters
     - List of Programming Language Libraries
     - List of Game Ideas, easter eggs & references (to other games, movies, books, characters, lines, quotes, names, memes, ...), gameplay features/modes, ... 
