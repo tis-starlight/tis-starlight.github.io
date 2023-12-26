@@ -300,19 +300,19 @@ Debugging tools and features can vary across programming languages and developme
 
 Understanding the terminologies related to debugging and debuggers is crucial for effective software development. Here are explanations for key terms:
 
-- **Logging**:
-The practice of recording information, such as variable values or messages, during the execution of a program for debugging and analysis purposes. Logging can be associated with both static analysis and dynamic analysis, depending on the context in which it is used.
-  * **Error Logging**: Logging specifically focused on recording errors and exceptions. _Use Cases_: Facilitating postmortem analysis of errors in production.
-  * **Audit Logging**: Logging events for security and compliance purposes. _Use Cases_: Recording user activities for security audits.
+Logging:
+: The practice of recording information, such as variable values or messages, during the execution of a program for debugging and analysis purposes. Logging can be associated with both static analysis and dynamic analysis, depending on the context in which it is used.
+  - **Error Logging**: Logging specifically focused on recording errors and exceptions. _Use Cases_: Facilitating postmortem analysis of errors in production.
+  - **Audit Logging**: Logging events for security and compliance purposes. _Use Cases_: Recording user activities for security audits.
 
-- **Memory Leak**:
-A condition where a program allocates memory but fails to release it, leading to a gradual increase in the program's memory usage.
+Memory Leak:
+: A condition where a program allocates memory but fails to release it, leading to a gradual increase in the program's memory usage.
 
-- **Exception Handling**:
-The process of managing and responding to exceptions (errors or unexpected situations) that occur during program execution. Debuggers often provide features to handle exceptions.
+Exception Handling:
+: The process of managing and responding to exceptions (errors or unexpected situations) that occur during program execution. Debuggers often provide features to handle exceptions.
 
-- **Race Condition**:
-A race condition occurs when the behavior of a program depends on the relative timing of events, often leading to unpredictable outcomes. Debugging race conditions can be challenging.
+Race Condition:
+: A race condition occurs when the behavior of a program depends on the relative timing of events, often leading to unpredictable outcomes. Debugging race conditions can be challenging.
 
-- **Live Debugging**:
-Debugging a program while it is actively handling real-world data and events. Live debugging is often performed on systems that are in production.
+Live Debugging:
+: Debugging a program while it is actively handling real-world data and events. Live debugging is often performed on systems that are in production.
