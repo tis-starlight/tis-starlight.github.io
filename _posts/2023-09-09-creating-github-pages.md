@@ -42,7 +42,7 @@ This includes creating beautifully designed documentation, blog posts, and more,
 
 ## Markdown
 
-Markdown is a lightweight markup language that is used for formatting and structuring plain text documents. 
+[**Markdown**](https://en.wikipedia.org/wiki/Markdown) is a lightweight markup language that is used for formatting and structuring plain text documents. 
 
 It is often used for creating documents that will be converted to HTML, but it can also be used for other purposes such as documentation, README files, blogging and note-taking.
 
