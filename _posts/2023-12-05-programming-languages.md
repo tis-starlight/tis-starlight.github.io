@@ -36,7 +36,7 @@ The **1940s** saw the construction of the **Electronic Numerical Integrator and 
 
 The **1970s** witnessed the creation of _"C"_ and _"Pascal"_, influencing subsequent programming languages. The 1980s brought widespread adoption of "personal computers", leading to the popularity of languages like _"C++"_ and _"Java"_ in the 1990s. The **2000s** and beyond have seen the rise of languages such as _"Python"_ and _"JavaScript"_, emphasizing ease of use and versatility.
 
-## Types of Programming Languages
+## Types of Programming Languages [+](https://en.wikipedia.org/wiki/List_of_programming_languages_by_type)
 
 The two main types of programming languages are Low-level languages and High-level languages. These categories are based on the level of abstraction they provide to the programmer and their proximity to the hardware.
 
