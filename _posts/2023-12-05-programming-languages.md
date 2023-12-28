@@ -5,7 +5,7 @@ title: 0.2 - Programming Languages      # TITLE for the post
 date: 2023-12-05 00:12:00 +0500     # YYYY-MM-DD HH:MM:SS +/-TTTT // Add Future Date & Time for planned future release
 
 categories: [Programming Languages, -Programming 101]             # [TOP_CATEGORY, SUB_CATEGORY] 
-tags: [programming, languages, paradigms]   # [TAG] 'TAG' names should always be lowercase & seperated by comma
+tags: [programming languages, paradigms]   # [TAG] 'TAG' names should always be lowercase & seperated by comma
 
 # pin: true         # uncomment to pin
 # toc: false        # uncomment to turn off Table Of Content for this post

@@ -5,7 +5,7 @@ title: 0 - Problems and Solutions      # TITLE for the post
 date: 2023-12-01 04:00:00 +0500     # YYYY-MM-DD HH:MM:SS +/-TTTT // Add Future Date & Time for planned future release
 
 categories: [Programming Languages, -Programming 101]             # [TOP_CATEGORY, SUB_CATEGORY] 
-tags: [problems, solutions]   # [TAG] 'TAG' names should always be lowercase & seperated by comma
+tags: [problems, solutions, algorithms]   # [TAG] 'TAG' names should always be lowercase & seperated by comma
 
 # pin: true         # uncomment to pin
 # toc: false        # uncomment to turn off Table Of Content for this post
