@@ -151,6 +151,8 @@ When you want to use pure Markdown (without nested HTML & CSS), you can use Emoj
 | Global Imports   | Emily Johnson | Canada  |
 | La Maison du Vin | Pierre Dupont | France  |
 
+<!--  (:---- Left-justified) (----: Right-justified) (:----: Centered)  -->
+
 | File(s) | In Directory | from %TEMP% |
 | ------- |:------------:|:-----------:|
 | `*.PNG` | ✓            | ✗           |
