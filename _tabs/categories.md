@@ -158,7 +158,8 @@ Cybersecurity:
     - Digital Forensics
     - Malware Analysis
     - Reverse-Engineering
-    - Game Hacking (exploits, cheats, ESP, wallhacks, aimbots, )
+    - Game Hacking (exploits, cheats, ESP, wallhacks, aimbots, trainers, ...) & their types
+    - list of tools (eg., ida pro, ghidra, olldbg, gdb, radare2, hex editors, wireshark, process monitor, tcpdump, windump, valgrind, PEiD, cheat engine, lucky patcher, game guardian, artmoney, autohotkey, ...)
     - 
 Prompt-Engineering:
     - Concepts
