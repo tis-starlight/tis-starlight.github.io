@@ -98,6 +98,14 @@ Eiffel Tower
 
 **bold**              <!-- or  __bold__ , <b> bold </b> -->
 
+## Tool-tip
+
+Most inline <abbr title="Hypertext Markup Language">HTML</abbr> tags are supported.
+
+```html
+Most inline <abbr title="Hypertext Markup Language">HTML</abbr> tags are supported.
+```
+
 ## Improving Visibility
 
 Sometimes, Markdown content requires adding [HTML elements and CSS attributes](https://stackoverflow.com/questions/35465557/how-to-apply-color-on-text-in-markdown) like color and font sizes, and weight attributes. However, Natively Markdown or any Markdown parser/flavor does not support CSS styles.
