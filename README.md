@@ -1,56 +1,27 @@
-# Chirpy Starter
+# 👋 Welcome
 
-[![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)][gem]&nbsp;
-[![GitHub license](https://img.shields.io/github/license/cotes2020/chirpy-starter.svg?color=blue)][mit]
+[**YouTube**](https://www.youtube.com/channel/UClM7SQbs4f77roJSLOAYqiA) | [**ArtStation**](https://www.artstation.com/tis-starlight)
 
-When installing the [**Chirpy**][chirpy] theme through [RubyGems.org][gem], Jekyll can only read files in the folders
-`_data`, `_layouts`, `_includes`, `_sass` and `assets`, as well as a small part of options of the `_config.yml` file
-from the theme's gem. If you have ever installed this theme gem, you can use the command
-`bundle info --path jekyll-theme-chirpy` to locate these files.
+## About
 
-The Jekyll team claims that this is to leave the ball in the user’s court, but this also results in users not being
-able to enjoy the out-of-the-box experience when using feature-rich themes.
+> Official GitHub-Pages site of _**Starlight**_, where you'll find a collection of *blogs, documentation,  tutorials, tips & tricks*. Covering a wide range of topics, including 3D modeling, programming, game development, and much more.
 
-To fully use all the features of **Chirpy**, you need to copy the other critical files from the theme's gem to your
-Jekyll site. The following is a list of targets:
+## Blogs
 
-```shell
-.
-├── _config.yml
-├── _plugins
-├── _tabs
-└── index.html
-```
+Explore insightful articles on various topics related to 3D, Programming and Game Development. Gain valuable knowledge and stay up-to-date with the latest trends and techniques.
 
-To save you time, and also in case you lose some files while copying, we extract those files/configurations of the
-latest version of the **Chirpy** theme and the [CD][CD] workflow to here, so that you can start writing in minutes.
+## Tutorials
 
-## Prerequisites
+Learn through step-by-step tutorials that cover a wide array of subjects. Whether you're a beginner or an experienced developer, there's something here for everyone.
 
-Follow the instructions in the [Jekyll Docs](https://jekyllrb.com/docs/installation/) to complete the installation of
-the basic environment. [Git](https://git-scm.com/) also needs to be installed.
+## Tips & Tricks
 
-## Installation
+Discover handy tips and tricks that can streamline your workflow and improve your skills in related fields.
 
-Sign in to GitHub and [**use this template**][use-template] to generate a brand new repository and name it
-`USERNAME.github.io`, where `USERNAME` represents your GitHub username.
+## Contact
 
-Then clone it to your local machine and run:
+Feel free to reach out to me through [GitHub](https://github.com/tis-starlight). I'd love to hear your thoughts and feedback.
 
-```console
-$ bundle
-```
+Stay tuned for exciting content and updates!
 
-## Usage
-
-Please see the [theme's docs](https://github.com/cotes2020/jekyll-theme-chirpy#documentation).
-
-## License
-
-This work is published under [MIT][mit] License.
-
-[gem]: https://rubygems.org/gems/jekyll-theme-chirpy
-[chirpy]: https://github.com/cotes2020/jekyll-theme-chirpy/
-[use-template]: https://github.com/cotes2020/chirpy-starter/generate
-[CD]: https://en.wikipedia.org/wiki/Continuous_deployment
-[mit]: https://github.com/cotes2020/chirpy-starter/blob/master/LICENSE
+Created with ❤️ by [**Starlight**](https://tis-starlight.github.io)
