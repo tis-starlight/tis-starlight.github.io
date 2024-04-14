@@ -202,7 +202,7 @@ A [Badge](https://getbootstrap.com/docs/5.3/components/badge/){: target="_blank"
 A [Button](https://getbootstrap.com/docs/5.3/components/buttons/){: target="_blank" rel="noopener noreferrer"} is a core UI component used for user interaction, enabling actions or navigation.
 
 <div class="container mt-2 d-flex justify-content-center">
-  <a href="#!" class="btn btn-success" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; margin-right: 10px;" role="button">Visit #</a>
+  <a href="#" class="btn btn-success" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; margin-right: 10px;" role="button">Visit #</a>
   <a href="https://tis-starlight.github.io" class="btn btn-outline-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; border: 1px solid; margin-left: 10px; --bs-btn-font-size: 1rem;" role="button">Visit Starlight</a>
 </div>
 
@@ -228,8 +228,8 @@ A [Button Group](https://getbootstrap.com/docs/5.3/components/button-group/){: t
       Dropdown
     </button>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#!">Post1 link</a></li>
-      <li><a class="dropdown-item" href="#!">Post2 link</a></li>
+      <li><a class="dropdown-item" href="#">Post1 link</a></li>
+      <li><a class="dropdown-item" href="#">Post2 link</a></li>
     </ul>
   </div>
 </div>
@@ -244,9 +244,9 @@ A [Button Group](https://getbootstrap.com/docs/5.3/components/button-group/){: t
       Dropdown
     </button>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" style="color: #ff0000;" href="#!">Post1 link</a></li>
-      <li><a class="dropdown-item" style="color: #ff0000;" href="#!">Post2 link</a></li>
-      <li><a class="dropdown-item" style="color: #ff0000;" href="#!">Post3 link</a></li>
+      <li><a class="dropdown-item" style="color: #ff0000;" href="#">Post1 link</a></li>
+      <li><a class="dropdown-item" style="color: #ff0000;" href="#">Post2 link</a></li>
+      <li><a class="dropdown-item" style="color: #ff0000;" href="#">Post3 link</a></li>
     </ul>
   </div>
 </div>
@@ -261,7 +261,7 @@ A [Button Group](https://getbootstrap.com/docs/5.3/components/button-group/){: t
       <div class="card-body">
         <h5 class="card-title pt-0 mt-0" data-toc-skip>Card title</h5>
         <p class="card-text pt-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#!" class="btn btn-primary">Button</a>
+        <a href="#" class="btn btn-primary">Button</a>
       </div>
     </div>
   </div>  
@@ -270,7 +270,7 @@ A [Button Group](https://getbootstrap.com/docs/5.3/components/button-group/){: t
       <div class="card-body">
         <h5 class="card-title pt-0 mt-0" data-toc-skip>Card title</h5>
         <p class="card-text pt-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#!" class="btn btn-primary">Button</a>
+        <a href="#" class="btn btn-primary">Button</a>
       </div>
     </div>
   </div>  
@@ -285,7 +285,7 @@ A [Button Group](https://getbootstrap.com/docs/5.3/components/button-group/){: t
       <div class="card-body p-2">
         <h5 class="card-title m-0" data-toc-skip>Card title</h5>
         <p class="card-text mt-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#!" class="btn btn-primary mt-1">Button</a>
+        <a href="#" class="btn btn-primary mt-1">Button</a>
       </div>
     </div>
   </div>
@@ -295,7 +295,7 @@ A [Button Group](https://getbootstrap.com/docs/5.3/components/button-group/){: t
       <div class="card-body p-2">
         <h5 class="card-title m-0" data-toc-skip>Card title</h5>
         <p class="card-text mt-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#!" class="btn btn-primary mt-1">Button</a>
+        <a href="#" class="btn btn-primary mt-1">Button</a>
       </div>
     </div>
   </div>
@@ -329,7 +329,7 @@ A [Button Group](https://getbootstrap.com/docs/5.3/components/button-group/){: t
   <div class="card-body mt-0 pt-0">
     <h5 class="card-title" data-toc-skip>Discover Our New Product</h5>
     <p class="card-text" style="text-align: justify;">Introducing our latest innovation, the XYZ Pro Series. Designed to revolutionize your workflow with cutting-edge features and unparalleled performance. Whether you're a professional or a hobbyist, the XYZ Pro Series is engineered to meet your needs and exceed your expectations.</p>
-    <a href="#!" class="btn btn-primary" data-mdb-ripple-init>Learn More</a>
+    <a href="#" class="btn btn-primary" data-mdb-ripple-init>Learn More</a>
   </div>
   <div class="card-footer text-muted mt-4">2 days ago</div>
 </div>
@@ -478,11 +478,11 @@ A [Dropdown](https://getbootstrap.com/docs/5.3/components/dropdowns/){: target="
     Action
   </button>
   <ul class="dropdown-menu bg-dark">
-    <li><a class="dropdown-item text-light" href="#!">Action</a></li>
-    <li><a class="dropdown-item text-light" href="#!">Another action</a></li>
-    <li><a class="dropdown-item text-light" href="#!">Action List</a></li>
+    <li><a class="dropdown-item text-light" href="#">Action</a></li>
+    <li><a class="dropdown-item text-light" href="#">Another action</a></li>
+    <li><a class="dropdown-item text-light" href="#">Action List</a></li>
     <li><hr class="dropdown-divider"></li>
-    <li><a class="dropdown-item text-light" href="#!">Docs</a></li>
+    <li><a class="dropdown-item text-light" href="#">Docs</a></li>
   </ul>
 </div>
 
@@ -744,7 +744,7 @@ A [Toast](https://getbootstrap.com/docs/5.3/components/toasts/){: target="_blank
 <br>
 
 <!-- Link Tooltip -->
-<a href="#!" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-title="Some tooltip text.">Link-Tooltip</a>
+<a href="#" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-title="Some tooltip text.">Link-Tooltip</a>
 
 <!-- Text Tooltip -->
 <span data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-title="Some tooltip text."> <u>This is a text-Tooltip</u>. </span>
