@@ -219,35 +219,40 @@ A [Button Group](https://getbootstrap.com/docs/5.3/components/button-group/){: t
 
 <br>
 
-<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-  <button type="button" class="btn btn-primary">1</button>
-  <button type="button" class="btn btn-primary">2</button>
-
-  <div class="btn-group" role="group">
-    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-      Dropdown
-    </button>
-    <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Post1 link</a></li>
-      <li><a class="dropdown-item" href="#">Post2 link</a></li>
-    </ul>
-  </div>
-</div>
-
-<div class="btn-group" style="margin-left: 20px;" role="group" aria-label="Button group with nested dropdown">
-  <button type="button" class="btn btn-primary">1</button>
-  <button type="button" class="btn btn-primary">2</button>
-  <button type="button" class="btn btn-primary">3</button>
-
-  <div class="btn-group" role="group">
-    <button type="button" class="btn btn-outline-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-      Dropdown
-    </button>
-    <ul class="dropdown-menu">
-      <li><a class="dropdown-item" style="color: #ff0000;" href="#">Post1 link</a></li>
-      <li><a class="dropdown-item" style="color: #ff0000;" href="#">Post2 link</a></li>
-      <li><a class="dropdown-item" style="color: #ff0000;" href="#">Post3 link</a></li>
-    </ul>
+<div class="container d-flex justify-content-center align-items-center">
+  <div class="row">
+    <div class="col">
+      <div class="btn-group" style="margin-top: 10px;" role="group" aria-label="Button group with nested dropdown">
+        <button type="button" class="btn btn-primary">1</button>
+        <button type="button" class="btn btn-primary">2</button>
+        <div class="btn-group" role="group">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Post1 link</a></li>
+            <li><a class="dropdown-item" href="#">Post2 link</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="btn-group" style="margin-top: 10px;" role="group" aria-label="Button group with nested dropdown">
+        <button type="button" class="btn btn-primary">1</button>
+        <button type="button" class="btn btn-primary">2</button>
+        <button type="button" class="btn btn-primary">3</button>
+        <div class="btn-group" role="group">
+          <button type="button" class="btn btn-outline-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" style="color: #ff0000;" href="#">Post1 link</a></li>
+            <li><a class="dropdown-item" style="color: #ff0000;" href="#">Post2 link</a></li>
+            <li><a class="dropdown-item" style="color: #ff0000;" href="#">Post3 link</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -301,7 +306,6 @@ A [Button Group](https://getbootstrap.com/docs/5.3/components/button-group/){: t
   </div>
 </div>
  
-
 <br>
 
 <div class="card p-0 m-0 bg-dark text-white" style="border-radius: 10px; overflow: hidden;">
@@ -681,37 +685,29 @@ A [Toast](https://getbootstrap.com/docs/5.3/components/toasts/){: target="_blank
 
 <!-- Buttons to trigger toast notifications -->
 <div class="d-flex justify-content-center mt-4">
-    <button type="button" class="btn btn-primary me-2" id="primaryToastBtn">Primary</button>
-    <button type="button" class="btn btn-success me-2" id="successToastBtn">Success</button>
-    <button type="button" class="btn btn-warning me-2" id="warningToastBtn">Warning</button>
-    <button type="button" class="btn btn-danger me-2" id="dangerToastBtn">Danger</button>
+    <button type="button" class="btn btn-primary me-2 toast-trigger" data-target="primaryToast">Primary</button>
+    <button type="button" class="btn btn-success me-2 toast-trigger" data-target="successToast">Success</button>
+    <button type="button" class="btn btn-warning me-2 toast-trigger" data-target="warningToast">Warning</button>
+    <button type="button" class="btn btn-danger me-2 toast-trigger" data-target="dangerToast">Danger</button>
 </div>
 
 <!-- JavaScript to trigger toast notifications -->
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        // Function to show a toast
-        function showToast(toastId) {
-            const toastElement = document.getElementById(toastId);
-            if (toastElement) {
-                const toastInstance = new bootstrap.Toast(toastElement);
-                toastInstance.show();
-            }
-        }
-        // Add event listeners to trigger toasts
-        document.getElementById('successToastBtn').addEventListener('click', function() {
-            showToast('successToast');
+document.addEventListener('DOMContentLoaded', function() {
+    const toastTriggers = document.querySelectorAll('.toast-trigger');
+    if (toastTriggers) {
+        toastTriggers.forEach((trigger) => {
+            trigger.addEventListener('click', () => {
+                const toastId = trigger.dataset.target;
+                const toastElement = document.getElementById(toastId);
+                if (toastElement) {
+                    const toastInstance = new bootstrap.Toast(toastElement);
+                    toastInstance.show();
+                }
+            });
         });
-        document.getElementById('primaryToastBtn').addEventListener('click', function() {
-            showToast('primaryToast');
-        });
-        document.getElementById('dangerToastBtn').addEventListener('click', function() {
-            showToast('dangerToast');
-        });
-        document.getElementById('warningToastBtn').addEventListener('click', function() {
-            showToast('warningToast');
-        });
-    });
+    }
+});
 </script>
 
 ### Tooltips
@@ -763,63 +759,94 @@ A [Toast](https://getbootstrap.com/docs/5.3/components/toasts/){: target="_blank
 <!-- Code by: Adam Argyle -->
 <div class="imgcompare">
     <section class="before">
-      <img src="https://assets.codepen.io/2585/Runner.svg" alt="" style="border-radius: 20px;">
+        <img src="https://assets.codepen.io/2585/Runner.svg" alt="" style="border-radius: 20px;">
     </section>
     <section class="after">
-      <img src="https://assets.codepen.io/2585/Roboto.svg" alt="" style="border-radius: 20px;"> 
+        <img src="https://assets.codepen.io/2585/Roboto.svg" alt="" style="border-radius: 20px;"> 
     </section>
     <input type="range" id="range" step="0.6">
 </div>
 <style>
-        .imgcompare {
-            display: grid;
-        }
-        .imgcompare > * {
-            grid-area: 1 / 1;
-        }
-        .imgcompare > section {
-            display: grid;
-            place-content: center;
-        }
-        .imgcompare .before {
-            mask: linear-gradient(to right, #000 0, var(--pos, 50%), #0000 0);
-        }
-        .imgcompare .after {
-            mask: linear-gradient(to right, #0000 0, var(--pos, 50%), #000 0);
-        }
-        .imgcompare > input[type="range"] {
-            z-index: 1;
-            appearance: none;
-            background: transparent;
-            cursor: pointer;
-            -webkit-tap-highlight-color: transparent;
-        }
-        .imgcompare > input[type="range"]::-webkit-slider-thumb {
-            appearance: none;
-            inline-size: 4px;
-            block-size: 100dvh;
-            background-color: CanvasText;
-        }
-        .imgcompare > input[type="range"]::-moz-range-thumb {
-            appearance: none;
-            inline-size: 4px;
-            block-size: 100dvh;
-            background-color: CanvasText;
-        }
-        img {
-            max-block-size: 80dvh;
-            max-inline-size: 100%;
-        }
-        * {
-            box-sizing: border-box;
-            margin: 0;
-        }   
+    .imgcompare {
+        display: grid;
+    }
+    .imgcompare > * {
+        grid-area: 1 / 1;
+    }
+    .imgcompare > section {
+        display: grid;
+        place-content: center;
+    }
+    .imgcompare .before {
+        mask: linear-gradient(to right, #000 0, var(--pos, 50%), #0000 0);
+    }
+    .imgcompare .after {
+        mask: linear-gradient(to right, #0000 0, var(--pos, 50%), #000 0);
+    }
+    .imgcompare > input[type="range"] {
+        z-index: 1;
+        appearance: none;
+        background: transparent;
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+    }
+    .imgcompare > input[type="range"]::-webkit-slider-thumb {
+        appearance: none;
+        inline-size: 4px;
+        block-size: 100dvh;
+        background-color: CanvasText;
+    }
+    .imgcompare > input[type="range"]::-moz-range-thumb {
+        appearance: none;
+        inline-size: 4px;
+        block-size: 100dvh;
+        background-color: CanvasText;
+    }
+    img {
+        max-block-size: 80dvh;
+        max-inline-size: 100%;
+    }
+    * {
+        box-sizing: border-box;
+        margin: 0;
+    }   
 </style>
 
 <script>
     var range = document.getElementById('range');
     range.oninput = () =>
-      document.body.style.setProperty('--pos', range.value + '%');
+        document.body.style.setProperty('--pos', range.value + '%');
+
+    // Add touch event listeners for mobile devices
+    range.addEventListener('touchstart', handleTouchStart, false);
+    range.addEventListener('touchmove', handleTouchMove, false);
+
+    var initialX = null;
+
+    function handleTouchStart(event) {
+        initialX = event.touches[0].clientX;
+    };
+
+    function handleTouchMove(event) {
+        if (initialX === null) {
+            return;
+        }
+
+        var currentX = event.touches[0].clientX;
+        var diffX = initialX - currentX;
+
+        var newPos = parseFloat(range.value) + diffX / range.offsetWidth * 100;
+        if (newPos < 0) {
+            newPos = 0;
+        } else if (newPos > 100) {
+            newPos = 100;
+        }
+
+        range.value = newPos;
+        document.body.style.setProperty('--pos', newPos + '%');
+
+        initialX = currentX;
+    };
 </script>
 
 <br>
@@ -828,41 +855,13 @@ A [Toast](https://getbootstrap.com/docs/5.3/components/toasts/){: target="_blank
 
 <!-- tsParticles | https://github.com/tsparticles/tsparticles -->
 <!-- ParticleJS | https://github.com/VincentGarreau/particles.js/ -->
-  <div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 50px;">
-    <div id="particles-container1" style="border: 1px solid #ccc; border-radius: 10px; padding: 10px; width: 800px; height: 300px; overflow: hidden; margin-bottom: 20px; position: relative;">
-      <div id="particles-js1" style="position: absolute; width: 100%; height: 100%; background-image: url('https://i.imgur.com/uNfcILD.png'); background-repeat: no-repeat; background-size: 20%; background-position: 50% 50%;"></div>
-    </div>
-    <div style="display: flex; align-items: center;">
-      <label for="width1">Width:</label>
-      <input type="number" id="width1" min="100" max="800" step="10" value="800" onchange="updateSize(1)" style="margin-right: 10px;">
-      <label for="height1">Height:</label>
-      <input type="number" id="height1" min="100" max="400" step="10" value="300" onchange="updateSize(1)">
-    </div>
-  </div>
 
-  <div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 50px;">
-    <div id="particles-container2" style="border: 1px solid #ccc; border-radius: 10px; padding: 10px; width: 800px; height: 300px; overflow: hidden; margin-bottom: 20px; position: relative;">
-      <div id="particles-js2" style="position: absolute; width: 100%; height: 100%; background-image: url('https://i.imgur.com/uNfcILD.png'); background-repeat: no-repeat; background-size: 20%; background-position: 50% 50%;"></div>
-    </div>
-    <div style="display: flex; align-items: center;">
-      <label for="width2">Width:</label>
-      <input type="number" id="width2" min="100" max="800" step="10" value="800" onchange="updateSize(2)" style="margin-right: 10px;">
-      <label for="height2">Height:</label>
-      <input type="number" id="height2" min="100" max="400" step="10" value="300" onchange="updateSize(2)">
-    </div>
+<div style="border: 1px solid #ccc; border-radius: 10px; padding: 10px; overflow: hidden; margin-bottom: 20px; position: relative;">
+    <div id="particles-js1" style="width: 100%; height: 300px; background-image: url('https://i.imgur.com/uNfcILD.png'); background-repeat: no-repeat; background-size: 20%; background-position: 50% 50%;"></div>
   </div>
-
   <script>
-    function updateSize(particlesId) {
-      var width = document.getElementById('width' + particlesId).value;
-      var height = document.getElementById('height' + particlesId).value;
-      document.getElementById('particles-container' + particlesId).style.width = width + 'px';
-      document.getElementById('particles-container' + particlesId).style.height = height + 'px';
-    }
-
-  particlesJS("particles-js1", {
-    // Particle configuration for the first particle system
-    "particles": {
+    particlesJS("particles-js1", {
+      "particles": {
       "number": {
         "value": 400,
         "density": {
@@ -970,10 +969,15 @@ A [Toast](https://getbootstrap.com/docs/5.3/components/toasts/){: target="_blank
       }
     },
     "retina_detect": true
-  });
-  particlesJS("particles-js2", {
-    // Particle configuration for the second particle system
-    "particles": {
+    });
+</script>
+
+<div style="border: 1px solid #ccc; border-radius: 10px; padding: 10px; overflow: hidden; margin-bottom: 20px; position: relative;">
+    <div id="particles-js2" style="width: 100%; height: 300px; background-image: url('https://i.imgur.com/uNfcILD.png'); background-repeat: no-repeat; background-size: 20%; background-position: 50% 50%;"></div>
+  </div>
+  <script>
+    particlesJS("particles-js2", {
+      "particles": {
       "number": {
         "value": 200,
         "density": {
