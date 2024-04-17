@@ -756,100 +756,58 @@ document.addEventListener('DOMContentLoaded', function() {
 
 ## Image Comparison Slider
 
-<!-- Code by: Adam Argyle -->
-<div class="imgcompare">
-    <section class="before">
-        <img src="https://assets.codepen.io/2585/Runner.svg" alt="" style="border-radius: 20px;">
-    </section>
-    <section class="after">
-        <img src="https://assets.codepen.io/2585/Roboto.svg" alt="" style="border-radius: 20px;"> 
-    </section>
-    <input type="range" id="range" step="0.6">
-</div>
+<!-- img-comparison-slider | https://github.com/sneas/img-comparison-slider/ -->
+<img-comparison-slider class="slider-focus slider-split-line" style="outline: none;" value="50">
+  <figure slot="first" class="before" style="pointer-events: none;">
+    <img width="100%" style="border-radius: 8px;" src="https://i.imgur.com/m9E2ats.png">
+    <figcaption>Before</figcaption>
+  </figure>
+  <figure slot="second" class="after" style="pointer-events: none;">
+    <img width="100%" style="border-radius: 8px;" src="https://i.imgur.com/4KOWYcz.png">
+    <figcaption>After</figcaption>
+  </figure>
+</img-comparison-slider>
+
 <style>
-    .imgcompare {
-        display: grid;
-    }
-    .imgcompare > * {
-        grid-area: 1 / 1;
-    }
-    .imgcompare > section {
-        display: grid;
-        place-content: center;
-    }
-    .imgcompare .before {
-        mask: linear-gradient(to right, #000 0, var(--pos, 50%), #0000 0);
-    }
-    .imgcompare .after {
-        mask: linear-gradient(to right, #0000 0, var(--pos, 50%), #000 0);
-    }
-    .imgcompare > input[type="range"] {
-        z-index: 1;
-        appearance: none;
-        background: transparent;
-        cursor: pointer;
-        -webkit-tap-highlight-color: transparent;
-    }
-    .imgcompare > input[type="range"]::-webkit-slider-thumb {
-        appearance: none;
-        inline-size: 4px;
-        block-size: 100dvh;
-        background-color: CanvasText;
-    }
-    .imgcompare > input[type="range"]::-moz-range-thumb {
-        appearance: none;
-        inline-size: 4px;
-        block-size: 100dvh;
-        background-color: CanvasText;
-    }
-    img {
-        max-block-size: 80dvh;
-        max-inline-size: 100%;
-    }
-    * {
-        box-sizing: border-box;
-        margin: 0;
-    }   
+  .before,
+  .after {
+    margin: 0;
+  }
+  .before figcaption,
+  .after figcaption {
+    background: #fff;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid #c0c0c0;
+    border-radius: 8px;
+    color: #DDD;
+    opacity: 0.8;
+    padding: 8px 10px 8px 10px;
+    position: absolute;
+    top: 90%;
+    transform: translateY(-50%);
+    line-height: 60%;
+  }
+  .before figcaption {
+    left: 20px;
+  }
+  .after figcaption {
+    right: 20px;
+  }
+  .slider-focus {
+    transition: box-shadow 200ms ease-in-out;
+  }
+  .slider-focus:focus {
+    outline: none;
+    box-shadow: 0px 0px 15px 5px #0c5d10;
+    border-radius: 8px;
+  }
+  .slider-split-line {
+    --divider-width: 1px;
+    /* --divider-color: #ffa658; */
+    --default-handle-opacity: 1;
+    --default-handle-width: 50px;
+  }
 </style>
-
-<script>
-    var range = document.getElementById('range');
-    range.oninput = () =>
-        document.body.style.setProperty('--pos', range.value + '%');
-
-    // Add touch event listeners for mobile devices
-    range.addEventListener('touchstart', handleTouchStart, false);
-    range.addEventListener('touchmove', handleTouchMove, false);
-
-    var initialX = null;
-
-    function handleTouchStart(event) {
-        initialX = event.touches[0].clientX;
-    };
-
-    function handleTouchMove(event) {
-        if (initialX === null) {
-            return;
-        }
-
-        var currentX = event.touches[0].clientX;
-        var diffX = initialX - currentX;
-
-        var newPos = parseFloat(range.value) + diffX / range.offsetWidth * 100;
-        if (newPos < 0) {
-            newPos = 0;
-        } else if (newPos > 100) {
-            newPos = 100;
-        }
-
-        range.value = newPos;
-        document.body.style.setProperty('--pos', newPos + '%');
-
-        initialX = currentX;
-    };
-</script>
-
-<br>
 
 ## ParticleJS [+](https://github.com/VincentGarreau/particles.js/){: target="_blank" rel="noopener noreferrer"}
 
