@@ -759,11 +759,11 @@ document.addEventListener('DOMContentLoaded', function() {
 <!-- img-comparison-slider | https://github.com/sneas/img-comparison-slider/ -->
 <img-comparison-slider class="slider-focus slider-split-line" style="outline: none;" value="50">
   <figure slot="first" class="before" style="pointer-events: none;">
-    <img width="100%" style="border-radius: 8px;" src="https://i.imgur.com/m9E2ats.png">
+    <img width="100%" style="border-radius: 8px;" src="https://i.imgur.com/m9E2ats.png" alt="original-logo">
     <figcaption>Before</figcaption>
   </figure>
   <figure slot="second" class="after" style="pointer-events: none;">
-    <img width="100%" style="border-radius: 8px;" src="https://i.imgur.com/4KOWYcz.png">
+    <img width="100%" style="border-radius: 8px;" src="https://i.imgur.com/4KOWYcz.png" alt="grayscale-logo">
     <figcaption>After</figcaption>
   </figure>
 </img-comparison-slider>
@@ -1683,8 +1683,11 @@ $ bundle
 You may want to preview the site contents before publishing, so just run it by:
 
 ```console
-$ bundle exec jekyll s
+$ bundle exec jekyll serve
 ```
+
+> Pass the `--livereload` option to `serve` to automatically refresh the page with each change you make to the source files: `bundle exec jekyll serve --livereload`
+{: .prompt-info }
 
 After a few seconds, the local service will be published at _<http://127.0.0.1:4000>_.
 
