@@ -2,23 +2,17 @@
 
 [**YouTube**](https://www.youtube.com/channel/UClM7SQbs4f77roJSLOAYqiA) | [**ArtStation**](https://www.artstation.com/tis-starlight)
 
-## About
+## 🌟About
 
-> Official GitHub-Pages site of _**Starlight**_, where you'll find a collection of *blogs, documentation,  tutorials, tips & tricks*. Covering a wide range of topics, including 3D modeling, programming, game development, and much more.
+> Official site of **Starlight™️**, where you'll find a collection of *blogs, documentation,  tutorials, tips & tricks*. Covering a wide range of topics, including 3D modeling, programming, game development, and much more.
 
-## Blogs
+## 🔍What You’ll Discover
 
-Explore insightful articles on various topics related to 3D, Programming and Game Development. Gain valuable knowledge and stay up-to-date with the latest trends and techniques.
+- Insightful articles on various topics related to 3D, Programming and Game Development. Gain valuable knowledge and stay up-to-date with the latest trends and techniques.
+- Step-by-step tutorials that cover a wide array of subjects. Whether you're a beginner or an experienced developer, there's something here for everyone.
+- Handy tips and tricks that can streamline your workflow and improve your skills in related fields.
 
-## Tutorials
-
-Learn through step-by-step tutorials that cover a wide array of subjects. Whether you're a beginner or an experienced developer, there's something here for everyone.
-
-## Tips & Tricks
-
-Discover handy tips and tricks that can streamline your workflow and improve your skills in related fields.
-
-## Contact
+## 📬Stay Connected
 
 Feel free to reach out to me through [GitHub](https://github.com/tis-starlight). I'd love to hear your thoughts and feedback.
 
