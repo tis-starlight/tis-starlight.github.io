@@ -43,6 +43,8 @@ order: 4
 
 -->
 
+{% include animated-background.html %} <!-- Enable animated background here only-->
+
 <!-- ParticleJS | https://github.com/VincentGarreau/particles.js/ -->
 <div style="border: 1px solid #444545; border-radius: 10px; padding: 10px; overflow: hidden; margin-bottom: 20px; position: relative;">
     <div id="particles-js3" style="width: 100%; height: 300px; background-image: url('https://i.imgur.com/uNfcILD.png'); background-repeat: no-repeat; background-size: 20%; background-position: 50% 50%;"></div>
@@ -166,8 +168,16 @@ order: 4
 
 ## 👋 Hi!
 
-> "In the realm of coding and 3D design, I blend the artistry of game creation with the science of programming, forging unforgettable experiences one line of code at a time."
+> Tell me and I forget. Teach me and I remember. Involve me and I learn.
+> --- Benjamin Franklin
 
-I have an unwavering passion for the intricate world of programming, with a particular fondness for C/C++, C#, and assembly languages. These coding languages are not just lines of text for me; they are the creative threads that weave together the fabric of digital innovation.
+I’m a passionate game developer and 3D artist with a solid academic background in computer science. Here, you'll find a wealth of unified resources covering a wide range of topics, all curated to streamline referencing and enhance your learning experience.
 
-As a developer, I firmly believe in the ethos of constant growth. Learning is not just a phase; it's a way of life. Every challenge, every bug, and every line of code is an opportunity to expand my knowledge and refine my craft. It's an exhilarating journey that I cherish.
+<br>
+
+<div class="box-info" markdown="1">
+<div class="title"> The Story Behind the Screen </div>
+<p> Over time, my notes and ideas scattered across various mediums—note books, loose pages, books, Obsidian vaults, text documents, PDFs, presentations, and even Google Memo app. As someone juggling multiple projects, I found myself repeatedly going back to relearn concepts, often piecing together information from countless sources just to regain what I had previously understood. It became a frustrating cycle, wasting time and energy. </p>
+<p> I created this site to break that cycle. It’s my way of consolidating all those scattered notes into one unified, detailed resource that’s easy to reference. By sharing my experiences and learnings here, I hope to save others from the same frustration and provide a clear, concise guide through the topics I’ve explored. </p>
+<p> Beyond just a learning hub, this site also doubles as my portfolio and blog, showcasing the projects I’m passionate about and the insights I’ve gained along the way. </p>
+</div>
