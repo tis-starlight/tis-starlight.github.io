@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Hitmarker Text';
-    src: url('HitmarkerText-Regular.woff2') format('woff2');
+    src: url('/assets/fonts/HitmarkerText-Regular.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
     font-display:swap;
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: 'Hitmarker Text';
-    src: url('HitmarkerText-Bold.woff2') format('woff2');
+    src: url('/assets/fonts/HitmarkerText-Bold.woff2') format('woff2');
     font-weight: 700;
     font-style: normal;
     font-display:swap;
@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: 'Hitmarker Condensed';
-    src: url('HitmarkerCondensed-Regular.woff2') format('woff2');
+    src: url('/assets/fonts/HitmarkerCondensed-Regular.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
     font-display:swap;
@@ -24,7 +24,7 @@
 
 @font-face {
     font-family: 'Hitmarker Condensed';
-    src: url('HitmarkerCondensed-Black.woff2') format('woff2');
+    src: url('/assets/fonts/HitmarkerCondensed-Black.woff2') format('woff2');
     font-weight: 900;
     font-style: normal;
     font-display:swap;
