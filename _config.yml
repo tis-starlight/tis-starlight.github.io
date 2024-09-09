@@ -94,7 +94,7 @@ pageviews:
 #     light  - Use the light color scheme
 #     dark   - Use the dark color scheme
 #
-theme_mode: dark # [light | dark]
+theme_mode: # [light | dark]
 
 # Animated background
 # To enable the animated background on a specific page, use the following code: {% include animated-background.html %}

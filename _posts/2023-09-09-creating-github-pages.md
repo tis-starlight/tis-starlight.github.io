@@ -266,6 +266,8 @@ In addition to *Hitmarker*, there are several other popular fonts that are widel
 | **`Orbitron`**     | A geometric sans-serif typeface, ideal for futuristic and sci-fi projects, often used in headlines and display text.  | [Orbitron ↗](https://fonts.google.com/specimen/Orbitron){: target="_blank" rel="noopener noreferrer"}|
 | **`Hitmarker`**    | A custom typeface associated with the Call of Duty brand, versatile for body text and headlines in regular and condensed versions. | [Hitmarker ↗](https://globalfonts.pro/font/hitmarker){: target="_blank" rel="noopener noreferrer"}  |
 
+<!-- 
+
 ## Bootstrap [+](https://getbootstrap.com/docs/5.3/examples/cheatsheet/){: target="_blank" rel="noopener noreferrer"}
 
 ### Accordion
@@ -771,9 +773,7 @@ A [Spinner](https://getbootstrap.com/docs/5.3/components/spinners/){: target="_b
 
 A [Toast](https://getbootstrap.com/docs/5.3/components/toasts/){: target="_blank" rel="noopener noreferrer"} is a lightweight notification component that pops up on the screen to display brief messages to the user.
 
-<!-- Toast containers for stacking toasts -->
 <div class="toast-container position-fixed bottom-0 end-0 p-3">
-    <!-- Success Toast -->
     <div id="successToast" class="toast" style="background-color: #04210f;" role="alert" aria-live="assertive" aria-atomic="true">
         <div class="toast-header bg-success" style="background-color: #72c894; color: #04210f;">
             <i class="fas fa-check-circle me-2" style="color: #04210f;"></i>
@@ -785,7 +785,6 @@ A [Toast](https://getbootstrap.com/docs/5.3/components/toasts/){: target="_blank
             Success message goes here.
         </div>
     </div>
-    <!-- Primary Toast -->
     <div id="primaryToast" class="toast" style="background-color: #11242a;" role="alert" aria-live="assertive" aria-atomic="true">
         <div class="toast-header bg-primary" style="background-color: #87cbe0; color: #11242a;">
             <i class="fas fa-info-circle me-2" style="color: #11242a;"></i>
@@ -797,7 +796,6 @@ A [Toast](https://getbootstrap.com/docs/5.3/components/toasts/){: target="_blank
             Primary message goes here.
         </div>
     </div>
-    <!-- Danger Toast -->
     <div id="dangerToast" class="toast" style="background-color: #2c0f14;" role="alert" aria-live="assertive" aria-atomic="true">
         <div class="toast-header bg-danger" style="background-color: #e37083; color: #2c0f14;">
             <i class="fas fa-exclamation-circle me-2" style="color: #2c0f14;"></i>
@@ -809,7 +807,6 @@ A [Toast](https://getbootstrap.com/docs/5.3/components/toasts/){: target="_blank
             Danger message goes here.
         </div>
     </div>
-    <!-- Warning Toast -->
     <div id="warningToast" class="toast" style="background-color: #2e2005;" role="alert" aria-live="assertive" aria-atomic="true">
         <div class="toast-header bg-warning" style="background-color: #efc776; color: #2e2005;">
             <i class="fas fa-exclamation-triangle me-2" style="color: #2e2005;"></i>
@@ -823,7 +820,6 @@ A [Toast](https://getbootstrap.com/docs/5.3/components/toasts/){: target="_blank
     </div>
 </div>
 
-<!-- Buttons to trigger toast notifications -->
 <div class="d-flex justify-content-center mt-4">
     <button type="button" class="btn btn-primary me-2 toast-trigger" data-target="primaryToast">Primary</button>
     <button type="button" class="btn btn-success me-2 toast-trigger" data-target="successToast">Success</button>
@@ -831,7 +827,6 @@ A [Toast](https://getbootstrap.com/docs/5.3/components/toasts/){: target="_blank
     <button type="button" class="btn btn-danger me-2 toast-trigger" data-target="dangerToast">Danger</button>
 </div>
 
-<!-- JavaScript to trigger toast notifications -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     const toastTriggers = document.querySelectorAll('.toast-trigger');
@@ -879,10 +874,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <br>
 
-<!-- Link Tooltip -->
 <a href="#" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-title="Some tooltip text.">Link-Tooltip</a>
 
-<!-- Text Tooltip -->
 <span data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-title="Some tooltip text."> <u>This is a text-Tooltip</u>. </span>
 
 <style>
@@ -893,6 +886,8 @@ document.addEventListener('DOMContentLoaded', function() {
     cursor: help;
   }
 </style>
+
+-->
 
 ## Image Comparison Slider
 
@@ -955,7 +950,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <!-- ParticleJS | https://github.com/VincentGarreau/particles.js/ -->
 
 <div style="border: 1px solid #ccc; border-radius: 10px; padding: 10px; overflow: hidden; margin-bottom: 20px; position: relative;">
-    <div id="particles-js1" style="width: 100%; height: 300px; background-image: url('https://i.imgur.com/uNfcILD.png'); background-repeat: no-repeat; background-size: 20%; background-position: 50% 50%;"></div>
+    <div id="particles-js1" style="width: 100%; height: 300px; background-image: url('https://i.imgur.com/uNfcILD.png'); background-repeat: no-repeat; background-size: 20%; background-position: 50% 50%; filter: invert(50%);"></div>
   </div>
   <script>
     particlesJS("particles-js1", {
@@ -968,7 +963,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       },
       "color": {
-        "value": "#ffffff"
+        "value": "#7a6e6e"
       },
       "shape": {
         "type": "circle",
@@ -1071,7 +1066,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <div style="border: 1px solid #ccc; border-radius: 10px; padding: 10px; overflow: hidden; margin-bottom: 20px; position: relative;">
-    <div id="particles-js2" style="width: 100%; height: 300px; background-image: url('https://i.imgur.com/uNfcILD.png'); background-repeat: no-repeat; background-size: 20%; background-position: 50% 50%;"></div>
+    <div id="particles-js2" style="width: 100%; height: 300px; background-image: url('https://i.imgur.com/uNfcILD.png'); background-repeat: no-repeat; background-size: 20%; background-position: 50% 50%; filter: invert(50%);"></div>
   </div>
   <script>
     particlesJS("particles-js2", {
@@ -1084,7 +1079,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       },
       "color": {
-        "value": "#ffffff"
+        "value": "#7a6e6e"
       },
       "shape": {
         "type": "circle",
@@ -1124,9 +1119,9 @@ document.addEventListener('DOMContentLoaded', function() {
       "line_linked": {
         "enable": true,
         "distance": 150,
-        "color": "#ffffff",
-        "opacity": 0.4,
-        "width": 1
+        "color": "#373030",
+        "opacity": 0.5,
+        "width": 1.5
       },
       "move": {
         "enable": true,

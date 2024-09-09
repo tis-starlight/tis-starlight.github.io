@@ -47,7 +47,7 @@ order: 4
 
 <!-- ParticleJS | https://github.com/VincentGarreau/particles.js/ -->
 <div style="border: 1px solid #444545; border-radius: 10px; padding: 10px; overflow: hidden; margin-bottom: 20px; position: relative;">
-    <div id="particles-js3" style="width: 100%; height: 300px; background-image: url('https://i.imgur.com/uNfcILD.png'); background-repeat: no-repeat; background-size: 20%; background-position: 50% 50%;"></div>
+    <div id="particles-js3" style="width: 100%; height: 300px; background-image: url('https://i.imgur.com/uNfcILD.png'); background-repeat: no-repeat; background-size: 20%; background-position: 50% 50%; filter: invert(50%);"></div>
   </div>
   <script>
     particlesJS("particles-js3", {
@@ -60,7 +60,7 @@ order: 4
           }
         },
         "color": {
-          "value": "#ffffff"
+          "value": "#7a6e6e"
         },
         "shape": {
           "type": "circle",
@@ -100,9 +100,9 @@ order: 4
         "line_linked": {
           "enable": true,
           "distance": 150,
-          "color": "#ffffff",
-          "opacity": 0.4,
-          "width": 1
+          "color": "#373030",
+          "opacity": 0.5,
+          "width": 1.5
         },
         "move": {
           "enable": true,
