@@ -15,6 +15,11 @@
   --clipboard-checked-color: #2bcc2b;
   --filepath-text-color: #cacaca;
   
+  /*Code block dots color*/
+  --code-header-fdot-color: hsla(354, 100%, 46%, 0.55);
+  --code-header-sdot-color: hsla(41, 100%, 46%, 0.55);
+  --code-header-tdot-color: hsla(127, 100%, 46%, 0.55);
+
   .highlight .gp {
     color: #87939d;
   }

@@ -1943,6 +1943,13 @@ Can be referenced as \eqref{eq:label_name}.
 > If you are building the site via `chirpy-starter`, copy that file from the gem installation directory (check with command `bundle info --path jekyll-theme-chirpy`) to the same directory in your repository.
 {: .prompt-tip }
 
+```css
+<style>
+.MathJax { font-size: 1.3em !important; }
+</style>
+```
+{: .nolineno}
+
 ## Mermaid
 
 [**Mermaid**](https://github.com/mermaid-js/mermaid){: target="_blank" rel="noopener noreferrer"} is a great diagrams generation tool. To enable it on your post, add the following to the YAML block:

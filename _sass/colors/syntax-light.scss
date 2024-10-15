@@ -14,6 +14,11 @@
   --code-header-muted-color: #e5e5e5;
   --code-header-icon-color: #c9c8c8;
   --clipboard-checked-color: #43c743;
+
+  /*Code block dots color*/
+  --code-header-fdot-color: hsla(354, 100%, 46%, 0.65);
+  --code-header-sdot-color: hsla(41, 100%, 46%, 0.65);
+  --code-header-tdot-color: hsla(127, 100%, 46%, 0.65);
   
   /* --- Syntax highlight theme from `rougify style github` --- */
   
