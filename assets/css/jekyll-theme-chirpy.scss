@@ -1,0 +1,379 @@
+---
+---
+
+@use 'main
+{%- if jekyll.environment == ' production ' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* Append your custom style below */
+/* Append styles directly or import their files */
+
+/* Animated Background  */
+@use 'sass:math';
+@keyframes infirot {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+.icon-loading1 {
+  display: inline-block;
+  animation: infirot 1s linear infinite;
+  -webkit-animation: infirot 1s linear infinite;
+}
+
+@function random_range($min, $max) {
+  $rand: math.random();
+  $random_range: $min + math.floor($rand * (($max - $min) + 1));
+  @return $random_range;
+}
+
+#animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+
+  @keyframes animate {
+    0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+      border-radius: 0;
+    }
+    100% {
+      transform: translateY(-1200px) rotate(720deg);
+      opacity: 0;
+      border-radius: 50%;
+    }
+  }
+
+  @media all and (min-width: 1200px) {
+    .animation-circle {
+      position: absolute;
+      left: var(--circle-left);
+      bottom: -300px;
+      display: block;
+      background: var(--circle-background);
+      width: var(--circle-side-length);
+      height: var(--circle-side-length);
+      animation: animate 25s linear infinite;
+      animation-duration: var(--circle-time);
+      animation-delay: var(--circle-delay);
+      pointer-events: none;
+
+      @for $i from 0 through 25 {
+        &:nth-child(#{$i}) {
+          --circle-left: #{random_range(0%, 100%)};
+          --circle-background: rgba(
+            #{random_range(0, 255)},
+            #{random_range(0, 255)},
+            #{random_range(0, 255)},
+            0.06
+          );
+          --circle-side-length: #{random_range(20px, 200px)};
+          --circle-time: #{random_range(10s, 45s)};
+          --circle-delay: #{random_range(0s, 25s)};
+        }
+      }
+    }
+  }
+
+  @media all and (max-width: 1199px) {
+    .animation-circle {
+      display: none;
+    }
+  }
+}
+
+/* custom alerts */
+@import 'github-alerts.css';
+
+/* colorbox style design */
+/* defines box-info, box-tip, box-warning, box-danger four colorbox */
+@mixin colorbox(
+  $border-color,
+  $icon-color,
+  $icon-content,
+  $bg-color,
+  $fa-style: 'solid'
+) {
+  border-left: 0.2rem solid $border-color;
+  border-radius: 0.25rem;
+  color: var(--text-color);
+  padding: 0.6rem 1rem 0.6rem 1.5rem;
+  box-shadow: var(--language-border-color) 1px 1px 2px 1px;
+  position: relative;
+  margin-bottom: 1rem;
+
+  > div.title::before {
+    content: $icon-content;
+    color: $icon-color;
+    font: var(--fa-font-#{$fa-style});
+    text-align: center;
+    width: 3rem;
+    position: absolute;
+    left: 0.2rem;
+    margin-top: 0.4rem;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  > div.title {
+    background-color: $bg-color;
+    color: $icon-color;
+    padding: 0.5rem 0.6rem 0.5rem 3rem;
+    margin: -0.6rem -1rem 0.6rem -1.5rem;
+    font-weight: 600;
+  }
+
+  > p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* box-info blue */
+.box-info {
+  @include colorbox(
+    var(--prompt-info-icon-color),
+    var(--prompt-info-icon-color),
+    '\f06a',
+    var(--prompt-info-bg)
+  );
+}
+
+/* box-tip green */
+.box-tip {
+  @include colorbox(
+    var(--prompt-tip-icon-color),
+    var(--prompt-tip-icon-color),
+    '\f0eb',
+    var(--prompt-tip-bg),
+    'regular'
+  );
+}
+
+/* box-warning yellow */
+.box-warning {
+  @include colorbox(
+    var(--prompt-warning-icon-color),
+    var(--prompt-warning-icon-color),
+    '\f06a',
+    var(--prompt-warning-bg)
+  );
+}
+
+/* box-danger red */
+.box-danger {
+  @include colorbox(
+    var(--prompt-danger-icon-color),
+    var(--prompt-danger-icon-color),
+    '\f071',
+    var(--prompt-danger-bg)
+  );
+}
+
+// HTML details element #1
+// details class="details-block" style
+details.details-block {
+  border-radius: 0.25rem;
+  border-left: 0.2rem solid var(--details-border-color);
+  box-shadow: var(--language-border-color) 1px 1px 2px 1px;
+  margin-bottom: 1rem;
+  padding: 0.6rem 1rem 0.6rem 1.5rem;
+  > p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+details.details-block > summary {
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  margin: -0.6rem -1rem -0.6rem -1.5rem;
+  font-weight: 600;
+  background-color: var(--details-bg);
+  color: var(--details-border-color);
+  text-decoration: none; // text-decoration: underline;
+  position: relative;
+  list-style: none;
+}
+
+details.details-block > summary::-webkit-details-marker {
+  display: none;
+}
+details.details-block > summary::marker {
+  content: none;
+}
+
+details.details-block > summary::before {
+  // content: '🙈';
+  /* content:'\002B9A'; */
+  content: '😼';
+  margin-right: 0.5rem;
+  display: inline-block;
+}
+details.details-block[open] > summary::before {
+  /* content: '🐵';*/
+  /* content: '\002B9B'; */
+  content: '🙀';
+  animation: my-cat 0.2s ease-in-out;
+  margin-right: 0.5rem;
+}
+
+details.details-block > summary::after {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f105'; /* Unicode for fa-angle-down */
+  display: inline-block;
+  transition: transform 0.2s ease;
+  position: absolute;
+  right: 1rem; /* Adjust the position of the arrow */
+}
+
+details.details-block[open] > summary::after {
+  transform: rotate(90deg);
+}
+
+details.details-block[open] > summary {
+  // transition: margin 200ms ease-out;
+  margin-bottom: 0.6rem;
+}
+
+@keyframes my-cat {
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+// HTML details element #2
+// details class = "details-inline" style
+details.details-inline {
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  border-left: 3px dashed var(--link-color); // 2px solid var(--blockquote-border-color)
+  // box-shadow: var(--language-border-color) 1px 1px 2px 1px;
+  > p:last-child {
+    margin-bottom: 0;
+  }
+}
+details.details-inline > summary {
+  color: var(--link-color);
+  display: inline-block;
+  line-height: normal;
+  font-weight: 600;
+  // border-bottom: 1px solid var(--link-underline-color);
+}
+details.details-inline > summary:hover {
+  color: #d2603a;
+  border-bottom: 1px solid #d2603a;
+}
+details.details-inline > summary::marker {
+  content: none;
+}
+details.details-inline > summary::-webkit-details-marker {
+  display: none;
+}
+details.details-inline > summary::before {
+  content: '+';
+  scale: 1.5;
+  display: inline-block;
+  margin-right: 0.4rem;
+  transition: transform 0.2s ease;
+}
+details.details-inline[open] > summary::before {
+  transform: rotate(135deg);
+}
+
+// Back-to-top progress bar
+#progress-circle {
+  margin: -1px -1px;
+  top: -2.75rem;
+  position: relative;
+  transform: rotate(-90deg);
+
+  circle {
+    stroke: var(--site-title-color); // var(--toc-highlight)
+    stroke-dasharray: 2 * 3.14 * 20;
+    stroke-dashoffset: 2 * 3.14 * 20;
+    transition: stroke-dashoffset 0.2s;
+  }
+}
+
+/*
+// Use single line post title
+#post-list .card .card-body .card-title {
+  -webkit-line-clamp: 1;
+}
+*/
+
+/*
+// Use blue accent color for recently updated posts list
+#access-lastmod a:hover {
+  color: #007bff !important;
+  border-bottom: 1px solid #007bff;
+}
+*/
+
+/*
+.btn:hover {                    // Change button hover (fill) color
+    background-color: rgb(255, 0, 0) !important;
+  }
+
+  .btn.btn-outline-primary {    // Change button outline/stroke color
+    &:not(.disabled):hover {
+      border-color: red !important;
+    }
+  }
+*/
+
+/*
+// .post-content { text-align: justify; }
+.d-flex {
+  display: flex;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.m-auto {
+  margin: auto;
+}
+*/
+
+/*
+
+// Sidebar
+#sidebar {
+
+  // Images:
+  // 1. https://i.imgur.com/JrgMIrd.jpg
+  // 2. https://i.imgur.com/KMSvGgd.jpg
+  // 3. https://i.imgur.com/wA2Voru.jpg
+  // 4. https://i.imgur.com/rzrJOto.jpg
+
+
+  background-image: url(https://i.imgur.com/rzrJOto.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+#sidebar .site-title a {
+  color: #ffffff;
+  text-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+#sidebar .site-subtitle {
+  color: #ffffff;
+  text-shadow: 2px 2px 3px rgba(0,0,0, 0.7);
+}
+#sidebar .sidebar-bottom .mode-toggle, #sidebar a {
+  color: #ffffff;
+}
+#sidebar .sidebar-bottom .btn {
+  color: var(--sidebar-btn-color);
+}
+
+*/
