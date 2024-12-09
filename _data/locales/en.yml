@@ -43,12 +43,18 @@ copyright:
 # meta: Using the :THEME theme for :PLATFORM.
 meta: :THEME
 
+footer_alias: >-
+    The inspiration behind the name 'Starlight' came from my own name,
+    which means shooting star. I chose this alias because, like a shooting star that
+    illuminates the sky for a brief moment, it represents light, energy, and the beauty of
+    fleeting moments.
+
 not_found:
   statement: Sorry, we've misplaced that URL or it's pointing to something that doesn't exist.
 
 notification:
   update_found: A new version of content is available.
-  update: Update 🚀
+  update: Update🚀
 
 # ----- Posts related labels -----
 

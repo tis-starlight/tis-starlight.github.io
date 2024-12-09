@@ -1,25 +1,18 @@
 ---
-title: 0.3 - Errors, Bugs and Debugging      # TITLE for the post
-# author: Starlight                 # uncomment to override author name, by default its Starlight
-
-date: 2023-12-25 19:30:00 +0500     # YYYY-MM-DD HH:MM:SS +/-TTTT // Add Future Date & Time for planned future release
-
-categories: [Programming Languages, -Programming 101]             # [TOP_CATEGORY, SUB_CATEGORY] 
-tags: [errors, bugs, debugging, debuggers]   # [TAG] 'TAG' names should always be lowercase & seperated by comma
-
-# pin: true         # uncomment to pin
-# toc: false        # uncomment to turn off Table Of Content for this post
-
-#math: true         # (override) uncomment to use MathJax Mathematics for this post
-#mermaid: true      # (override) uncomment to use Mermaid diagram functionality for this post
-
+title: 0.3 - Errors, Bugs and Debugging
+# author: Starlight
+date: 2023-12-25 19:30:00 +0500
+categories: [Programming Languages, -Programming 101]
+tags: [errors, bugs, debugging, debuggers]
+# pin: true
+# toc: false
+# math: true
+# mermaid: true
 image:      
-  path: /assets/img/posts/errors-bugs-debugging.jpg   # image path. forward slash (/)
+  path: /assets/img/posts/errors-bugs-debugging.jpg
   lqip: data:image/jpeg;base64,UklGRlQAAABXRUJQVlA4IEgAAACwAQCdASoKAAcAAkA4JZQAAtzJXo0gAP7ykrRvEXe4yVhsgsH32RiH/7g0/VN4L+UBKZcmh9HwFF+EpwNj4hqN4pgDrwVgAAA=
-  alt: Errors, Bugs and Debugging   # displayed under the image (caption) 
-
-# render_with_liquid: false           # comment or set bool true to use Liquid Parsing
-
+  alt: Errors, Bugs and Debugging
+# render_with_liquid: false
 ---
 
 ## Errors 

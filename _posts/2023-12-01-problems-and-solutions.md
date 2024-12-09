@@ -1,25 +1,18 @@
 ---
-title: 0 - Problems and Solutions      # TITLE for the post
-# author: Starlight                 # uncomment to override author name, by default its Starlight
-
-date: 2023-12-01 04:00:00 +0500     # YYYY-MM-DD HH:MM:SS +/-TTTT // Add Future Date & Time for planned future release
-
-categories: [Programming Languages, -Programming 101]             # [TOP_CATEGORY, SUB_CATEGORY] 
-tags: [problems, solutions, algorithms]   # [TAG] 'TAG' names should always be lowercase & seperated by comma
-
-# pin: true         # uncomment to pin
-# toc: false        # uncomment to turn off Table Of Content for this post
-
-#math: true         # (override) uncomment to use MathJax Mathematics for this post
-mermaid: true       # (override) uncomment to use Mermaid diagram functionality for this post
-
+title: 0 - Problems and Solutions
+# author: Starlight
+date: 2023-12-01 04:00:00 +0500
+categories: [Programming Languages, -Programming 101]
+tags: [problems, solutions, algorithms]
+# pin: true
+# toc: false
+# math: true
+mermaid: true
 image:      
-  path: /assets/img/posts/problems-and-solutions.jpg   # image path. forward slash (/)
+  path: /assets/img/posts/problems-and-solutions.jpg
   lqip: data:image/jpg;base64,UklGRlwAAABXRUJQVlA4IFAAAAAwAgCdASoKAAYAAkA4JbACdLoAAnfbmcDPAAD+8bUy/kn4s538WT6cRLizwrgSrxHkzXbewoJCFlVBi+v+k2TKX2+/WPJD+OxSleEQ+WGAAA==
-  alt: Problems and Solutions   # displayed under the image (caption) 
-
-# render_with_liquid: false           # comment or set bool true to use Liquid Parsing
-
+  alt: Problems and Solutions
+# render_with_liquid: false
 ---
 
 In the dim glow of a computer screen late at night, lines of code come to life, weaving the intricate tapestry of a digital world. Every programmer has a story, a moment when the seemingly cryptic symbols transformed into a solution, a creation, or even a moment of sheer frustration. Today, we delve into the realm of programming—a journey where logic meets creativity, and the possibilities are as vast as the digital landscape itself.

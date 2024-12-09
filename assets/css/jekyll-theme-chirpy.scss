@@ -2,7 +2,7 @@
 ---
 
 @use 'main
-{%- if jekyll.environment == ' production ' -%}
+{%- if jekyll.environment == 'production' -%}
   .bundle
 {%- endif -%}
 ';
@@ -183,7 +183,7 @@
 // details class="details-block" style
 details.details-block {
   border-radius: 0.25rem;
-  border-left: 0.2rem solid var(--details-border-color);
+  border-left: 0.2rem solid #865ab7;
   box-shadow: var(--language-border-color) 1px 1px 2px 1px;
   margin-bottom: 1rem;
   padding: 0.6rem 1rem 0.6rem 1.5rem;
@@ -196,8 +196,8 @@ details.details-block > summary {
   padding: 0.5rem 1rem 0.5rem 1rem;
   margin: -0.6rem -1rem -0.6rem -1.5rem;
   font-weight: 600;
-  background-color: var(--details-bg);
-  color: var(--details-border-color);
+  background-color: #00000000;
+  color: #865ab7;
   text-decoration: none; // text-decoration: underline;
   position: relative;
   list-style: none;
@@ -303,6 +303,20 @@ details.details-inline[open] > summary::before {
   }
 }
 
+// Code block dots color
+@media (min-width: 576px) {
+  div[class^='language-'] .code-header::before {
+    content: "";
+    display: inline-block;
+    margin-left: 1rem;
+    width: .75rem;
+    height: .75rem;
+    border-radius: 50%;
+    background-color: #df47568c;
+    box-shadow: 1.25rem 0 0 #e3b0438c, 2.5rem 0 0 #53da638c;
+  }
+}
+
 /*
 // Use single line post title
 #post-list .card .card-body .card-title {
@@ -376,4 +390,23 @@ details.details-inline[open] > summary::before {
   color: var(--sidebar-btn-color);
 }
 
+*/
+
+/*
+blockquote {
+  border-left: 0.125rem solid var(--blockquote-border-color); // border-left: 5px
+}
+*/
+
+/*
+// Dark
+--highlight-bg-color: #151515;
+--highlighter-rouge-color: #de6b18;
+--inline-code-bg: #272822;
+// --link-underline-color: rgb(82, 108, 150);
+
+// Light
+--highlighter-rouge-color: #de6b18;
+--inline-code-bg: #f3f3f3;
+//--link-underline-color: #dee2e6;
 */

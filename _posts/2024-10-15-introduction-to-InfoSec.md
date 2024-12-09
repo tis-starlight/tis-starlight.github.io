@@ -1,28 +1,20 @@
 ---
 title: 0 - Introduction to Information Security
 description: Basic notions of information security.
-
-# author: Starlight                 # uncomment to override author name, by default its Starlight
-
-date: 2024-10-15 22:20:00 +0500     # YYYY-MM-DD HH:MM:SS +/-TTTT // Add Future Date & Time for planned future release
-# last_modified_at: 2024-10-15 22:20:00 +0500     # To explicitly mention a post last modified/updated date & time // comment this to generate it automatically
-
-categories: [Information Security (InfoSec)]             # [TOP_CATEGORY, SUB_CATEGORY] 
-tags: [information security, infosec, cybersecurity, cryptography, encryption, data security]   # [TAG] 'TAG' names should always be lowercase & separated by comma
-
+# author: Starlight
+date: 2024-10-15 22:20:00 +0500
+# last_modified_at: 2024-10-15 22:20:00 +0500
+categories: [Information Security (InfoSec)]
+tags: [information security, infosec, cybersecurity, cryptography, encryption, data security]
 # pin: true
 # toc: false
-
 math: false
 mermaid: false
-
 image:      
-  path: /assets/img/posts/intro-to-infosec.png    # image path. forward slash (/)
+  path: /assets/img/posts/intro-to-infosec.png
   lqip: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAMAAAC67D+PAAAAgVBMVEUEK4akv+NGet1DctAFG1kXLGkCHnAfT7MEHGAMQq8qWLUGKX4EFk5CgPRCfOolRpEIW/VDeN89a8cQI1xEdtcVO48bZfAOPKAybd5XhNpdjuoqPHAxTJAqT59FccpFbb8JT9UWRKUWQJodOoEaWtVLfNp1ksgbKFgaMnJVca5nicQOhX0nAAAAYklEQVQI1xWKRRLDMBTFXk3fFJ4wt+H7HzC1VhqN4NU4T9M8Kg+hns+fQwnIgdqua8kJ9Ldpqmoz0JAlNWm6BNWgLIqYDTUhFsd7eGWy8ozltStQ/L455xZDD69La0ztrvMFS3AF8N06bLEAAAAASUVORK5CYII=
   alt:
-
-render_with_liquid: false           # comment or set bool true to use Liquid Parsing
-
+render_with_liquid: false
 ---
 
 [**Information Security**](https://en.wikipedia.org/wiki/Information_security){: target="_blank" rel="noopener noreferrer"}, often abbreviated as **InfoSec**, is the practice of protecting information by mitigating information risks. It involves the protection of information systems and the information processed, stored, and transmitted by these systems from unauthorized access, use, disclosure, disruption, modification, or destruction.

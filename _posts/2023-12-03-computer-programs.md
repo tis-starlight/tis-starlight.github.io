@@ -1,25 +1,18 @@
 ---
-title: 0.1 - Computer Programs     # TITLE for the post
-# author: Starlight                 # uncomment to override author name, by default its Starlight
-
-date: 2023-12-03 02:25:00 +0500     # YYYY-MM-DD HH:MM:SS +/-TTTT // Add Future Date & Time for planned future release
-
-categories: [Programming Languages, -Programming 101]             # [TOP_CATEGORY, SUB_CATEGORY] 
-tags: [programs, codes, softwares, sdlc, version control, source control]   # [TAG] 'TAG' names should always be lowercase & seperated by comma
-
-# pin: true         # uncomment to pin
-# toc: false        # uncomment to turn off Table Of Content for this post
-
-#math: true         # (override) uncomment to use MathJax Mathematics for this post
-#mermaid: true       # (override) uncomment to use Mermaid diagram functionality for this post
-
+title: 0.1 - Computer Programs
+# author: Starlight
+date: 2023-12-03 02:25:00 +0500
+categories: [Programming Languages, -Programming 101]
+tags: [programs, codes, softwares, sdlc, version control, source control]
+# pin: true
+# toc: false
+# math: true
+# mermaid: true
 image:      
-  path: /assets/img/posts/computer-programs.jpg   # image path. forward slash (/)
+  path: /assets/img/posts/computer-programs.jpg
   lqip: data:image/jpg;base64,UklGRi4AAABXRUJQVlA4ICIAAACQAQCdASoKAAYAAkA4JZwAAudGFIAA/v2d8Pz2XIlelmAA
-  alt: Computer Programs   # displayed under the image (caption) 
-
-# render_with_liquid: false           # comment or set bool true to use Liquid Parsing
-
+  alt: Computer Programs
+# render_with_liquid: false
 ---
 
 "The keyboard is our pen, and code is our language. Let's embark on a linguistic adventure through the world of computer programs, where syntax and semantics come together to create the poetry of the digital age."

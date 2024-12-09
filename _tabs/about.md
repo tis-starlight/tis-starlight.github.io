@@ -18,16 +18,15 @@ order: 4
 <script src="/assets/js/about.js" defer></script>
 
 <!-- Shields.io | https://shields.io -->
-[![Linktree](https://img.shields.io/badge/Linktree-black?style=for-the-badge&logo=linktree)](https://linktr.ee/tis.starlight){: target="_blank" style="border-radius: 5px; overflow: hidden"} <br>
+[![Linktree](https://img.shields.io/badge/Linktree-black?style=for-the-badge&logo=linktree)](https://linktr.ee/tis.starlight){: target="_blank" style="border-radius: 5px; overflow: hidden"} 
 [![GitHub](https://img.shields.io/badge/GitHub-black?style=for-the-badge&logo=github)](https://github.com/tis-starlight){: target="_blank" style="border-radius: 5px; overflow: hidden"}
-[![HuggingFace](https://img.shields.io/badge/Huggingface-black?style=for-the-badge&logo=huggingface)](https://huggingface.co/tis-starlight){: target="_blank" style="border-radius: 5px; overflow: hidden"}
-[![CG-Trader](https://img.shields.io/badge/CG_Trader-black?style=for-the-badge&logo=anycubic&logoColor=blue)](https://www.cgtrader.com/tis-starlight){: target="_blank" style="border-radius: 5px; overflow: hidden"}
-[![Sketchfab](https://img.shields.io/badge/Sketchfab-black?style=for-the-badge&logo=sketchfab)](https://sketchfab.com/tis-starlight){: target="_blank" style="border-radius: 5px; overflow: hidden"} <br>
-[![ArtStation](https://img.shields.io/badge/ArtStation-black?style=for-the-badge&logo=artstation)](https://www.artstation.com/tis-starlight){: target="_blank" style="border-radius: 5px; overflow: hidden"}
+[![YouTube](https://img.shields.io/badge/YouTube-black?style=for-the-badge&logo=youtube&logoColor=red)](https://www.youtube.com/@tis-starlight){: target="_blank" style="border-radius: 5px; overflow: hidden"} <br>
 [![Instagram](https://img.shields.io/badge/Instagram-black?style=for-the-badge&logo=instagram)](https://www.instagram.com/tis.starlight){: target="_blank" style="border-radius: 5px; overflow: hidden"}
-[![Behance](https://img.shields.io/badge/Behance-black?style=for-the-badge&logo=behance&logoColor=blue)](https://www.behance.net/tis-starlight){: target="_blank" style="border-radius: 5px; overflow: hidden"}
+[![ArtStation](https://img.shields.io/badge/ArtStation-black?style=for-the-badge&logo=artstation)](https://www.artstation.com/tis-starlight){: target="_blank" style="border-radius: 5px; overflow: hidden"}
+[![Behance](https://img.shields.io/badge/Behance-black?style=for-the-badge&logo=behance&logoColor=blue)](https://www.behance.net/tis-starlight){: target="_blank" style="border-radius: 5px; overflow: hidden"} <br>
 [![DeviantArt](https://img.shields.io/badge/Deviantart-black?style=for-the-badge&logo=deviantart)](https://www.deviantart.com/tis-starlight){: target="_blank" style="border-radius: 5px; overflow: hidden"}
-[![YouTube](https://img.shields.io/badge/YouTube-black?style=for-the-badge&logo=youtube&logoColor=red)](https://www.youtube.com/@tis-starlight){: target="_blank" style="border-radius: 5px; overflow: hidden"}
+[![CG-Trader](https://img.shields.io/badge/CG_Trader-black?style=for-the-badge&logo=anycubic&logoColor=blue)](https://www.cgtrader.com/tis-starlight){: target="_blank" style="border-radius: 5px; overflow: hidden"}
+[![Sketchfab](https://img.shields.io/badge/Sketchfab-black?style=for-the-badge&logo=sketchfab)](https://sketchfab.com/tis-starlight){: target="_blank" style="border-radius: 5px; overflow: hidden"}
 
 ## 👋 Hi!
 

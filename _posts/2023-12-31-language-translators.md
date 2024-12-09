@@ -1,25 +1,18 @@
 ---
-title: 0.4 - Language Translators   # TITLE for the post
-# author: Starlight                 # uncomment to override author name, by default its Starlight
-
-date: 2023-12-31 03:36:00 +0500     # YYYY-MM-DD HH:MM:SS +/-TTTT // Add Future Date & Time for planned future release
-
-categories: [Programming Languages, -Programming 101]             # [TOP_CATEGORY, SUB_CATEGORY] 
-tags: [language translator, language processor, compiler, interpreter, assembler, disassembler, decompiler, linker, loader, program execution]   # [TAG] 'TAG' names should always be lowercase & seperated by comma
-
-# pin: true         # uncomment to pin
-# toc: false        # uncomment to turn off Table Of Content for this post
-
-#math: true         # (override) uncomment to use MathJax Mathematics for this post
-mermaid: true      # (override) uncomment to use Mermaid diagram functionality for this post
-
+title: 0.4 - Language Translators
+# author: Starlight
+date: 2023-12-31 03:36:00 +0500
+categories: [Programming Languages, -Programming 101]
+tags: [language translator, language processor, compiler, interpreter, assembler, disassembler, decompiler, linker, loader, program execution]
+# pin: true
+# toc: false
+# math: true
+mermaid: true
 image:      
-  path: /assets/img/posts/language-translators.jpg    # image path. forward slash (/)
+  path: /assets/img/posts/language-translators.jpg
   lqip: data:image/jpeg;base64,UklGRjwAAABXRUJQVlA4IDAAAADwAQCdASoPAAgAAkA4JZwCdAEf/7COBWAA/vxnAPEUFme48N8f+5YkgbJgr3bgAAA=
-  alt: Language Translators   # displayed under the image (caption) 
-
-# render_with_liquid: false           # comment or set bool true to use Liquid Parsing
-
+  alt: Language Translators
+# render_with_liquid: false
 ---
 
 ## Language Translator
