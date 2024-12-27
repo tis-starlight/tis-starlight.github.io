@@ -365,8 +365,8 @@ flowchart LR
 
 - **[NASM](https://en.wikipedia.org/wiki/Netwide_Assembler) (Netwide Assembler)**: NASM is a popular x86 and x86-64 assembler designed for portability and modularity. It is often used on Unix-like systems.
 - **[MASM](https://en.wikipedia.org/wiki/Microsoft_Macro_Assembler) (Microsoft Macro Assembler)**: MASM is an x86 assembler that is commonly used with Microsoft Visual Studio for Windows development.
-- **[TASM](https://en.wikipedia.org/wiki/Turbo_Assembler) (Turbo Assembler)**: TASM was Borland's assembler for x86 architecture. It's older but may still be used for certain legacy projects.
 - **[FASM](https://en.wikipedia.org/wiki/FASM) (Flat Assembler)**: FASM is a lightweight, fast, and portable x86 and x86-64 assembler.
+- **[TASM](https://en.wikipedia.org/wiki/Turbo_Assembler) (Turbo Assembler)**: TASM was Borland's assembler for x86 architecture. It's older but may still be used for certain legacy projects.
 - **[GAS](https://en.wikipedia.org/wiki/GNU_Assembler) (GNU Assembler)**: Also known as AS, GAS is the assembler used by the GNU Compiler Collection (GCC). It supports various architectures.
 
 ### 4. Disassembler
@@ -379,7 +379,7 @@ flowchart LR
 - They are typically designed to work with a specific architecture or instruction set. For example, an x86 disassembler can analyze and translate machine code specific to the x86 architecture.
 - They play a crucial role in debugging and reverse engineering activities. They help analysts (security experts) and developers understand the inner workings of a program, investigate vulnerabilities, or modify the behavior of an executable.
 - They are often used with compiled languages, allowing analysts to inspect and understand the low-level details of programs written in languages such as C, C++, or assembly.
-- IDA Pro, Radare2, and Ghidra are examples of popular disassemblers used in the field of reverse engineering and security analysis.
+- IDA Pro, x64dbg, Ghidra, Radare2 are examples of popular disassemblers used in the field of reverse engineering and security analysis.
 
 <br>
 
@@ -433,14 +433,16 @@ flowchart LR
   * **Limited High-Level Abstraction**: Disassemblers primarily work with low-level assembly language, lacking the high-level abstractions present in the original source code. This can make the analysis more challenging, especially for complex programs.
   * **Dynamic Code Analysis Challenges**: Dynamic aspects of a program, such as runtime behavior, may not be fully captured by static disassemblers, requiring additional tools for dynamic analysis.
 
-#### 4.3 - List of Disassemblers [+](https://en.wikipedia.org/wiki/Disassembler#Examples_of_disassemblers)
+#### 4.3 - List of Disassemblers [+](https://en.wikipedia.org/wiki/Disassembler#Examples_of_disassemblers) | [+](https://en.wikibooks.org/wiki/X86_Disassembly/Disassemblers_and_Decompilers)
 
 - [**IDA Pro**](https://en.wikipedia.org/wiki/Interactive_Disassembler): IDA Pro is a popular and widely used disassembler with advanced features. It supports a variety of processors and executable formats.
 - [**Ghidra**](https://en.wikipedia.org/wiki/Ghidra): Developed by the National Security Agency (NSA), Ghidra is a powerful open-source software reverse engineering suite that includes a disassembler.
+- [**x64dbg**](https://en.wikipedia.org/wiki/X64dbg): x64dbg is an open-source Windows-based debugger that provides disassembly features during debugging, with support for both 32-bit and 64-bit applications.
 - [**Radare2**](https://en.wikipedia.org/wiki/Radare2): Radare2 is an open-source reverse engineering framework that includes a disassembler, debugger, and other analysis tools. It is designed for Unix-like systems.
 - [**OllyDbg**](https://en.wikipedia.org/wiki/OllyDbg): OllyDbg is a Windows-based disassembler and debugger that is often used for software cracking and reverse engineering.
 - [**Binary Ninja**](https://en.wikipedia.org/wiki/Binary_Ninja): Binary Ninja is a commercial disassembler and reverse engineering platform that offers a modern and customizable interface.
-- [**Hopper Disassembler**](https://www.hopperapp.com/): Hopper is a commercial disassembler for macOS and Linux. It provides a user-friendly interface and supports various architectures.
+- [**Hopper Disassembler**](https://www.hopperapp.com): Hopper is a commercial disassembler for macOS and Linux. It provides a user-friendly interface and supports various architectures.
+- [**Cutter**](https://cutter.re): Cutter is an open-source GUI frontend for rizin (a fork of the Radare2 reverse engineering framework). It is a disassembler and decompiler designed for analyzing and exploring binary files.
 
 ### 5. Decompiler
 
@@ -503,7 +505,7 @@ graph LR
   * Decompilers aim to recover high-level abstractions, such as functions, loops, and variables, from the low-level binary code.
   * Unlike disassemblers, decompilers provide a more abstract and human-readable view of the code, closer to the original source.
 
-#### 5.2 - List of Decompilers [+](https://en.wikipedia.org/wiki/Decompiler#See_also)
+#### 5.2 - List of Decompilers [+](https://en.wikibooks.org/wiki/X86_Disassembly/Disassemblers_and_Decompilers#Common_Decompilers)
 
 - **Hex-Rays IDA Pro (with Hex-Rays Decompiler)**: IDA Pro is a widely used disassembler, and with the additional Hex-Rays Decompiler plugin, it can decompile code for a better understanding of the original source. Note that this is a commercial tool.
 - **Ghidra**: Ghidra, an open-source software reverse engineering suite developed by the National Security Agency (NSA), includes a decompiler. It can decompile various architectures and is free to use.

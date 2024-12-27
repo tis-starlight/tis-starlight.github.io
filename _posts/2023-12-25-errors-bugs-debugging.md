@@ -63,6 +63,7 @@ A collection of (grammatical) rules for writing programs in a programming langua
 A [program bug](https://en.wikipedia.org/wiki/Software_bug) is a flaw or error in a software application or system that causes it to produce unexpected or incorrect results. Bugs can manifest in various forms, such as syntax errors, logical errors, or runtime errors, and they can occur at different stages of the software development life cycle. Bugs can be introduced during the coding phase, but they may also arise due to design issues, incorrect specifications, or unexpected interactions between different parts of a program.
 
 ### History of Bugs
+{: data-toc-skip=''}
 
 The term **bug** in the context of computer programming has an interesting historical origin. In 1947, [**Grace Hopper**](https://en.wikipedia.org/wiki/Grace_Hopper), an American computer scientist, found an actual moth causing a malfunction in the _Harvard Mark II_ computer. She documented the "first actual case where bug was found" in the logbook, coining the term "bug" to describe a defect in a computer program. Since then, the term has become widely used in the field of software development.
 
@@ -73,6 +74,7 @@ The term **bug** in the context of computer programming has an interesting histo
 [Debugger](https://en.wikipedia.org/wiki/Debugger) is a tool or software application designed to help programmers identify and fix bugs in their code. Debuggers provide various features and functionalities to facilitate the debugging process.
 
 ### Importance of debugging
+{: data-toc-skip=''}
 
 The following are the reasons why debugging is crucial in software development:
 
@@ -92,31 +94,43 @@ The following are the reasons why debugging is crucial in software development:
 - **Documentation Improvement**: Debugging often involves understanding and documenting code, contributing to better project documentation.
 - **Innovation**: By resolving issues, developers can focus on implementing new features and innovations rather than constantly addressing bugs.
 
+## Techniques for Debugging
 
-## Types of Debugging
+Developers employ various debugging techniques to identify and resolve issues in software. The choice of technique depends on the problem's nature, the development environment, and the available tools. Often, a combination of these techniques is used to comprehensively diagnose and enhance software quality.
 
-There are several types of debugging techniques that developers use to identify and fix issues in software. The choice of debugging method depends on the nature of the problem, the development environment, and the tools available. Often, a combination of these debugging techniques is used to thoroughly assess and improve the quality of software. 
+Here are some common debugging techniques:
 
-Here are some common types of debugging:
+#### Print Statement Debugging:
+{: data-toc-skip='' .mt-4 .mb-2 }
 
-- **Print Statement Debugging**:
 Developers "insert print statements (or equivalent output statements) in the code to print the values of variables or messages at various points". This helps trace the flow of the program and identify the source of errors.
 
-- **Interactive Debugging**:
+#### Interactive Debugging:
+{: data-toc-skip='' .mt-2 .mb-2 }
+
 Developers use an "interactive debugger provided by an integrated development environment (IDE) or a standalone debugger". They can set breakpoints, step through code, inspect variables, and analyze the program's state in real-time.
 
-- **Remote Debugging**:
+#### Remote Debugging:
+{: data-toc-skip='' .mt-2 .mb-2 }
+
 Debugging is performed on a "system or environment that is different from the one where the code is running". This is particularly useful in situations where the development and execution environments are separate.
 
-- **Postmortem Debugging**:
+#### Postmortem Debugging:
+{: data-toc-skip='' .mt-2 .mb-2 }
+
 Debugging is done after the "program has terminated or crashed". Developers analyze core dumps, crash reports, or log files to understand the state of the program at the time of failure.
 
-- **Static Analysis**:
+#### Static Analysis (Static Debugging):
+{: data-toc-skip='' .mt-2 .mb-2 }
+
 Developers use [static analysis](https://en.wikipedia.org/wiki/Static_program_analysis) tools to "analyze the source code without executing it". These [tools](https://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis) identify potential issues, such as coding style violations, potential bugs, or security vulnerabilities.
   * **Linting**: A form of static analysis focused on identifying issues related to coding standards. A **linter** is a tool that analyzes source code to flag programming errors, bugs, stylistic issues, and other problematic patterns. **Linting** or lint analysis, refers to the process of running a linter on your code to identify and report such issues.  _Use Cases_: Enforcing code style and maintaining code quality.
   * **Code Review**: Developers conduct code reviews, where peers examine each other's code for potential issues, adherence to coding standards, and overall code quality.
 
-- **Dynamic Analysis**: Developers use [dynamic analysis](https://en.wikipedia.org/wiki/Dynamic_program_analysis) tools to "analyze the behavior of a program during execution". This includes runtime memory analysis, code coverage analysis, and other techniques to identify issues that may not be apparent in the source code alone.
+#### Dynamic Analysis (Dynamic Debugging):
+{: data-toc-skip='' .mt-2 .mb-2 }
+
+Developers use [dynamic analysis](https://en.wikipedia.org/wiki/Dynamic_program_analysis) tools to "analyze the behavior of a program during execution". This includes runtime memory analysis, code coverage analysis, and other techniques to identify issues that may not be apparent in the source code alone.
   * **Unit Testing**: Developers write unit tests to verify the correctness of individual units (functions, methods, or classes) of code. Failures in unit tests indicate potential bugs or regressions.
   * **Integration Testing**: Developers test the interaction between different components or modules of a software system. Integration testing helps identify issues that arise when different parts of the code work together.
   * **Regression Testing**: Developers run tests to ensure that recent changes to the codebase have not introduced new bugs or negatively impacted existing functionality.
@@ -125,6 +139,9 @@ Developers use [static analysis](https://en.wikipedia.org/wiki/Static_program_an
     * **Memory Profiling**: Analyzing memory usage during program execution. _Use Cases_: Identifying memory leaks or inefficient memory usage.
     * **Performance Profiling**: Analyzing overall program performance, including CPU usage, memory usage, and other metrics. _Use Cases_: Understanding and improving the efficiency of a program.
   * **Code Coverage**: Code coverage measures the extent to which the source code of a program has been executed during testing. Debuggers and testing tools often provide code coverage analysis.
+
+> Do not confuse **static analysis** and **dynamic analysis** in the context of *reverse engineering* with traditional debugging techniques; in reverse engineering, they are used to understand and analyze software behavior or structure rather than to directly fix bugs.
+{: .gh-alert.note }
 
 ## Debugging Strategies
 
@@ -207,12 +224,12 @@ JIT debugging introduces security considerations, as it allows for dynamic code 
 
 [Debuggers](https://en.wikipedia.org/wiki/Comparison_of_debuggers) are tools that help developers identify and resolve issues in their code. They come in various forms and are often integrated into development environments or provided as standalone applications. Here's a categorized list of different types of debuggers:
 
-- **Integrated Development Environment (IDE) Debuggers**: 
+- **Integrated Development Environment (IDE) Debuggers**:
   * **Visual Studio Debugger**: Integrated with Microsoft Visual Studio, it supports various languages like C++, C#, and more.
   * **Eclipse Debugger**: Integrated debugger in the Eclipse IDE, supporting Java, C/C++, and other languages.
   * **Xcode Debugger**: Integrated debugger for macOS and iOS development within the Xcode IDE.
 
-- **Language-Specific Debuggers**: 
+- **Language-Specific Debuggers**:
   * **GDB (GNU Debugger)**: Commonly used for debugging C, C++, and Fortran code on Unix-like systems.
   * **LLDB (LLVM Debugger)**: A debugger for the LLVM compiler infrastructure, often used with languages like C, C++, and Swift.
   * **pdb (Python Debugger)**: Debugger for Python, allowing developers to step through code and inspect variables.
@@ -235,7 +252,7 @@ JIT debugging introduces security considerations, as it allows for dynamic code 
   * **Remote Debugging in Visual Studio Code**: VS Code supports remote debugging for various languages and platforms.
 
 - **Dynamic Analysis Tools**:
-  * **Valgrind (Memcheck)**: Besides debugging, it also helps in detecting memory-related issues dynamically.
+  * **Valgrind (Memcheck)**: Helps in detecting memory-related issues dynamically.
   * **AddressSanitizer (ASan)**: A runtime memory error detector that finds memory corruption bugs in C/C++ programs.
 
 - **Mobile Development Debuggers**:
@@ -273,6 +290,11 @@ JIT debugging introduces security considerations, as it allows for dynamic code 
 - **Memory Leak Detection Tools**:
   * **LeakCanary (Android)**: Library for detecting memory leaks in Android applications.
   * **Valgrind (Massif)**: Helps in detecting memory heap usage and analyzing memory-related issues.
+
+- **Reverse Engineering and Low-Level Debuggers**:
+  * **x64Dbg**: A debugger designed for analyzing and debugging 64-bit (x64) and 32-bit (x32) applications.
+  * **OllyDbg**: A popular x86 debugger known for its ease of use in reverse engineering and binary analysis. It has been succeeded by x64Dbg, which supports 64-bit applications.
+  * **AFD** (Advanced Fullscreen Debugger): An old 32-bit debugger designed for assembly in DOSBox. 
 
 ## Features of Debuggers
 

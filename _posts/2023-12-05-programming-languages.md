@@ -104,7 +104,7 @@ _start:
     int 0x80         ; make system call
 ```
 
-> The topic is covered in more detail in `Assembly (asm)`.
+> The topic is covered in more detail in [`Assembly (asm)`](/categories/assembly-language).
 {: .prompt-info }
 
 ### 2. High-level Languages

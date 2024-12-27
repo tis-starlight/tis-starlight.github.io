@@ -117,6 +117,14 @@ This is *green*{: style="color: green"}
 - Using Emojis:
 When you want to use pure Markdown (without nested HTML & CSS), you can use Emojis to draw attention to some fragment of the file, i.e. ⚠️WARNING⚠️, 🔴DANGER🔴 or 🔥NEW🔥.
 
+## Enhanced Text Selection
+
+<p class="selection" style="margin-bottom: 4px;">Try selecting the text to see how it works:</p>
+<p class="selection">The wind whispered through the trees as Emily walked along the cobblestone path, her footsteps muffled by the crunch of fallen leaves. The sun dipped low on the horizon, casting a warm glow over the landscape. In the distance, a solitary figure stood by the old oak tree, its branches heavy with secrets of days gone by. She couldn’t make out who it was, but something about the silhouette tugged at her heart, stirring memories she had long buried. As she approached, a shiver of anticipation ran down her spine—maybe it was a sign, a chance to unravel the past she had so carefully concealed.</p>
+
+> It works well on most browsers, but may not function as intended on mobile devices. Additionally, nested elements within a paragraph can cause issues with enhanced selection.
+{: .gh-alert.note }
+
 ## Typography
 
 [Typography](https://en.wikipedia.org/wiki/Typography){: target="_blank" rel="noopener noreferrer"} plays a crucial role in design, influencing readability, tone, and visual impact. It’s more than just choosing a typeface; it’s about crafting a visual experience that enhances communication and resonates with the audience. Effective typography guides the reader’s eye, sets the mood of the content, and reinforces the brand’s identity.
@@ -416,7 +424,7 @@ This is a danger.
 >  ✓ means keep, ✗ means delete.
 {: .prompt-info }
 
-## Insert & preview content
+## Embed Files
 
 To embed files in your blog, you can use `<iframe>` elements like this:
 
@@ -583,7 +591,7 @@ _Full screen width and center alignment_
 ### Float to left
 
 ![Desktop View](/assets/img/posts/placeholder.PNG){: width="972" height="589" .w-50 .left lqip="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAHCAMAAAALbFwWAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAACxUExURaGhoaampq2trbq6ur+/v7u7u9/f38nJyaqqqrKysrCwsK+vr6CgoKWlpaurq7GxsbOzs7y8vMzMzLe3t6ysrK6urqinqKuqq6enp5mZmZSTlIGBgYaGho+Pj4qKim9vb3Nzc1xcXFdXV1FRUXZ2dnp6emNjY1ZWVlJSUk9PT0dHR0JCQjc3NzY2Nj09PT8/Pzs7Ozo6OjU1NTIyMhwcHB4eHhsbGxoaGhkZGRgYGP///0LpJfUAAAABYktHRDpOCcT6AAAAB3RJTUUH5wkIFR8Yy+o8VwAAAGFJREFUCNdjYGBkYmZhZWPn4OTiZmDg4eHh5eMXEBRiEWYQEeXmEGNk5OUVZ+JjkJCUYmKSlpGRlZNXYFBUUlZRVVNX19DU0mbQ0dXT1zcwNNDRNTJmMDE1MzM3A2ILS0sACHYJGO1mhrMAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjMtMDktMDhUMjE6MzE6MjQrMDA6MDBkBvpZAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIzLTA5LTA4VDIxOjMxOjI0KzAwOjAwFVtC5QAAACh0RVh0ZGF0ZTp0aW1lc3RhbXAAMjAyMy0wOS0wOFQyMTozMToyNCswMDowMEJOYzoAAAAASUVORK5CYII=" .shadow style="border-radius: 10px;"}
-In the heart of this desolate no man's land, the very essence of nature seemed to have withered away, leaving behind a haunting, barren expanse. The landscape, once vibrant with life, had succumbed to the relentless forces of time and neglect. A relentless wind whispered through skeletal remains of long-forgotten trees, their twisted branches reaching towards a colorless sky.The ground beneath was cracked and parched, resembling a shattered mosaic of forgotten dreams. The earth, choked by an endless sea of gray dust, bore the scars of a world that had turned its back on it. Here, no creature stirred, and no songbird dared to sing. The silence was profound, as if the land itself held its breath, waiting for some long-lost spark of vitality to ignite its soul.
+In the heart of this desolate no man's land, the very essence of nature seemed to have withered away, leaving behind a haunting, barren expanse. The landscape, once vibrant with life, had succumbed to the relentless forces of time and neglect. A relentless wind whispered through skeletal remains of long-forgotten trees, their twisted branches reaching towards a colorless sky. The ground beneath was cracked and parched, resembling a shattered mosaic of forgotten dreams. The earth, choked by an endless sea of gray dust, bore the scars of a world that had turned its back on it. Here, no creature stirred, and no songbird dared to sing. The silence was profound, as if the land itself held its breath, waiting for some long-lost spark of vitality to ignite its soul.
 
 ### Float to right
 
@@ -695,7 +703,7 @@ toc: false
 
 ## Comments
 
-The global switch of comments is defined by variable `comments.active` in the file `_config.yml`{: .filepath}. After selecting a comment system for this variable, comments will be turned on for all posts.
+The global setting for comments is defined by the `comments.provider` option in the `_config.yml`{: .filepath} file. Once a comment system is selected for this variable, comments will be enabled for all posts.
 
 If you want to close the comment for a specific post, add the following to the **Front Matter** of the post:
 
