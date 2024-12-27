@@ -123,7 +123,7 @@ flowchart LR
     style id3 stroke:#3AF400,stroke-width:2px
 ```
 
-> The topic is covered in more detail in [`Design and Analysis of Algorithms`](/categories/design-and-analysis-of-algorithms).
+> The topic is covered in more detail in `Design and Analysis of Algorithms`.
 {: .prompt-info }
 
 ### Example

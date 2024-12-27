@@ -177,7 +177,7 @@ mindmap
         FPGA
 ```
 
-> The topic is covered in more detail in [`Computer Organization and Architecture`](/categories/computer-organization-and-architecture).
+> The topic is covered in more detail in `Computer Organization and Architecture`.
 {: .prompt-info }
 
 ### ⭕ x86 Architecture
