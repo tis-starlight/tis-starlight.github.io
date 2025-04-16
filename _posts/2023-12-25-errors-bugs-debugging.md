@@ -1,5 +1,6 @@
 ---
 title: 0.3 - Errors, Bugs and Debugging
+description: An overview of computer errors, bugs, debugging techniques, debuggers, and essential error-handling terminology.
 # author: Starlight
 date: 2023-12-25 19:30:00 +0500
 categories: [Programming Languages, -Programming 101]
@@ -17,7 +18,7 @@ image:
 
 ## Errors 
 
-Errors refer to mistakes or [bugs](https://en.wikipedia.org/wiki/Software_bug) in the code that prevent it from executing as intended. Understanding and categorizing errors is crucial for developers to identify, diagnose, and fix issues in their programs. 
+Errors refer to mistakes or [bugs](https://en.wikipedia.org/wiki/Software_bug){: target="_blank" rel="noopener noreferrer"} in the code that prevent it from executing as intended. Understanding and categorizing errors is crucial for developers to identify, diagnose, and fix issues in their programs. 
 
 ## Types of errors
 
@@ -27,7 +28,7 @@ Errors in programming can be broadly classified into three main types: syntax er
 
 A collection of (grammatical) rules for writing programs in a programming language is known as **syntax**. All program statements are written according to these rules. 
 
-[Syntax errors](https://en.wikipedia.org/wiki/Syntax_error) occur when the code violates the rules of the programming language's syntax. These errors are typically detected by the compiler or interpreter during the compilation or parsing phase, and they prevent the program from being compiled or executed.
+[Syntax errors](https://en.wikipedia.org/wiki/Syntax_error){: target="_blank" rel="noopener noreferrer"} occur when the code violates the rules of the programming language's syntax. These errors are typically detected by the compiler or interpreter during the compilation or parsing phase, and they prevent the program from being compiled or executed.
 
 - **Examples**:
   * Missing (delimiters) semicolons or parentheses.
@@ -60,18 +61,18 @@ A collection of (grammatical) rules for writing programs in a programming langua
 
 ## Program Bug
 
-A [program bug](https://en.wikipedia.org/wiki/Software_bug) is a flaw or error in a software application or system that causes it to produce unexpected or incorrect results. Bugs can manifest in various forms, such as syntax errors, logical errors, or runtime errors, and they can occur at different stages of the software development life cycle. Bugs can be introduced during the coding phase, but they may also arise due to design issues, incorrect specifications, or unexpected interactions between different parts of a program.
+A [program bug](https://en.wikipedia.org/wiki/Software_bug){: target="_blank" rel="noopener noreferrer"} is a flaw or error in a software application or system that causes it to produce unexpected or incorrect results. Bugs can manifest in various forms, such as syntax errors, logical errors, or runtime errors, and they can occur at different stages of the software development life cycle. Bugs can be introduced during the coding phase, but they may also arise due to design issues, incorrect specifications, or unexpected interactions between different parts of a program.
 
 ### History of Bugs
 {: data-toc-skip=''}
 
-The term **bug** in the context of computer programming has an interesting historical origin. In 1947, [**Grace Hopper**](https://en.wikipedia.org/wiki/Grace_Hopper), an American computer scientist, found an actual moth causing a malfunction in the _Harvard Mark II_ computer. She documented the "first actual case where bug was found" in the logbook, coining the term "bug" to describe a defect in a computer program. Since then, the term has become widely used in the field of software development.
+The term **bug** in the context of computer programming has an interesting historical origin. In 1947, [**Grace Hopper**](https://en.wikipedia.org/wiki/Grace_Hopper){: target="_blank" rel="noopener noreferrer"}, an American computer scientist, found an actual moth causing a malfunction in the _Harvard Mark II_ computer. She documented the "first actual case where bug was found" in the logbook, coining the term "bug" to describe a defect in a computer program. Since then, the term has become widely used in the field of software development.
 
 ## Debugging
 
-[Debugging](https://en.wikipedia.org/wiki/Debugging) is the process of finding and fixing bugs in a program. It is a crucial and integral part of the software development life cycle (SDLC). The goal of debugging is to identify the root cause of an issue and make the necessary corrections to ensure the program behaves as intended.
+[Debugging](https://en.wikipedia.org/wiki/Debugging){: target="_blank" rel="noopener noreferrer"} is the process of finding and fixing bugs in a program. It is a crucial and integral part of the software development life cycle (SDLC). The goal of debugging is to identify the root cause of an issue and make the necessary corrections to ensure the program behaves as intended.
 
-[Debugger](https://en.wikipedia.org/wiki/Debugger) is a tool or software application designed to help programmers identify and fix bugs in their code. Debuggers provide various features and functionalities to facilitate the debugging process.
+[Debugger](https://en.wikipedia.org/wiki/Debugger){: target="_blank" rel="noopener noreferrer"} is a tool or software application designed to help programmers identify and fix bugs in their code. Debuggers provide various features and functionalities to facilitate the debugging process.
 
 ### Importance of debugging
 {: data-toc-skip=''}
@@ -123,19 +124,19 @@ Debugging is done after the "program has terminated or crashed". Developers anal
 #### Static Analysis (Static Debugging):
 {: data-toc-skip='' .mt-2 .mb-2 }
 
-Developers use [static analysis](https://en.wikipedia.org/wiki/Static_program_analysis) tools to "analyze the source code without executing it". These [tools](https://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis) identify potential issues, such as coding style violations, potential bugs, or security vulnerabilities.
+Developers use [static analysis](https://en.wikipedia.org/wiki/Static_program_analysis){: target="_blank" rel="noopener noreferrer"} tools to "analyze the source code without executing it". These [tools](https://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis){: target="_blank" rel="noopener noreferrer"} identify potential issues, such as coding style violations, potential bugs, or security vulnerabilities.
   * **Linting**: A form of static analysis focused on identifying issues related to coding standards. A **linter** is a tool that analyzes source code to flag programming errors, bugs, stylistic issues, and other problematic patterns. **Linting** or lint analysis, refers to the process of running a linter on your code to identify and report such issues.  _Use Cases_: Enforcing code style and maintaining code quality.
   * **Code Review**: Developers conduct code reviews, where peers examine each other's code for potential issues, adherence to coding standards, and overall code quality.
 
 #### Dynamic Analysis (Dynamic Debugging):
 {: data-toc-skip='' .mt-2 .mb-2 }
 
-Developers use [dynamic analysis](https://en.wikipedia.org/wiki/Dynamic_program_analysis) tools to "analyze the behavior of a program during execution". This includes runtime memory analysis, code coverage analysis, and other techniques to identify issues that may not be apparent in the source code alone.
+Developers use [dynamic analysis](https://en.wikipedia.org/wiki/Dynamic_program_analysis){: target="_blank" rel="noopener noreferrer"} tools to "analyze the behavior of a program during execution". This includes runtime memory analysis, code coverage analysis, and other techniques to identify issues that may not be apparent in the source code alone.
   * **Unit Testing**: Developers write unit tests to verify the correctness of individual units (functions, methods, or classes) of code. Failures in unit tests indicate potential bugs or regressions.
   * **Integration Testing**: Developers test the interaction between different components or modules of a software system. Integration testing helps identify issues that arise when different parts of the code work together.
   * **Regression Testing**: Developers run tests to ensure that recent changes to the codebase have not introduced new bugs or negatively impacted existing functionality.
   * **Fuzz Testing**: Fuzz testing involves providing random or invalid inputs to a program to uncover unexpected behavior or vulnerabilities. It is particularly useful for identifying security issues.
-  * **Profiling**: [Profiling](https://en.wikipedia.org/wiki/Profiling_(computer_programming)) tools are used to "analyze the performance (runtime behavior) of a program, identify bottlenecks, and optimize code". While not strictly debugging, profiling helps in improving the efficiency of a program.
+  * **Profiling**: [Profiling](https://en.wikipedia.org/wiki/Profiling_(computer_programming)){: target="_blank" rel="noopener noreferrer"} tools are used to "analyze the performance (runtime behavior) of a program, identify bottlenecks, and optimize code". While not strictly debugging, profiling helps in improving the efficiency of a program.
     * **Memory Profiling**: Analyzing memory usage during program execution. _Use Cases_: Identifying memory leaks or inefficient memory usage.
     * **Performance Profiling**: Analyzing overall program performance, including CPU usage, memory usage, and other metrics. _Use Cases_: Understanding and improving the efficiency of a program.
   * **Code Coverage**: Code coverage measures the extent to which the source code of a program has been executed during testing. Debuggers and testing tools often provide code coverage analysis.
@@ -222,7 +223,9 @@ JIT debugging introduces security considerations, as it allows for dynamic code 
 
 ## Types of Debuggers
 
-[Debuggers](https://en.wikipedia.org/wiki/Comparison_of_debuggers) are tools that help developers identify and resolve issues in their code. They come in various forms and are often integrated into development environments or provided as standalone applications. Here's a categorized list of different types of debuggers:
+Debuggers are tools that help developers identify and resolve issues in their code. They come in various forms and are often integrated into development environments or provided as standalone applications. For a comprehensive [comparison of debuggers](https://en.wikipedia.org/wiki/Comparison_of_debuggers){: target="_blank" rel="noopener noreferrer"}, refer to this resource.
+
+Here's a categorized list of different types of debuggers:
 
 - **Integrated Development Environment (IDE) Debuggers**:
   * **Visual Studio Debugger**: Integrated with Microsoft Visual Studio, it supports various languages like C++, C#, and more.
@@ -300,8 +303,8 @@ JIT debugging introduces security considerations, as it allows for dynamic code 
 
 Debugging tools and features can vary across programming languages and development environments, but these functionalities are fundamental to the process of finding and fixing bugs in software. Common features of debuggers include:
 
-- **[Breakpoints](https://en.wikipedia.org/wiki/Breakpoint)**: Allows the programmer to pause the execution of a program at a specific point to inspect the state of variables and the program's flow.
-- **[Stepping](https://en.wikipedia.org/wiki/Stepping_(debugging))**: Enables the programmer to execute the program one line or one function at a time, helping to trace the program's execution path.
+- [**Breakpoints**](https://en.wikipedia.org/wiki/Breakpoint){: target="_blank" rel="noopener noreferrer"}: Allows the programmer to pause the execution of a program at a specific point to inspect the state of variables and the program's flow.
+- [**Stepping**](https://en.wikipedia.org/wiki/Stepping_(debugging)){: target="_blank" rel="noopener noreferrer"}: Enables the programmer to execute the program one line or one function at a time, helping to trace the program's execution path.
   * **Step Into**: A debugging action that enters a function and allows the programmer to inspect the internal workings of that function.
   * **Step Over**: A debugging action that executes a function without entering its internal details, moving to the next line of code after the function call.
   * **Step Out**: A debugging action that continues the execution of the program until it exits the current function, allowing the programmer to return to the calling context.

@@ -5,7 +5,7 @@ description: Basics of Assembly Language
 date: 2024-12-27 21:45:00 +0500
 categories: [Computer Organization & Assembly Language (COAL), Assembly Language]
 tags: [programming languages, assembly]
-pin: true
+# pin: true
 # toc: false
 # math: true
 mermaid: true
@@ -16,10 +16,12 @@ image:
 # render_with_liquid: false
 ---
 
-<!-- var(--site-title-color) -->
-<div style="border: 1px solid var(--main-border-color); border-radius: 10px; padding: 10px; margin: 5px; text-align: justify;">
-<a href="https://en.wikipedia.org/wiki/Assembly_language"><strong>Assembly language</strong></a> (ASM) is a low-level programming language that is a step above machine language. It provides a human-readable representation of the instructions (mnemonics) that a computer’s central processing unit (CPU) can execute. Each assembly language instruction directly corresponds to a machine language instruction, making it a more direct representation of the hardware instructions.
+<div style="border: 1px solid var(--main-border-color); border-radius: 10px; padding: 10px; margin: 5px; text-align: justify;">   <!-- var(--site-title-color) -->
+<a href="https://en.wikipedia.org/wiki/Assembly_language" target="_blank" rel="noopener noreferrer"><strong>Assembly language</strong></a> (ASM) is a low-level programming language that is a step above machine language. It provides a human-readable representation of the instructions (mnemonics) that a computer’s central processing unit (CPU) can execute. Each assembly language instruction directly corresponds to a machine language instruction, making it a more direct representation of the hardware instructions.
 </div>
+
+> A foundational understanding of `Computer Organization and Architecture` (COA) and `Digital Logic Design` (DLD) is highly recommended as prerequisites for [`Assembly Language`](/categories/assembly-language), as these subjects provide critical insights into the underlying principles of computer systems.
+{: .prompt-tip }
 
 ## 📜 History and Evolution of Assembly Language
 
@@ -32,7 +34,7 @@ The tool that translates assembly language into machine code, known as an *assem
   <ol>
     <li><strong>Early Computing Machines (1940s) | (1GL)</strong>
       <ul>
-        <li><strong>Machine Code Only</strong>: Early computers like the <a href="https://en.wikipedia.org/wiki/ENIAC">ENIAC</a> (1945) and the <a href="https://en.wikipedia.org/wiki/Manchester_Baby">Manchester Baby</a> (1948) required programmers to input instructions in binary (machine code) or through physical means like switches and punch cards.</li>
+        <li><strong>Machine Code Only</strong>: Early computers like the <a href="https://en.wikipedia.org/wiki/ENIAC" target="_blank" rel="noopener noreferrer">ENIAC</a> (1945) and the <a href="https://en.wikipedia.org/wiki/Manchester_Baby" target="_blank" rel="noopener noreferrer">Manchester Baby</a> (1948) required programmers to input instructions in binary (machine code) or through physical means like switches and punch cards.</li>
         <li><strong>Need for Abstraction</strong>: As machines became more complex, writing programs in raw binary became tedious and error-prone. This drove the need for a human-readable language that could represent machine instructions.</li>
       </ul>
     </li>
@@ -40,12 +42,12 @@ The tool that translates assembly language into machine code, known as an *assem
       <ul>
         <li>Assembly language was developed as a symbolic representation of machine code.</li>
         <li>Tools called <strong>assemblers</strong> were created to translate assembly language into machine language.</li>
-        <li><strong>Mnemonics</strong> like <code>ADD</code>, <code>SUB</code>, and <code>MOV</code> were introduced to replace binary opcodes, making it easier to write and debug code.</li>
+        <li><strong>Mnemonics</strong> like <code class="language-plaintext highlighter-rouge">ADD</code>, <code class="language-plaintext highlighter-rouge">SUB</code>, and <code class="language-plaintext highlighter-rouge">MOV</code> were introduced to replace binary opcodes, making it easier to write and debug code.</li>
       </ul>
     </li>
     <li><strong>Early Commercial Computers</strong>
       <ul>
-        <li>Assembly languages were tailored for specific machines, such as <a href="https://en.wikipedia.org/wiki/IBM_701">IBM 701</a> (1952) and <a href="https://en.wikipedia.org/wiki/UNIVAC">UNIVAC</a>.</li>
+        <li>Assembly languages were tailored for specific machines, such as <a href="https://en.wikipedia.org/wiki/IBM_701" target="_blank" rel="noopener noreferrer">IBM 701</a> (1952) and <a href="https://en.wikipedia.org/wiki/UNIVAC" target="_blank" rel="noopener noreferrer">UNIVAC</a>.</li>
         <li>These early systems established the foundation of architecture-specific assembly languages, with each processor requiring a unique instruction set.</li>
       </ul>
     </li>
@@ -54,7 +56,7 @@ The tool that translates assembly language into machine code, known as an *assem
         <li>During this period, assembly language became the primary method for programming due to its efficiency and direct control over hardware.</li>
         <li><strong>Macro Assemblers</strong>: Introduced features like macros, which allowed repetitive code sequences to be simplified.</li>
         <li><strong>Structured Assembly</strong>: Began adopting features to improve readability and maintainability, such as labels for loops and conditionals.</li>
-        <li>Popular systems, such as <a href="https://en.wikipedia.org/wiki/IBM_System/360">IBM's System/360</a> (1964), used assembly extensively.</li>
+        <li>Popular systems, such as <a href="https://en.wikipedia.org/wiki/IBM_System/360" target="_blank" rel="noopener noreferrer">IBM's System/360</a> (1964), used assembly extensively.</li>
       </ul>
     </li>
     <li><strong>Rise of High-Level Languages (1970s–1980s)</strong>
@@ -65,8 +67,8 @@ The tool that translates assembly language into machine code, known as an *assem
     </li>
     <li><strong>Modern Processor Architectures (1980s–1990s)</strong>
       <ul>
-        <li><strong>Complex Instruction Set Computing</strong> (<a href="https://en.wikipedia.org/wiki/Complex_instruction_set_computer">CISC</a>): Processors like <strong>Intel x86</strong> introduced complex instruction sets, making assembly language more intricate.</li>
-        <li><strong>Reduced Instruction Set Computing</strong> (<a href="https://en.wikipedia.org/wiki/Reduced_instruction_set_computer">RISC</a>): Simplified instruction sets (e.g., <strong>ARM</strong>, <strong>MIPS</strong>) made assembly programming more streamlined for certain architectures.</li>
+        <li><strong>Complex Instruction Set Computing</strong> (<a href="https://en.wikipedia.org/wiki/Complex_instruction_set_computer" target="_blank" rel="noopener noreferrer">CISC</a>): Processors like <strong>Intel x86</strong> introduced complex instruction sets, making assembly language more intricate.</li>
+        <li><strong>Reduced Instruction Set Computing</strong> (<a href="https://en.wikipedia.org/wiki/Reduced_instruction_set_computer" target="_blank" rel="noopener noreferrer">RISC</a>): Simplified instruction sets (e.g., <strong>ARM</strong>, <strong>MIPS</strong>) made assembly programming more streamlined for certain architectures.</li>
         <li><strong>Inline Assembly</strong>: High-level languages (or mid-level languages) like <strong>C</strong> introduced features to incorporate assembly directly within their syntax, blending performance and usability.</li>
       </ul>
     </li>
@@ -130,7 +132,7 @@ Assembly language uses **mnemonic codes** to instruct the processor on what acti
   1. **Write Assembly Code**: Use an IDE (or text editor) to write assembly code using mnemonic instructions. Save the file with an appropriate extension, such as `.asm`, `.s`, or `.asmx`, depending on your assembler.
   2. **Assemble the Code**: Use an assembler to convert the assembly code into machine language.
   3. **Generate an Object File**: The assembler creates an object file corresponding to your assembly code. This file typically has a `.obj` extension.
-  4. **Link and Create an Executable**: If the program consists of multiple source files, they must be linked together, along with required libraries, to create an executable file. A linker, such as `lk`, is used for this purpose.
+  4. **Link and Create an Executable**: If the program consists of multiple source files, they must be linked together, along with required libraries, to create an executable file. A linker, such as `ld`, is used for this purpose.
   5. **Run the Program**: After generating the executable file, run it using the appropriate software or environment. The method of execution will depend on the tools and operating system being used.
 
 ## ⚖️ Advantages and Disadvantages of Assembly
@@ -182,20 +184,20 @@ mindmap
 
 ### ⭕ x86 Architecture
 
-[x86](https://en.wikipedia.org/wiki/X86), also known as **80x86** or the **8086 family**, is a family of complex instruction set computer (CISC) instruction set architectures originally developed by **Intel**. It is based on the 8086 microprocessor and its 8-bit-external-bus variant, the 8088. The 8086 was introduced in 1978 as a fully 16-bit extension of Intel's earlier 8-bit 8080 microprocessor. To address more memory than a plain 16-bit address could, it utilized memory segmentation.
+[x86](https://en.wikipedia.org/wiki/X86){: target="_blank" rel="noopener noreferrer"}, also known as **80x86** or the **8086 family**, is a family of complex instruction set computer (CISC) instruction set architectures originally developed by **Intel**. It is based on the 8086 microprocessor and its 8-bit-external-bus variant, the 8088. The 8086 was introduced in 1978 as a fully 16-bit extension of Intel's earlier 8-bit 8080 microprocessor. To address more memory than a plain 16-bit address could, it utilized memory segmentation.
 
 | Property | Details |
 |----------|---------|
-| Designer | [Intel][intel-hl], [AMD][amd-hl] |
-| Bits | [16-bit][16bit-hl], [32-bit][32bit-hl], [64-bit][64bit-hl] |
+| Designer | [Intel][intel-hl]{: target="_blank" rel="noopener noreferrer"}, [AMD][amd-hl]{: target="_blank" rel="noopener noreferrer"} |
+| Bits | [16-bit][16bit-hl]{: target="_blank" rel="noopener noreferrer"}, [32-bit][32bit-hl]{: target="_blank" rel="noopener noreferrer"}, [64-bit][64bit-hl]{: target="_blank" rel="noopener noreferrer"} |
 | Introduced | 1978 (16-bit), 1985 (32-bit), 2003 (64-bit) |
-| [Design][design-hl] | [CISC][cisc-hl] (Complex Instruction Set Computer) |
-| Type | [Register–memory][regmem-hl] |
-| [Encoding][encoding-hl] | Variable (1 to 15 bytes) |
-| [Branching][branching-hl] | [Condition code][condcode-hl] |
-| [Endianness][endianness-hl] | Little |
+| [Design][design-hl]{: target="_blank" rel="noopener noreferrer"} | [CISC][cisc-hl]{: target="_blank" rel="noopener noreferrer"} (Complex Instruction Set Computer) |
+| Type | [Register–memory][regmem-hl]{: target="_blank" rel="noopener noreferrer"} |
+| [Encoding][encoding-hl]{: target="_blank" rel="noopener noreferrer"} | Variable (1 to 15 bytes) |
+| [Branching][branching-hl]{: target="_blank" rel="noopener noreferrer"} | [Condition code][condcode-hl]{: target="_blank" rel="noopener noreferrer"} |
+| [Endianness][endianness-hl]{: target="_blank" rel="noopener noreferrer"} | Little |
 | Open | Partly open: Advanced x86 features require an Intel license; <br> x86-64 requires an AMD license. The i686 subset is fully open after 21 years. |
-| Registers | [General-purpose][gpr-hl] : 16-bit: 6 registers (BP, SP not general-purpose); <br> 32-bit: 8 GPRs (incl. EBP, ESP); 64-bit: 16 GPRs (incl. RBP, RSP). |
+| Registers | [General-purpose][gpr-hl]{: target="_blank" rel="noopener noreferrer"} : 16-bit: 6 registers (BP, SP not general-purpose); <br> 32-bit: 8 GPRs (incl. EBP, ESP); 64-bit: 16 GPRs (incl. RBP, RSP). |
 
 [intel-hl]: https://en.wikipedia.org/wiki/Intel
 [amd-hl]: https://en.wikipedia.org/wiki/Advanced_Micro_Devices
@@ -226,8 +228,8 @@ mindmap
   * **Workstations and Content Creation**: CAD, video editing, and 3D modeling leverage x86 CPUs for high compute power.
   * **Legacy Applications**: Businesses still rely on older applications that require x86 compatibility.
 - **Variants**:
-  * **32-bit** ([x86](https://en.wikipedia.org/wiki/X86)): Introduced with the 80386 processor, supports up to 4 GB RAM and is widely used in older systems.
-  * **64-bit** ([x86-64](https://en.wikipedia.org/wiki/X86-64) / AMD64): Introduced by AMD; supports larger memory addressing (up to 16 exabytes) and improved performance. Allows execution of both 32-bit and 64-bit code.
+  * **32-bit** ([x86](https://en.wikipedia.org/wiki/X86){: target="_blank" rel="noopener noreferrer"}): Introduced with the 80386 processor, supports up to 4 GB RAM and is widely used in older systems.
+  * **64-bit** ([x86-64](https://en.wikipedia.org/wiki/X86-64){: target="_blank" rel="noopener noreferrer"} / AMD64): Introduced by AMD; supports larger memory addressing (up to 16 exabytes) and improved performance. Allows execution of both 32-bit and 64-bit code.
 - **Advantages**:
   * x86 architecture powers the majority of consumer and enterprise systems, ensuring widespread software support.
   * Seamless support for older software, enhancing longevity and reducing software redevelopment costs.
@@ -243,17 +245,17 @@ mindmap
 
 ### ⭕ ARM Architecture
 
-[ARM](https://en.wikipedia.org/wiki/ARM_architecture_family) is a family of RISC (Reduced Instruction Set Computing) instruction set architectures ([ISA](https://en.wikipedia.org/wiki/Instruction_set_architecture)) for computer processors. Developed by Arm Holdings, these ISAs are licensed to other companies that manufacture the physical devices incorporating the instruction set. Additionally, Arm Holdings designs and licenses the cores that implement these ISAs.
+[ARM](https://en.wikipedia.org/wiki/ARM_architecture_family){: target="_blank" rel="noopener noreferrer"} is a family of RISC (Reduced Instruction Set Computing) instruction set architectures ([ISA](https://en.wikipedia.org/wiki/Instruction_set_architecture){: target="_blank" rel="noopener noreferrer"}) for computer processors. Developed by Arm Holdings, these ISAs are licensed to other companies that manufacture the physical devices incorporating the instruction set. Additionally, Arm Holdings designs and licenses the cores that implement these ISAs.
 
 | Property | Details |
 |----------|---------|
 | Designer | Sophie Wilson, Steve Furber, Acorn Computers/Arm Holdings |
-| Bits | [32-bit][32bit-hl], [64-bit][64bit-hl] |
+| Bits | [32-bit][32bit-hl]{: target="_blank" rel="noopener noreferrer"}, [64-bit][64bit-hl]{: target="_blank" rel="noopener noreferrer"} |
 | Introduced | 1985 |
-| [Design][design-hl] | [RISC][risc-hl] (Reduced Instruction Set Computer) |
-| Type | [Load–store][loadstore-hl] |
-| [Branching][branching-hl] | [Condition code][condcode-hl], compare and branch |
-| [Endianness][endianness-hl] | [Bi][biend-hl] (little as default) |
+| [Design][design-hl]{: target="_blank" rel="noopener noreferrer"} | [RISC][risc-hl]{: target="_blank" rel="noopener noreferrer"} (Reduced Instruction Set Computer) |
+| Type | [Load–store][loadstore-hl]{: target="_blank" rel="noopener noreferrer"} |
+| [Branching][branching-hl]{: target="_blank" rel="noopener noreferrer"} | [Condition code][condcode-hl]{: target="_blank" rel="noopener noreferrer"}, compare and branch |
+| [Endianness][endianness-hl]{: target="_blank" rel="noopener noreferrer"} | [Bi][biend-hl]{: target="_blank" rel="noopener noreferrer"} (little as default) |
 | Open | Proprietary |
 
 [risc-hl]: https://en.wikipedia.org/wiki/Reduced_instruction_set_computer
@@ -293,22 +295,22 @@ mindmap
 
 ### ⭕ MIPS Architecture
 
-[MIPS](https://en.wikipedia.org/wiki/MIPS_architecture) (Microprocessor without Interlocked Pipelined Stages) is a family of reduced instruction set computer (RISC) instruction set architectures (ISA) originally developed by MIPS Computer Systems, now known as MIPS Technologies, headquartered in the United States.
+[MIPS](https://en.wikipedia.org/wiki/MIPS_architecture){: target="_blank" rel="noopener noreferrer"} (Microprocessor without Interlocked Pipelined Stages) is a family of reduced instruction set computer (RISC) instruction set architectures (ISA) originally developed by MIPS Computer Systems, now known as MIPS Technologies, headquartered in the United States.
 
 The MIPS architecture has evolved through various iterations, including MIPS I, II, III, IV, and V, as well as five versions of MIPS32/64 for 32-bit and 64-bit implementations. While the early MIPS architectures were designed as 32-bit systems, 64-bit versions were introduced later.
 
 | Property | Details |
 |----------|---------|
 | Designer | 	MIPS Technologies, Imagination Technologies |
-| Bits | [64-bit][64bit-hl] (32 → 64) |
+| Bits | [64-bit][64bit-hl]{: target="_blank" rel="noopener noreferrer"} (32 → 64) |
 | Introduced | 1985 |
-| [Design][design-hl] | [RISC][risc-hl] (Reduced Instruction Set Computer) |
-| Type | [Load–store][loadstore-hl] |
-| [Encoding][encoding-hl] | Fixed |
-| [Branching][branching-hl] | Compare and branch, with a 1 instruction delay after the branching condition check |
-| [Endianness][endianness-hl] | [Bi][biend-hl] |
+| [Design][design-hl]{: target="_blank" rel="noopener noreferrer"} | [RISC][risc-hl]{: target="_blank" rel="noopener noreferrer"} (Reduced Instruction Set Computer) |
+| Type | [Load–store][loadstore-hl]{: target="_blank" rel="noopener noreferrer"} |
+| [Encoding][encoding-hl]{: target="_blank" rel="noopener noreferrer"} | Fixed |
+| [Branching][branching-hl]{: target="_blank" rel="noopener noreferrer"} | Compare and branch, with a 1 instruction delay after the branching condition check |
+| [Endianness][endianness-hl]{: target="_blank" rel="noopener noreferrer"} | [Bi][biend-hl]{: target="_blank" rel="noopener noreferrer"} |
 | Open | Partly |
-| Registers | [General-purpose][gpr-hl] : 32-bit: 32 registers |
+| Registers | [General-purpose][gpr-hl]{: target="_blank" rel="noopener noreferrer"} : 32-bit: 32 registers |
 
 - **Key Features**:
   * **RISC Design**: Focuses on a small, simple, and highly optimized instruction set for high-speed execution.
@@ -339,18 +341,18 @@ The MIPS architecture has evolved through various iterations, including MIPS I, 
 
 ### ⭕ RISC-V Architecture
 
-[RISC-V](https://en.wikipedia.org/wiki/RISC-V) (pronounced "risk-five") is an open-standard instruction set architecture (ISA) rooted in established reduced instruction set computer (RISC) principles. It originated in 2010 at the University of California, Berkeley, transitioned to the RISC-V Foundation in 2015, and later to RISC-V International, a Swiss non-profit organization, in November 2019.
+[RISC-V](https://en.wikipedia.org/wiki/RISC-V){: target="_blank" rel="noopener noreferrer"} (pronounced "risk-five") is an open-standard instruction set architecture (ISA) rooted in established reduced instruction set computer (RISC) principles. It originated in 2010 at the University of California, Berkeley, transitioned to the RISC-V Foundation in 2015, and later to RISC-V International, a Swiss non-profit organization, in November 2019.
 
 | Property | Details |
 |----------|---------|
 | Designer | 	University of California (Berkeley) |
-| Bits | [32-bit][32bit-hl], [64-bit][64bit-hl], [128-bit][128bit-hl] |
+| Bits | [32-bit][32bit-hl]{: target="_blank" rel="noopener noreferrer"}, [64-bit][64bit-hl]{: target="_blank" rel="noopener noreferrer"}, [128-bit][128bit-hl]{: target="_blank" rel="noopener noreferrer"} |
 | Introduced | 2014 |
-| [Design][design-hl] | [RISC][risc-hl] (Reduced Instruction Set Computer) |
-| Type | [Load–store][loadstore-hl] |
-| [Encoding][encoding-hl] | Variable |
-| [Branching][branching-hl] | Compare and branch |
-| [Endianness][endianness-hl] | Little |
+| [Design][design-hl]{: target="_blank" rel="noopener noreferrer"} | [RISC][risc-hl]{: target="_blank" rel="noopener noreferrer"} (Reduced Instruction Set Computer) |
+| Type | [Load–store][loadstore-hl]{: target="_blank" rel="noopener noreferrer"} |
+| [Encoding][encoding-hl]{: target="_blank" rel="noopener noreferrer"} | Variable |
+| [Branching][branching-hl]{: target="_blank" rel="noopener noreferrer"} | Compare and branch |
+| [Endianness][endianness-hl]{: target="_blank" rel="noopener noreferrer"} | Little |
 | Open | Royalty free |
 
 [128bit-hl]: https://en.wikipedia.org/wiki/128-bit_computing
@@ -448,7 +450,7 @@ Below is a mapping of some common assembly languages to their corresponding proc
 
 ### ⭕ x86 Assembly
 
-[x86 assembly](https://en.wikipedia.org/wiki/X86_assembly_language) is used for processors designed by [Intel](https://en.wikipedia.org/wiki/Intel) and [AMD](https://en.wikipedia.org/wiki/AMD). It has been a cornerstone for personal computers and servers since the 1980s. It is also known as 32-bit assembly.
+[x86 assembly](https://en.wikipedia.org/wiki/X86_assembly_language){: target="_blank" rel="noopener noreferrer"} is used for processors designed by [Intel](https://en.wikipedia.org/wiki/Intel){: target="_blank" rel="noopener noreferrer"} and [AMD](https://en.wikipedia.org/wiki/AMD){: target="_blank" rel="noopener noreferrer"}. It has been a cornerstone for personal computers and servers since the 1980s. It is also known as 32-bit assembly.
 
 - **Key Features**:
   * Supports complex instruction sets (CISC architecture).
@@ -464,6 +466,24 @@ Below is a mapping of some common assembly languages to their corresponding proc
 
 > In future posts in the [`Assembly Language`](/categories/assembly-language) category, the focus will be on both x86 (32-bit) and x64 (64-bit) assembly.
 {: .gh-alert.important }
+
+### ⭕ x64 Assembly
+
+[x86-64 assembly](https://en.wikipedia.org/wiki/X86-64){: target="_blank" rel="noopener noreferrer"} (also known as x64) is an extension of x86 assembly developed by [AMD](https://en.wikipedia.org/wiki/AMD){: target="_blank" rel="noopener noreferrer"} and later adopted by [Intel](https://en.wikipedia.org/wiki/Intel){: target="_blank" rel="noopener noreferrer"}. It introduces 64-bit computing while maintaining backward compatibility with 32-bit (x86) applications.  
+
+- **Key Features**:  
+  * Extends the general-purpose registers to 64 bits (e.g., `RAX`, `RBX`).  
+  * Adds eight additional general-purpose registers (`R8`–`R15`).  
+  * Uses a more streamlined calling convention with registers for function arguments.  
+  * Supports larger memory addressing and improved performance for 64-bit applications.  
+  * Includes new instruction sets like SSE and AVX for enhanced vector processing.  
+- **Applications**:  
+  * Modern operating systems and high-performance computing.  
+  * Large-scale applications requiring more memory and processing power.  
+  * System programming, including OS kernels and hypervisors.  
+- **Challenges**:  
+  * Transitioning legacy x86 code to x64 may require adjustments.  
+  * Larger pointer sizes can lead to increased memory usage in certain applications.  
 
 ### ⭕ ARM Assembly
 
@@ -561,34 +581,38 @@ Assembly code files commonly use extensions like `.asm`, `.s`, and `.a`, each su
 
 Getting started with assembly language requires having the right tools at your disposal. From assemblers to debuggers and emulators, each tool plays an important role in writing, compiling, and understanding low-level code. Here’s a list of tools to get started with assembly language:
 
-1. **Integrated Development Environment** ([IDE](https://en.wikipedia.org/wiki/Integrated_development_environment) | [Comparison](https://en.wikipedia.org/wiki/Comparison_of_integrated_development_environments)):
+1. **Integrated Development Environment** ([IDE](https://en.wikipedia.org/wiki/Integrated_development_environment){: target="_blank" rel="noopener noreferrer"} \| [Comparison](https://en.wikipedia.org/wiki/Comparison_of_integrated_development_environments){: target="_blank" rel="noopener noreferrer"}):
   - While you can write assembly code in any *text editor*, using an IDE can provide features like syntax highlighting, debugging tools, easy compilation, and many more.
-  - Some popular IDEs are: Visual Studio Code([VS Code](https://code.visualstudio.com){: target="_blank" rel="noopener noreferrer"}), [Visual Studio](https://visualstudio.microsoft.com){: target="_blank" rel="noopener noreferrer"}, [Rider](https://www.jetbrains.com/rider){: target="_blank" rel="noopener noreferrer"}, [CLion](https://www.jetbrains.com/clion){: target="_blank" rel="noopener noreferrer"}, and [IntelliJ IDEA](https://www.jetbrains.com/idea){: target="_blank" rel="noopener noreferrer"} —there are plenty more to choose from. And if none of these suit you, there’s always the trusty Windows Notepad… because who needs features when you have determination? 😂📄
+  - Some popular IDEs are: Visual Studio Code ([VS Code](https://code.visualstudio.com){: target="_blank" rel="noopener noreferrer"}), [Visual Studio](https://visualstudio.microsoft.com){: target="_blank" rel="noopener noreferrer"}, [Rider](https://www.jetbrains.com/rider){: target="_blank" rel="noopener noreferrer"}, [CLion](https://www.jetbrains.com/clion){: target="_blank" rel="noopener noreferrer"}, and [IntelliJ IDEA](https://www.jetbrains.com/idea){: target="_blank" rel="noopener noreferrer"} —there are plenty more to choose from. And if none of these suit you, there’s always the trusty Windows Notepad… because who needs features when you have determination? 😂📄
 2. **Assembler**:
   - [Assembler](/posts/language-translators/#3-assembler) is a program that translates assembly language code (human-readable) into machine code (binary-code/machine-readable) so the CPU can understand and execute it.
-  - Some popular assemblers are: [NASM](https://www.nasm.us){: target="_blank" rel="noopener noreferrer"} (Netwide Assembler), [MASM](https://docs.microsoft.com/en-us/cpp/assembler/masm/microsoft-macro-assembler-reference){: target="_blank" rel="noopener noreferrer"} (Microsoft Macro Assembler), [FASM](https://flatassembler.net){: target="_blank" rel="noopener noreferrer"} (Flat Assembler), and [GAS](https://www.gnu.org/software/binutils){: target="_blank" rel="noopener noreferrer"} (GNU Assembler).
+  - Some popular assemblers are: [NASM](https://www.nasm.us){: target="_blank" rel="noopener noreferrer"} (Netwide Assembler), [MASM](https://docs.microsoft.com/en-us/cpp/assembler/masm/microsoft-macro-assembler-reference){: target="_blank" rel="noopener noreferrer"} (Microsoft Macro Assembler), [FASM](https://flatassembler.net){: target="_blank" rel="noopener noreferrer"} (Flat Assembler), [GAS](https://www.gnu.org/software/binutils){: target="_blank" rel="noopener noreferrer"} (GNU Assembler), [YASM](https://github.com/yasm/yasm){: target="_blank" rel="noopener noreferrer"}, [TASM](https://en.wikipedia.org/wiki/Turbo_Assembler){: target="_blank" rel="noopener noreferrer"} (Turbo Assembler), [HLA](https://www.plantation-productions.com/Webster/HighLevelAsm/dnld.html){: target="_blank" rel="noopener noreferrer"} (High Level Assembler), [SPIM](https://spimsimulator.sourceforge.net/){: target="_blank" rel="noopener noreferrer"}, and [Keil Assembler](https://www.keil.com/){: target="_blank" rel="noopener noreferrer"}.
 3. **Debugger**:
   - [Debugger](/posts/errors-bugs-debugging/#debugging) is a tool that tracks the behavior of code, allowing for step-by-step execution, monitoring of variables, and identification of issues. It is especially useful for debugging complex assembly programs.
-  - Some popular debuggers are: [x64dbg](https://x64dbg.com){: target="_blank" rel="noopener noreferrer"}, [Windbg](https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger){: target="_blank" rel="noopener noreferrer"} (Windows Debugger), [gdb](https://sourceware.org/gdb){: target="_blank" rel="noopener noreferrer"} (GNU Debugger), and AFD (Advanced Fullscreen Debugger).
+  - Some popular debuggers are: [x64dbg](https://x64dbg.com){: target="_blank" rel="noopener noreferrer"}, [Windbg](https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger){: target="_blank" rel="noopener noreferrer"} (Windows Debugger), [gdb](https://sourceware.org/gdb){: target="_blank" rel="noopener noreferrer"} (GNU Debugger), and AFD (Advanced Fullscreen Debug).
 4. **Emulator/Simulator/Sandbox/Virtual Machine**:
-  - [Emulator](https://en.wikipedia.org/wiki/Emulator) is a software tool that mimics the behavior of a specific hardware or operating system environment, allowing programs designed for one platform to run on another. It replicates the original system's architecture and functionality, enabling testing, debugging, and running software in a controlled and flexible virtual environment.
-  - Some popular emulators are: [QEMU](https://www.qemu.org/){: target="_blank" rel="noopener noreferrer"}, [VirtualBox](https://www.virtualbox.org){: target="_blank" rel="noopener noreferrer"}, [VMware](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion){: target="_blank" rel="noopener noreferrer"}, [DOSBox-X](https://dosbox-x.com){: target="_blank" rel="noopener noreferrer"}, and [DOSBox](https://www.dosbox.com){: target="_blank" rel="noopener noreferrer"}.
+  - [Emulator](https://en.wikipedia.org/wiki/Emulator){: target="_blank" rel="noopener noreferrer"} is a software tool that mimics the behavior of a specific hardware or operating system environment, allowing programs designed for one platform to run on another. It replicates the original system's architecture and functionality, enabling testing, debugging, and running software in a controlled and flexible virtual environment.
+  - Some popular emulators are: [QEMU](https://www.qemu.org/){: target="_blank" rel="noopener noreferrer"}, [Bochs](https://bochs.sourceforge.io){: target="_blank" rel="noopener noreferrer"}, [VirtualBox](https://www.virtualbox.org){: target="_blank" rel="noopener noreferrer"}, [VMware](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion){: target="_blank" rel="noopener noreferrer"}, [DOSBox-X](https://dosbox-x.com){: target="_blank" rel="noopener noreferrer"}, and [DOSBox](https://www.dosbox.com){: target="_blank" rel="noopener noreferrer"}.
 5. **Disassembler**:
   - [Disassembler](/posts/language-translators/#4-disassembler) is a software tool that converts binary machine code back into assembly language for analysis. It is widely used in **reverse engineering** to understand the functionality of compiled programs, debug issues, or analyze software without access to the original source code.
-  - Some popular disassemblers are: [x64dbg](https://x64dbg.com){: target="_blank" rel="noopener noreferrer"} (both debugger and disassembler), [IDA Pro](https://hex-rays.com/ida-pro){: target="_blank" rel="noopener noreferrer"}, [Ghidra](https://ghidra-sre.org){: target="_blank" rel="noopener noreferrer"}, [Radare2](https://www.radare.org/n/){: target="_blank" rel="noopener noreferrer"}, and [Binary Ninja](https://binary.ninja){: target="_blank" rel="noopener noreferrer"}.
+  - Some popular disassemblers are: [x64dbg](https://x64dbg.com){: target="_blank" rel="noopener noreferrer"} (both debugger and disassembler), [IDA Pro](https://hex-rays.com/ida-pro){: target="_blank" rel="noopener noreferrer"}, [Ghidra](https://ghidra-sre.org){: target="_blank" rel="noopener noreferrer"}, [Radare2](https://www.radare.org/n/){: target="_blank" rel="noopener noreferrer"} (CLI), [iaito](https://www.radare.org/n/iaito.html){: target="_blank" rel="noopener noreferrer"} (GUI), and [Binary Ninja](https://binary.ninja){: target="_blank" rel="noopener noreferrer"}.
 6. **Online Tools**:
   - Online tools exist that allow writing, running, debugging, and analyzing small programs directly in a browser. These tools are convenient for quick tests and learning but often have limited features and may not support complex or large-scale programs.
-  - Some popular online tools include: [Godbolt](https://godbolt.org){: target="_blank" rel="noopener noreferrer"} (Compiler Explorer), [Dogbolt](https://dogbolt.org){: target="_blank" rel="noopener noreferrer"} (Decompiler Explorer) [Ideone](https://ideone.com){: target="_blank" rel="noopener noreferrer"}, [OneCompiler](https://onecompiler.com){: target="_blank" rel="noopener noreferrer"}, and [Replit](https://replit.com){: target="_blank" rel="noopener noreferrer"}.
+  - Some popular online tools include: [Godbolt](https://godbolt.org){: target="_blank" rel="noopener noreferrer"} (Compiler Explorer), [Dogbolt](https://dogbolt.org){: target="_blank" rel="noopener noreferrer"} (Decompiler Explorer), [Ideone](https://ideone.com){: target="_blank" rel="noopener noreferrer"}, [OneCompiler](https://onecompiler.com){: target="_blank" rel="noopener noreferrer"}, and [Replit](https://replit.com){: target="_blank" rel="noopener noreferrer"}.
+
+> Assembly Development Environment setup is discussed [here](/posts/asm-environment-setup/#setting-up-the-development-environment).
+{: .gh-alert.note }
 
 ## 📖 Learning Resources
 
 - 📚 **Books**:
-  * **Computer Organization & Architecture** --- William Stalling  [↗](https://www.amazon.com/dp/0134101618){: target="_blank" rel="noopener noreferrer"}
-  * **Computer Organization And Design: The Hardware/Software Interface** --- David A. Patterson, John L. Hennessy  [↗](https://www.amazon.com/dp/8131222748){: target="_blank" rel="noopener noreferrer"}
-  * **Assembly Language for Intel-Based Computers** --- Kip R. Irvine  [↗](https://www.amazon.com/dp/0132383101){: target="_blank" rel="noopener noreferrer"}
-  * **Assembly Language for X86 Processors** --- Kip R. Irvine  [↗](https://www.amazon.com/dp/013602212X){: target="_blank" rel="noopener noreferrer"}
-  * **The Art of Assembly Language** --- Randall Hyde [↗](https://www.amazon.com/dp/1593272073){: target="_blank" rel="noopener noreferrer"}
-  * **The Art of 64-Bit Assembly** --- Randall Hyde [↗](https://www.amazon.com/dp/1718501080){: target="_blank" rel="noopener noreferrer"}
+  * **Computer Organization & Architecture** --- William Stalling  ([Amazon](https://www.amazon.com/dp/0134101618){: target="_blank" rel="noopener noreferrer"})
+  * **Computer Organization And Design: The Hardware/Software Interface** --- David A. Patterson, John L. Hennessy  ([Amazon](https://www.amazon.com/dp/8131222748){: target="_blank" rel="noopener noreferrer"})
+  * **Assembly Language for Intel-Based Computers** --- Kip R. Irvine  ([Amazon](https://www.amazon.com/dp/0132383101){: target="_blank" rel="noopener noreferrer"})
+  * **Assembly Language for X86 Processors** --- Kip R. Irvine  ([Amazon](https://www.amazon.com/dp/013602212X){: target="_blank" rel="noopener noreferrer"}) \| ([Official Website](https://asmirvine.com/){: target="_blank" rel="noopener noreferrer"})
+  * **The Art of Assembly Language** --- Randall Hyde ([Amazon](https://www.amazon.com/dp/1593272073){: target="_blank" rel="noopener noreferrer"})
+  * **The Art of 64-Bit Assembly** --- Randall Hyde ([Amazon](https://www.amazon.com/dp/1718501080){: target="_blank" rel="noopener noreferrer"})
+  * **Assembly Language Programming** --- Belal Hashmi
 
 > If you find learning through books difficult, you can explore **YouTube** or **Udemy** courses, but keep in mind that they may offer limited depth and scope.
 {: .gh-alert.tip }
@@ -600,8 +624,17 @@ Getting started with assembly language requires having the right tools at your d
   * [Intel x86 Instruction Set Reference](https://www.felixcloutier.com/x86/){: target="_blank" rel="noopener noreferrer"}
   * [The x86 Processor](https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/the-x86-processor){: target="_blank" rel="noopener noreferrer"}
   * [The x64 Processor](https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/the-x64-processor){: target="_blank" rel="noopener noreferrer"}
+  * [Overview of x64 ABI conventions](https://learn.microsoft.com/en-us/cpp/build/x64-software-conventions?view=msvc-170){: target="_blank" rel="noopener noreferrer"}
   * [NASM - The Netwide Assembler](https://www.nasm.us/doc){: target="_blank" rel="noopener noreferrer"} ([PDF Version](https://www.nasm.us/xdoc/2.16.03/nasmdoc.pdf){: target="_blank" rel="noopener noreferrer"})
   * [Understanding Windows x64 Assembly](https://sonictk.github.io/asm_tutorial){: target="_blank" rel="noopener noreferrer"}
+  * [Getting Started with MASM and Visual Studio 2022](https://asmirvine.com/gettingStartedVS2022/index.htm){: target="_blank" rel="noopener noreferrer"}
+  * [NASM examples by David Grantham](https://www.davidgrantham.com/){: target="_blank" rel="noopener noreferrer"}
+  * [NASM Assembly Language Tutorials](https://asmtutor.com/){: target="_blank" rel="noopener noreferrer"}
+  * [Reverse Engineering For Everyone](https://0xinfection.github.io/reversing/){: target="_blank" rel="noopener noreferrer"}
+  * [Dive Into Systems](https://diveintosystems.org/book/introduction.html){: target="_blank" rel="noopener noreferrer"}
+  * [Assembly Tutorials by Pixelclear](https://pixelclear.github.io/){: target="_blank" rel="noopener noreferrer"}
+  * [NASM Tutorial](https://cs.lmu.edu/~ray/notes/nasmtutorial/){: target="_blank" rel="noopener noreferrer"} by [Ray Toal](https://cs.lmu.edu/~ray/){: target="_blank" rel="noopener noreferrer"}
+  * [NASM Assembly Code](https://labs.bilimedtech.com/nasm/index.html){: target="_blank" rel="noopener noreferrer"}
 - 🎥 **Videos**:
   * [Assembly Language in 100 Seconds](https://youtu.be/4gwYkEK0gOk){: target="_blank" rel="noopener noreferrer"}
   * [What Is Assembly Language?](https://youtu.be/1FXhjErUz58){: target="_blank" rel="noopener noreferrer"}

@@ -2,6 +2,7 @@
   padding: 0.5rem 1rem;
   border-left-width: 0.25em;
   border-left-style: solid;
+  /* color: var(--text-color); */
 
   &::before {
     display: block;

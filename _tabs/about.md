@@ -34,7 +34,7 @@ order: 4
 > --- Friedrich Nietzsche
 <!-- He who has a why to live can bear almost any how — Friedrich Nietzsche -->
 
-I’m a passionate game developer and 3D artist with a solid academic background in computer science. Here, you'll find a wealth of unified resources covering a wide range of topics, all curated to streamline referencing and enhance your learning experience.
+I'm a passionate game developer and digital artist with a solid academic background in computer science. Here, you'll find a wealth of unified resources covering a wide range of topics, all curated to streamline referencing and enhance your learning experience.
 
 Below is a list of languages, tools & technologies that I'm familiar with. You can explore various tabs in the sidebar for quick navigation. The [categories](/categories) tab contains properly categorized content, while the [archives](/archives) tab provides a timeline of when each post was written. In the top right corner, you'll find a search bar to help you quickly find specific content. Additionally, you can toggle between light and dark mode to suit your preferences.
 
@@ -57,19 +57,23 @@ Below is a list of languages, tools & technologies that I'm familiar with. You c
 <hr class="about">
 
 ```
-© 2023 - 2024 Starlight - Some Rights Reserved.
+© 2023 - 2025 Starlight - Some Rights Reserved.
 
-All logos, trademarks, and associated materials related to "Starlight" are the
-exclusive property of Starlight and are protected by copyright laws.
+The content on this site is licensed under a Creative Commons Attribution-
+NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0).  
 
-All content on this site, including but not limited to artwork, is strictly
-prohibited from being used for AI training purposes or incorporated into any
-AI models. Please respect the 'noai' policy.
+All logos, trademarks, and associated materials related to "Starlight" are
+the exclusive property of Starlight and are not covered under the Creative-
+Commons license. Use of these elements requires explicit permission from Starlight.
+
+All content on this site, including but not limited to text, images, and
+artwork, is strictly prohibited from being used for AI training purposes
+or incorporated into AI models. Please respect the 'noai' policy.
 
 Some content on this site may have undergone post-processing using AI tools such
-as Copilot, ChatGPT, QuillBot, or Stealth Writer to improve quality. This processing
-may include correcting linguistic errors, addressing grammatical mistakes, summarizing
-content, or adjusting tone for clarity and consistency.
+as Copilot, ChatGPT, DeepSeek, QuillBot, or Stealth Writer to improve quality. This
+processing may include correcting linguistic errors, addressing grammatical mistakes,
+summarizing content, or adjusting tone for clarity and consistency.
 
 The information provided on this website is for general informational purposes
 only. While we strive to ensure the accuracy and reliability of the content, we
@@ -78,6 +82,25 @@ reliability of any information on this site. By using this website, you acknowle
 and agree that any reliance on such information is at your own risk. We are not
 liable for any errors or omissions, or for any losses, injuries, or damages arising
 from the use of this site or its content.
+
+All opinions expressed on this site are solely my own and do not reflect the views
+or positions of my employer.
+
+This site may collect anonymized usage data for performance and analytics purposes. 
+No personally identifiable information is stored unless voluntarily provided 
+(e.g., via comments, contact forms, or issue trackers).
+
+This site may contain links to third-party websites. These are provided solely for
+your convenience. We do not endorse or assume any responsibility for the content, 
+privacy policies, or practices of any external websites.
+
+Any third-party content, such as code snippets, quotes, or references, is used
+under the doctrine of fair use for purposes such as commentary, research, or
+education. All rights remain with their respective copyright holders.
+
+Content on this site reflects the state of knowledge or opinion at the time of
+publication and may not be updated regularly. For critical or time-sensitive
+decisions, please verify technical or legal information independently.
 
 If you have any concerns, notice any mistakes, or believe your content has been
 used without proper attribution, please feel free to contact me directly, leave

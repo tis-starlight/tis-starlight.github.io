@@ -1,0 +1,67 @@
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--tb-border-color); /* rgba(210, 215, 217, 0.75) */
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0;
+}
+
+.table-wrapper > table {
+  width: 100%;
+  border-spacing: 0;
+  overflow-x: auto;
+  margin: 0;
+  /* border-collapse: separate; */
+}
+
+.table-wrapper > table thead {
+  border-bottom: solid 2px rgba(210, 215, 217, 0.75);
+  /* background-color: #ffffff1a; */
+}
+
+.table-wrapper > table thead th {
+  padding: 0.4rem 1rem;
+  font-size: 95%;
+  white-space: nowrap;
+  /* color: #7dbbbb; */
+  /* font-weight: 600; */
+}
+
+.table-wrapper > table tbody tr {
+  border-bottom: 1px solid var(--tb-border-color);
+}
+
+.table-wrapper > table tbody tr:nth-child(2n) {
+  background-color: var(--tb-even-bg);
+}
+
+.table-wrapper > table tbody tr:nth-child(2n + 1) {
+  background-color: var(--tb-odd-bg);
+}
+
+.table-wrapper > table tbody td {
+  padding: 0.4rem 1rem;
+  font-size: 95%;
+  white-space: nowrap;
+}
+
+/* Fallback scrollbar styles for non-Webkit browsers */
+.table-wrapper {
+  scrollbar-width: thin;
+  scrollbar-color: #918e8e75 transparent;
+}
+
+.table-wrapper::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.table-wrapper::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+  background-color: #918e8e75;
+  border-radius: 5px;
+}

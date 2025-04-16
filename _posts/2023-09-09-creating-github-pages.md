@@ -95,6 +95,7 @@ Most inline <abbr title="Hypertext Markup Language">HTML</abbr> tags are support
 ```html
 Most inline <abbr title="Hypertext Markup Language">HTML</abbr> tags are supported.
 ```
+{: .nolineno }
 
 ## Improving Visibility/Readability
 
@@ -103,19 +104,70 @@ There are multiple ways to achieve this:
 
 - Using HTML and CSS: <span style="color:green;font-weight:400;font-size:20px">Hello World!</span>
 
-```html
-<span style="color:green;font-weight:400;font-size:20px"> Hello World! </span>
-```
-{: .nolineno }
+  ```html
+  <span style="color:green;font-weight:400;font-size:20px"> Hello World! </span>
+  ```
+  {: .nolineno }
 
 - Using [Kramdown](https://kramdown.gettalong.org/index.html){: target="_blank" rel="noopener noreferrer"} - a Ruby-based Markdown parser that extends the functionality of standard Markdown: This is *green*{: style="color: green"}
 
-```markdown
-This is *green*{: style="color: green"}
-```
+  ```markdown
+  This is *green*{: style="color: green"}
+  ```
+  {: .nolineno }
 
 - Using Emojis:
 When you want to use pure Markdown (without nested HTML & CSS), you can use Emojis to draw attention to some fragment of the file, i.e. ⚠️WARNING⚠️, 🔴DANGER🔴 or 🔥NEW🔥.
+
+- Using Squiggly Underline:
+
+  * <p>Hover over the <span class="squiggly-underline">squiggly underline</span> to see the effect!</p>
+  * Hover over the *squiggly underline*{: .squiggly-underline } to see the effect!
+  * Hover over the `squiggly underline`{: .squiggly-underline } to see the effect!
+
+  ```html
+  <p>Hover over the <span class="squiggly-underline">squiggly underline</span> to see the effect!</p>
+
+  Hover over the *squiggly underline*{: .squiggly-underline } to see the effect!
+
+  Hover over the `squiggly underline`{: .squiggly-underline } to see the effect!
+  ```
+  {: .nolineno }
+
+- Using Binary Underline:
+  * <span class="binary-underline">01000010 01101001 01101110 01100001 01110010 01111001</span>
+  * <span class="binary-underline">ABC DEF GHI JKL MNO PQR STU VWX YZ</span>
+
+  ```html
+  <span class="binary-underline">01000010 01101001 01101110 01100001 01110010 01111001</span>
+
+  <span class="binary-underline">ABC DEF GHI JKL MNO PQR STU VWX YZ</span>
+  ```
+  {: .nolineno }
+
+- Using Unicode/ASCII Art:
+
+  ```
+  ╔════════════════════════════════════════════════════════════╗
+  ║   🔑 𝗣𝗚𝗣 𝗣𝗨𝗕𝗟𝗜𝗖 𝗞𝗘𝗬 𝗕𝗟𝗢𝗖𝗞 ── 𝗘𝗻𝗱-𝘁𝗼-𝗘𝗻𝗱 𝗘𝗻𝗰𝗿𝘆𝗽𝘁𝗲𝗱 𝗧𝗿𝘂𝘀𝘁  ║
+  ╚════════════════════════════════════════════════════════════╝
+  ██████████████████████████████████████████████
+  mQGHCGR+UPEABCD4... [full key here]  
+  ██████████████████████████████████████████████
+  ✨ 𝗙𝗶𝗻𝗴𝗲𝗿𝗽𝗿𝗶𝗻𝘁: 1234 5678 9ABC DEF0 1234 5678 9ABC DEF0 1234 5678
+  ```
+
+  ```
+  |￣￣￣￣￣￣￣￣￣￣￣￣￣|  
+  |   Trust, but verify. |  
+  |   https://your.site  |  
+  |＿＿＿＿＿＿＿＿＿＿＿＿＿|  
+  (\__/) ||  
+  (•ㅅ•) ||  
+  / 　 づ  
+  ```
+
+  * GPG 🔑 `1234 5678 9ABC DEF0 1234 5678 9ABC DEF0 1234 5678`
 
 ## Enhanced Text Selection
 
@@ -242,32 +294,31 @@ When you want to use pure Markdown (without nested HTML & CSS), you can use Emoj
 
 <br>
 
-For further exploration and details on these fonts, visit the following resources:
-- Call of Duty - Typography [↗](https://brand.callofduty.com/typography/typeface/){: target="_blank" rel="noopener noreferrer"}
-- NaN - Custom Call of Duty Fonts [↗](https://www.nan.xyz/custom/call-of-duty/){: target="_blank" rel="noopener noreferrer"}
-- Global Fonts - Hitmarker [↗](https://globalfonts.pro/font/hitmarker/){: target="_blank" rel="noopener noreferrer"}
+For further exploration and details on these fonts, visit the following resources:  
+- [Call of Duty - Typography](https://brand.callofduty.com/typography/typeface/){: target="_blank" rel="noopener noreferrer"}  
+- [NaN - Custom Call of Duty Fonts](https://www.nan.xyz/custom/call-of-duty/){: target="_blank" rel="noopener noreferrer"}  
+- [Global Fonts - Hitmarker](https://globalfonts.pro/font/hitmarker/){: target="_blank" rel="noopener noreferrer"}  
 
 In addition to *Hitmarker*, there are several other popular fonts that are widely used in programming and design. These fonts offer distinct styles and features that cater to various needs, whether you're coding, creating technical documents, or designing modern interfaces. Below are some notable fonts to consider for your projects:
 
-| Font             | Description                                                                                                           | Link                                                                 |
-|------------------|-----------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
-| **`Fira Code`**    | A monospaced font designed for coding, with support for programming ligatures.                                         | [Fira Code ↗](https://github.com/tonsky/FiraCode){: target="_blank" rel="noopener noreferrer"}            |
-| **`Cascadia Mono`**| A modern monospaced font from Microsoft, often used in command-line interfaces and code editors.                        | [Cascadia Code ↗](https://github.com/microsoft/cascadia-code){: target="_blank" rel="noopener noreferrer"}|
-| **`JetBrains Mono`**| A monospaced typeface for developers, designed by JetBrains, featuring increased letter-spacing for readability.      | [JetBrains Mono ↗](https://www.jetbrains.com/lp/mono/){: target="_blank" rel="noopener noreferrer"}                 |
-| **`Orbitron`**     | A geometric sans-serif typeface, ideal for futuristic and sci-fi projects, often used in headlines and display text.  | [Orbitron ↗](https://fonts.google.com/specimen/Orbitron){: target="_blank" rel="noopener noreferrer"}|
-| **`Hitmarker`**    | A custom typeface associated with the Call of Duty brand, versatile for body text and headlines in regular and condensed versions. | [Hitmarker ↗](https://globalfonts.pro/font/hitmarker){: target="_blank" rel="noopener noreferrer"}  |
+| Font                 | Description                                                      | Link                                                                                            |
+| -------------------- | ---------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| **`Fira Code`**      | A monospaced font with programming ligatures.                    | [View](https://github.com/tonsky/FiraCode){: target="_blank" rel="noopener noreferrer"}         |
+| **`Cascadia Mono`**  | A modern monospaced font from Microsoft for coding.              | [View](https://github.com/microsoft/cascadia-code){: target="_blank" rel="noopener noreferrer"} |
+| **`JetBrains Mono`** | A developer typeface with better letter-spacing for readability. | [View](https://www.jetbrains.com/lp/mono/){: target="_blank" rel="noopener noreferrer"}         |
+| **`Orbitron`**       | A geometric sans-serif font, great for sci-fi projects.          | [View](https://fonts.google.com/specimen/Orbitron){: target="_blank" rel="noopener noreferrer"} |
+| **`Hitmarker`**      | A custom font linked to the Call of Duty brand.                  | [View](https://globalfonts.pro/font/hitmarker){: target="_blank" rel="noopener noreferrer"}     |
 
-<!-- 
-## Image Comparison Slider
+## Image Comparison
 
-// img-comparison-slider | https://github.com/sneas/img-comparison-slider/
+<!--  img-comparison-slider | https://github.com/sneas/img-comparison-slider/ -->
 <img-comparison-slider class="slider-focus slider-split-line" style="outline: none;" value="50">
   <figure slot="first" class="before" style="pointer-events: none;">
-    <img width="100%" style="border-radius: 8px;" src="https://i.imgur.com/m9E2ats.png" alt="original-logo">
+    <img width="100%" style="border-radius: 8px;" referrerpolicy="no-referrer" src="https://i.imgur.com/m9E2ats.png" alt="original-logo">
     <figcaption>Before</figcaption>
   </figure>
   <figure slot="second" class="after" style="pointer-events: none;">
-    <img width="100%" style="border-radius: 8px;" src="https://i.imgur.com/4KOWYcz.png" alt="grayscale-logo">
+    <img width="100%" style="border-radius: 8px;" referrerpolicy="no-referrer" src="https://i.imgur.com/4KOWYcz.png" alt="grayscale-logo">
     <figcaption>After</figcaption>
   </figure>
 </img-comparison-slider>
@@ -312,7 +363,6 @@ In addition to *Hitmarker*, there are several other popular fonts that are widel
     --default-handle-width: 50px;
   }
 </style>
--->
 
 ## Block Quote
 
@@ -335,6 +385,33 @@ In addition to *Hitmarker*, there are several other popular fonts that are widel
   <p>Throughout his long tenure, Mr. Chips led a quiet, unassuming life, until one day he fell in love with a young woman named Katherine Bridges. She was the daughter of one of the school's former headmasters, and their brief but poignant romance changed him in ways he never anticipated. Tragically, Katherine passed away not long after their engagement, and Mr. Chips never married. Yet, her memory remained a deep part of his heart, influencing the way he viewed life and his students.</p>
 </details>
 
+<details class="details-beauty" markdown="1">
+<summary>Click to toggle content</summary>
+Adler was a name whispered in the shadows of global espionage, a figure whose presence seemed to reverberate through the hidden undercurrents of history. No one knew for sure if he was real or merely a myth, a phantom created by those who wished to conceal the truth. His cold, calculating gaze betrayed nothing, and his movements were as fluid as the air itself—silent, swift, and invisible. A master of disguise, he could blend into any crowd, slip between worlds, and vanish without a trace.
+
+Whispers spoke of his involvement in clandestine operations that altered the fate of nations. Adler, it was said, had the ability to manipulate events from the darkest corners of the earth, always present yet never seen. Some claimed he was born in the heart of Europe, others suggested he was a ghost from the depths of the Cold War. But what was certain was his reputation—a name that both struck fear and commanded reverence.
+
+Was he real? Perhaps. But in the world of espionage, truth was irrelevant—what mattered was the story people chose to believe.
+</details>
+
+<details class="boxed-disclosure" markdown="1">
+  <summary>Click to toggle content</summary>
+  <div>
+    <p>Choose export format: <b>CSV</b> or <b>JSON</b></p>
+    <button>Download</button>
+  </div>
+</details>
+
+<details class="boxed-disclosure" markdown="1">
+  <summary>Click to toggle content</summary>
+  <div>
+    <p>He wasn't just cruel—cruelty, at least, had a purpose. No, he was empty, a hollow shell wrapped in the pretense of a man, moving through the world with a dead gaze and a half-smirk that never reached his eyes. He had long since stopped justifying the things he did; regret required a soul, and he had burned his long ago, if he ever had one. The blood, the lies, the bodies left in his wake—none of it weighed on him. If hell was real, he would walk into it laughing, not out of defiance, but because he had long since decided that damnation was just another place to exist.</p>
+  </div>
+  <div>
+    <p>And yet, people still tried. They searched for a flicker of remorse, some buried ember of humanity beneath the ruin. Priests spoke of salvation; lovers whispered of change. Fools, all of them. He let them believe, let them hope—sometimes, he even played along. A confession here, a trembling apology there, just enough to keep them close. Then, when the moment was right, when their guard was down, he would remind them what he was. Not with words, but with the cold efficiency of a knife, a lie, a betrayal so absolute it hollowed them out the way he had been hollowed long ago.</p>
+  </div>
+</details>
+
 <details class="details-inline" markdown="1">
   <summary>Click to toggle content</summary>
   <p><b>Time dilation</b> is a concept from Einstein's theory of relativity, where time passes at different rates for observers in different conditions. There are two main types:</p>
@@ -345,7 +422,21 @@ In addition to *Hitmarker*, there are several other popular fonts that are widel
   </ol>
 </details>
 
-## Prompts
+## Admonitions
+
+**Admonitions** are gentle warnings or advice that correct behavior or actions. In documentation, they highlight important information, warnings, or best practices, enhancing clarity and ensuring critical points are easily understood by developers.
+
+### Prompts
+
+There are several types of prompts: `tip`, `info`, `warning`, and `danger`. They can be generated by adding the class `prompt-{type}` to the blockquote. For example, define a prompt of type `info` as follows:
+
+```markdown
+> Example line for prompt.
+{: .prompt-info }
+```
+{: .nolineno }
+
+The following examples show how these prompts will be rendered:
 
 > An example showing the `tip` type prompt.
 {: .prompt-tip }
@@ -359,37 +450,104 @@ In addition to *Hitmarker*, there are several other popular fonts that are widel
 > An example showing the `danger` type prompt.
 {: .prompt-danger }
 
-<div class="box-tip" markdown="1">
-<div class="title"> Tip </div>
-This is a tip.
-</div>
+### Callouts
 
-<div class="box-info" markdown="1">
-<div class="title"> Info </div>
-This is an info.
-</div>
+There are several types of callouts available: `note`, `abstract`, `info`, `todo`, `tip`, `success`, `question`, `warning`, `failure`, `danger`, `bug`, `example`, and `quote`. These can be used in either predefined or custom formats. The custom format allows for title customization and can also be used without a title.
 
-<div class="box-warning" markdown="1">
-<div class="title"> Warning </div>
-This is a warning.
-</div>
+- **Predefined Callouts**: Predefined callouts can be created by adding the class `callout.{type}` to a blockquote. For example, a `note` type callout can be defined as follows:
+   
+  ```markdown
+  > Example line for a predefined callout.
+  {: .callout.note }
+  ```
+  {: .nolineno }
 
-<div class="box-danger" markdown="1">
-<div class="title"> Danger </div>
-This is a danger.
-</div>
+- **Custom Callouts**: Custom callouts are created by adding the class `callout-{type}` to a `<div>` element (embedding HTML within Markdown). These can also include a custom title. For example, a `note` type callout with a custom title can be defined as follows:
 
-> Tip: Keep your software up to date for better performance.
-{: .box-tip}
+  ```markdown
+  <div class="callout-note" markdown="1">
+  <div class="title"> Important Note! </div>
+  Example line for a custom callout.
+  </div>
+  ```
+  {: .nolineno }
 
-> Info: Make sure to back up your files regularly to avoid data loss.
-{: .box-info }
+  <div class="callout-note" markdown="1">
+  <div class="title"> Important Note! </div>
+  Example line for a custom callout.
+  </div>
 
-> Warning: High temperatures can damage your device. Keep it cool.
-{: .box-warning}
+- **Callouts Without Titles**: Callouts without titles can be created by adding the class `callout-{type}` to a blockquote. For example, a `note` type callout without a title can be defined as follows:
 
-> Danger: Do not touch electrical wires while they are live.
-{: .box-danger}
+  ```markdown
+  > Example line for a custom callout without a title.
+  {: .callout-note }
+  ```
+  {: .nolineno }
+
+  > Example line for a custom callout without a title.
+  {: .callout-note }
+
+The following examples show how predefined callouts will be rendered:
+
+> To highlight supplementary information or context that isn't critical but enhances understanding. e.g., This feature is only available in the premium version.
+{: .callout.note }
+
+> For summaries or overviews, usually at the beginning of a document or section, to provide a quick idea of the content. e.g., This guide explains the process of managing memory in **C++**.
+{: .callout.abstract }
+
+> To provide neutral, factual, or background information without requiring specific action. e.g., This tool was first introduced in `version 2.1`.
+{: .callout.info }
+
+> To list pending tasks or steps that need to be completed. e.g.,
+> - [x] Add health system to the player character.
+> - [ ] Add error handling for invalid memory allocation.
+> - [ ] Optimize texture loading to reduce memory usage.
+> - [ ] Set up particle system for explosions.
+{: .callout.todo }
+
+> For helpful advice, shortcuts, or best practices that can improve user experience or efficiency. e.g., Use keyboard shortcuts to navigate faster.
+{: .callout.tip }
+
+> To celebrate or acknowledge positive outcomes, achievements, or successful operations. e.g., The game build was successfully compiled and is ready for testing.
+{: .callout.success }
+
+> To pose a question to engage readers or prompt them to think critically. e.g., Have you considered using normal maps to enhance the detail of your 3D models without increasing polygon count?
+{: .callout.question }
+
+> To alert readers about potential risks, limitations, or things they need to be cautious about. e.g., Changes to this file may affect system stability.
+{: .callout.warning }
+
+> To indicate something went wrong or a task was unsuccessful, with details about the error. e.g., The build failed due to missing assets. Ensure all required files are included in the project.
+{: .callout.failure }
+
+> For critical warnings about severe risks or irreversible actions. e.g., Deleting this game object will cause all associated references to break, potentially crashing the game.
+{: .callout.danger }
+
+> To document or highlight known issues, glitches, or unexpected behaviors. e.g., The player character's collision detection glitches when moving at high speeds, causing it to phase through walls.
+{: .callout.bug }
+
+> To provide concrete illustrations or use cases to clarify a concept or instruction. e.g., To create a new file in a Unix-based system, use the `touch` command:
+>  ```bash
+>  touch newfile.txt
+>  ```
+>  This will create an empty file named `newfile.txt` in the current directory.
+{: .callout.example }
+
+> To showcase a citation, reference, or noteworthy statement from an external or internal source. e.g., "Game design is the art of creating the illusion of complexity" – **The Art of Game Design**: *A Book of Lenses*, Jesse Schell
+{: .callout.quote }
+
+### Alerts
+
+Several types of alerts are available: `tip`, `note`, `important`, `warning`, and `caution`. These can be created by adding the class `gh-alert.{type}` to a blockquote. For example, an `important` type alert can be defined as follows:
+
+```markdown
+> Example line for an alert.
+{: .gh-alert.important }
+```
+{: .nolineno }
+
+The following examples show how these alerts will be rendered:
 
 > This is a tip.
 {: .gh-alert.tip }
@@ -406,20 +564,76 @@ This is a danger.
 > This is a caution.
 {: .gh-alert.caution }
 
+### Colorbox
+
+Several types of colorboxes are available: `tip`, `info`, `warning`, and `danger`. They can be created with a custom title or without a title. To define a colorbox, add the class `box-{type}` to a `<div>` element (embedding HTML within Markdown).
+
+A colorbox with a title can be defined as follows:
+
+```markdown
+<div class="box-info" markdown="1">
+<div class="title"> Info </div>
+Example line for a colorbox with a title.
+</div>
+```
+{: .nolineno }
+
+A colorbox without a title can be defined as follows:
+
+```markdown
+> Example line for a colorbox without a title.
+{: .box-info }
+```
+{: .nolineno }
+
+The following examples show how these colorbox will be rendered:
+
+<div class="box-tip" markdown="1">
+<div class="title"> Tip </div>
+An example showing the `tip` type colorbox with a title.
+</div>
+
+<div class="box-info" markdown="1">
+<div class="title"> Info </div>
+An example showing the `info` type colorbox with a title.
+</div>
+
+<div class="box-warning" markdown="1">
+<div class="title"> Warning </div>
+An example showing the `warning` type colorbox with a title.
+</div>
+
+<div class="box-danger" markdown="1">
+<div class="title"> Danger </div>
+An example showing the `danger` type colorbox with a title.
+</div>
+
+> An example showing the `tip` type colorbox without a title.
+{: .box-tip }
+
+> An example showing the `info` type colorbox without a title.
+{: .box-info }
+
+> An example showing the `warning` type colorbox without a title.
+{: .box-warning }
+
+> An example showing the `danger` type colorbox without a title.
+{: .box-danger }
+
 ## Tables
 
 | Company          | Contact       | Country |
-|:---------------- |:------------- | -------:|
-| ABC Electronics  | John Smith    | USA     |
-| Global Imports   | Emily Johnson | Canada  |
-| La Maison du Vin | Pierre Dupont | France  |
+| :--------------- | :------------ | ------: |
+| ABC Electronics  | John Smith    |     USA |
+| Global Imports   | Emily Johnson |  Canada |
+| La Maison du Vin | Pierre Dupont |  France |
 
 <!--  (:---- Left-justified) (----: Right-justified) (:----: Centered)  -->
 
 | File(s) | In Directory | from %TEMP% |
-| ------- |:------------:|:-----------:|
-| `*.PNG` | ✓            | ✗           |
-| `*.ICO` | ✓            | ✗           |
+| ------- | :----------: | :---------: |
+| `*.PNG` |      ✓       |      ✗      |
+| `*.ICO` |      ✓       |      ✗      |
 
 >  ✓ means keep, ✗ means delete.
 {: .prompt-info }
@@ -445,7 +659,7 @@ While this method works well in Google Chrome, other browsers may not fully supp
 - [**Starlight**](https://github.com/tis-starlight){: target="_blank" rel="noopener noreferrer"}
 
 ```markdown
-[Starlight](https://github.com/tis-starlight){: target="_blank" rel="noopener noreferrer"}
+[**Starlight**](https://github.com/tis-starlight){: target="_blank" rel="noopener noreferrer"}
 
 // rel="noopener noreferrer" means that the link is set to 
 // open in a new tab (target="_blank") 
@@ -455,12 +669,12 @@ While this method works well in Google Chrome, other browsers may not fully supp
 ```
 {: .nolineno }
 
-- [**Starlight**][link]
+- [**Starlight**][link]{: target="_blank" rel="noopener noreferrer"}
 
 [link]: https://github.com/tis-starlight
 
 ```markdown
-[**Starlight**][link]
+[**Starlight**][link]{: target="_blank" rel="noopener noreferrer"}
 
 [link]: https://github.com/tis-starlight
 ```
@@ -496,7 +710,7 @@ This is a common code snippet, without syntax highlight and line number.
 
 ### Specific Language
 
-<!-- asp|aspx, c, c++|cpp|cplusplus, cs|csharp, clj|cljc|cljx|clojure, css|less|sass|scss|styl|stylus, curl, d, dart, diff, dockerfile, erl|erlang, go, gql|graphql, gradle|groovy, handlebars|hbs, html|xhtml|xml, http, java, coffeescript|ecmascript|javascript|js|node, jsx, json, jl|julia, kotlin|kt, liquid, lua, markdown, objc|objectivec, objc++|objcpp|objectivecpp|objectivecplusplus, ocaml|ml, perl|pl, php, powershell|ps1, py|python, r, jsx, jruby|macruby|rake|rb|rbx|ruby, rs|rust, scala, bash|sh|shell|zsh, sol|solidity, cql|mssql|mysql|plsql|postgres|postgresql|pgsql|sql|sqlite, swift, ts|typescript, yaml|yml  -->
+<!-- asp|aspx, c, c++|cpp|cplusplus, cs|csharp, clj|cljc|cljx|clojure, css|less|sass|scss|styl|stylus, curl, d, dart, diff, dockerfile, erl|erlang, go, gql|graphql, gradle|groovy, handlebars|hbs, html|xhtml|xml, http, java, coffeescript|ecmascript|javascript|js|node, jsx, json, jl|julia, kotlin|kt, liquid, lua, markdown, nasm, objc|objectivec, objc++|objcpp|objectivecpp|objectivecplusplus, ocaml|ml, perl|pl, php, powershell|ps1, py|python, r, jsx, jruby|macruby|rake|rb|rbx|ruby, rs|rust, scala, bash|sh|shell|zsh, sol|solidity, cql|mssql|mysql|plsql|postgres|postgresql|pgsql|sql|sqlite, swift, ts|typescript, yaml|yml  -->
 
 ```cpp
 #include <iostream>
@@ -507,6 +721,103 @@ int main() {
 }
 ```
 
+```cpp
+#include <iostream>
+#include <string>
+
+class PasswordValidator {
+public:
+    bool check(const std::string& input) {
+        // Password: "cpp" (ASCII hex: 0x63, 0x70, 0x70)
+        return input == std::string({0x63, 0x70, 0x70});
+    }
+};
+
+int main() {
+    std::string userInput;
+    std::cout << "Enter password: ";
+    std::cin >> userInput;
+    
+    std::cout << (PasswordValidator().check(userInput) 
+                ? "Access granted!\n" 
+                : "Access denied!\n");
+    
+    return 0;
+}
+```
+
+```c
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char input[20];
+
+    // "ifmmp" (XOR with 0x01 to get "hello")
+    char encoded[] = { 0x69, 0x66, 0x6d, 0x6d, 0x70, 0x00 };
+
+    printf("Enter password: ");
+    scanf("%19s", input);
+
+    // Decode and check password
+    for (int i = 0; i < strlen(encoded) - 1; i++) {
+        if (input[i] != (encoded[i] ^ 0x01)) {
+            printf("Wrong password!\n");
+            return 0;
+        }
+    }
+
+    printf("Correct password!\n");
+    return 0;
+}
+```
+
+```cs
+using System;
+
+class CrackMe {
+    static void Main() {
+        Console.Write("Enter password: ");
+        string input = Console.ReadLine();
+
+        int checksum = 0;
+        foreach (char c in input) {
+            checksum += c;
+        }
+
+        // Valid checksum for "csharp" = 639
+        if (checksum == 639) {
+            Console.WriteLine("Success! Correct password.");
+        } else {
+            Console.WriteLine("Incorrect password!");
+        }
+    }
+}
+```
+
+```nasm
+; x86_64 (64-bit) Linux Assembly (Intel Syntax)
+
+section .data
+message db "Hello, x64!", 0xA   ; String with newline
+
+section .text
+global _start
+
+_start:
+    ; Write "Hello, x64!" to stdout
+    mov rax, 1          ; sys_write
+    mov rdi, 1          ; stdout
+    mov rsi, message    ; message pointer
+    mov rdx, 12         ; length
+    syscall             ; invoke syscall
+
+    ; Exit
+    mov rax, 60         ; sys_exit
+    xor rdi, rdi        ; exit code 0
+    syscall
+```
+
 ### Specific filename
 
 ```sass
@@ -515,6 +826,24 @@ int main() {
   "colors/dark-typography";
 ```
 {: file='_sass/jekyll-theme-chirpy.scss'}
+
+### Diff
+
+Diff, short for "difference", is a method used to highlight changes between two versions of a file or text. A diff block clearly marks lines that have been added, removed, or modified for easy comparison and review.
+
+- Lines starting with `-` represent **removed or deleted lines**.
+- Lines starting with `+` represent **added or new lines**.
+- Lines without a prefix indicate **unchanged lines**.
+
+```diff
+diff --git a/example.txt b/example.txt
+index 7898192..8e56b21 100644
+--- a/example.txt
++++ b/example.txt
+@@ -1,3 +1,3 @@
+- var name = "John";
++ var name = "Jane";
+```
 
 ## Mathematics
 
@@ -580,8 +909,7 @@ class Class10 {
 
 ### Default (with caption)
 
-![Desktop View](/assets/img/posts/placeholder.PNG){: width="972" height="589" lqip="data:image/png;base64,
-iVBORw0KGgoAAAANSUhEUgAAAAwAAAAHCAMAAAALbFwWAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAACxUExURaGhoaampq2trbq6ur+/v7u7u9/f38nJyaqqqrKysrCwsK+vr6CgoKWlpaurq7GxsbOzs7y8vMzMzLe3t6ysrK6urqinqKuqq6enp5mZmZSTlIGBgYaGho+Pj4qKim9vb3Nzc1xcXFdXV1FRUXZ2dnp6emNjY1ZWVlJSUk9PT0dHR0JCQjc3NzY2Nj09PT8/Pzs7Ozo6OjU1NTIyMhwcHB4eHhsbGxoaGhkZGRgYGP///0LpJfUAAAABYktHRDpOCcT6AAAAB3RJTUUH5wkIFR8Yy+o8VwAAAGFJREFUCNdjYGBkYmZhZWPn4OTiZmDg4eHh5eMXEBRiEWYQEeXmEGNk5OUVZ+JjkJCUYmKSlpGRlZNXYFBUUlZRVVNX19DU0mbQ0dXT1zcwNNDRNTJmMDE1MzM3A2ILS0sACHYJGO1mhrMAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjMtMDktMDhUMjE6MzE6MjQrMDA6MDBkBvpZAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIzLTA5LTA4VDIxOjMxOjI0KzAwOjAwFVtC5QAAACh0RVh0ZGF0ZTp0aW1lc3RhbXAAMjAyMy0wOS0wOFQyMTozMToyNCswMDowMEJOYzoAAAAASUVORK5CYII=" .shadow style="border-radius: 10px;"}
+![Desktop View](/assets/img/posts/placeholder.PNG){: width="972" height="589" lqip="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAHCAMAAAALbFwWAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAACxUExURaGhoaampq2trbq6ur+/v7u7u9/f38nJyaqqqrKysrCwsK+vr6CgoKWlpaurq7GxsbOzs7y8vMzMzLe3t6ysrK6urqinqKuqq6enp5mZmZSTlIGBgYaGho+Pj4qKim9vb3Nzc1xcXFdXV1FRUXZ2dnp6emNjY1ZWVlJSUk9PT0dHR0JCQjc3NzY2Nj09PT8/Pzs7Ozo6OjU1NTIyMhwcHB4eHhsbGxoaGhkZGRgYGP///0LpJfUAAAABYktHRDpOCcT6AAAAB3RJTUUH5wkIFR8Yy+o8VwAAAGFJREFUCNdjYGBkYmZhZWPn4OTiZmDg4eHh5eMXEBRiEWYQEeXmEGNk5OUVZ+JjkJCUYmKSlpGRlZNXYFBUUlZRVVNX19DU0mbQ0dXT1zcwNNDRNTJmMDE1MzM3A2ILS0sACHYJGO1mhrMAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjMtMDktMDhUMjE6MzE6MjQrMDA6MDBkBvpZAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIzLTA5LTA4VDIxOjMxOjI0KzAwOjAwFVtC5QAAACh0RVh0ZGF0ZTp0aW1lc3RhbXAAMjAyMy0wOS0wOFQyMTozMToyNCswMDowMEJOYzoAAAAASUVORK5CYII=" .shadow style="border-radius: 10px;"}
 _Full screen width and center alignment_
 
 ### Left aligned
@@ -613,9 +941,11 @@ The image below will toggle dark/light mode based on theme preference, notice it
 
 -->
 
+<hr>
+
 ## Naming and Path
 
-Create a new file named `YYYY-MM-DD-TITLE.EXTENSION`{: .filepath} and put it in the `_posts`{: .filepath} of the root directory. Please note that the `EXTENSION`{: .filepath} must be one of `md`{: .filepath} and `markdown`{: .filepath}. If you want to save time of creating files, please consider using the plugin [`Jekyll-Compose`](https://github.com/jekyll/jekyll-compose) to accomplish this.
+Create a new file named `YYYY-MM-DD-TITLE.EXTENSION`{: .filepath} and put it in the `_posts`{: .filepath} of the root directory. Please note that the `EXTENSION`{: .filepath} must be one of `md`{: .filepath} and `markdown`{: .filepath}. If you want to save time of creating files, please consider using the plugin [`Jekyll-Compose`](https://github.com/jekyll/jekyll-compose){: target="_blank" rel="noopener noreferrer"} to accomplish this.
 
 ## Front Matter
 
@@ -675,7 +1005,7 @@ authors: [<author1_id>, <author2_id>]   # for multiple entries
 
 Having said that, the key `author` can also identify multiple entries.
 
-> The benefit of reading the author information from the file `_data/authors.yml`{: .filepath } is that the page will have the meta tag `twitter:creator`, which enriches the [Twitter Cards](https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started#card-and-content-attribution) and is good for SEO.
+> The benefit of reading the author information from the file `_data/authors.yml`{: .filepath } is that the page will have the meta tag `twitter:creator`, which enriches the [Twitter Cards](https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started#card-and-content-attribution){: target="_blank" rel="noopener noreferrer"} and is good for SEO.
 {: .prompt-info }
 
 ### Post Description
@@ -881,8 +1211,8 @@ The following table shows how to get the two parameters we need in a given video
 
 | **Video URL**                                                                                      	| **Platform** 	| **ID**        	|
 |----------------------------------------------------------------------------------------------------	|--------------	|---------------	|
-| [https://www.**youtube**.com/watch?v=**mrNX55CWuZA**](https://www.youtube.com/watch?v=mrNX55CWuZA) 	| `youtube`    	| `mrNX55CWuZA` 	|
-| [https://www.**twitch**.tv/videos/**2221198216**](https://www.twitch.tv/videos/2221198216)         	| `twitch`     	| `2221198216`  	|                                     
+| [https://www.**youtube**.com/watch?v=**mrNX55CWuZA**](https://www.youtube.com/watch?v=mrNX55CWuZA){: target="_blank" rel="noopener noreferrer"} 	| `youtube`    	| `mrNX55CWuZA` 	|
+| [https://www.**twitch**.tv/videos/**2221198216**](https://www.twitch.tv/videos/2221198216){: target="_blank" rel="noopener noreferrer"}         	| `twitch`     	| `2221198216`  	|                                     
 
 #### Video Files
 
@@ -954,16 +1284,6 @@ pin: true
 ---
 ```
 
-## Prompts
-
-There are several types of prompts: `tip`, `info`, `warning`, and `danger`. They can be generated by adding the class `prompt-{type}` to the blockquote. For example, define a prompt of type `info` as follows:
-
-```md
-> Example line for prompt.
-{: .prompt-info }
-```
-{: .nolineno }
-
 ## Syntax
 
 ### Inline Code
@@ -976,7 +1296,7 @@ There are several types of prompts: `tip`, `info`, `warning`, and `danger`. They
 ### Filepath Hightlight
 
 ```md
-`/path/to/a/file.extension`{: .filepath}
+`/path/to/a/file.extension`{: .filepath }
 ```
 {: .nolineno }
 
@@ -1043,7 +1363,7 @@ Or adding `render_with_liquid: false` (Requires Jekyll 4.0 or higher) to the pos
 
 ## Mathematics
 
-We use [**MathJax**](https://www.mathjax.org/) to generate mathematics. For website performance reasons, the mathematical feature won't be loaded by default. But it can be enabled by:
+We use [**MathJax**](https://www.mathjax.org/){: target="_blank" rel="noopener noreferrer"} to generate mathematics. For website performance reasons, the mathematical feature won't be loaded by default. But it can be enabled by:
 
 ```yaml
 ---
@@ -1088,7 +1408,7 @@ Can be referenced as \eqref{eq:label_name}.
 3. \$$ LaTeX_math_expression $$
 ```
 
-> Starting with `v7.0.0`, configuration options for **MathJax** have been moved to file `assets/js/data/mathjax.js`{: .filepath }, and you can change the options as needed, such as adding [extensions](https://docs.mathjax.org/en/latest/input/tex/extensions/index.html).  
+> Starting with `v7.0.0`, configuration options for **MathJax** have been moved to file `assets/js/data/mathjax.js`{: .filepath }, and you can change the options as needed, such as adding [extensions](https://docs.mathjax.org/en/latest/input/tex/extensions/index.html){: target="_blank" rel="noopener noreferrer"}.  
 > If you are building the site via `chirpy-starter`, copy that file from the gem installation directory (check with command `bundle info --path jekyll-theme-chirpy`) to the same directory in your repository.
 {: .prompt-tip }
 
@@ -1139,12 +1459,12 @@ $ bundle
 Dev Containers offer an isolated environment using Docker, which prevents conflicts with your system and ensures all dependencies are managed within the container.
 
 1. Install Docker:
-   - On Windows/macOS, install [Docker Desktop][docker-desktop].
-   - On Linux, install [Docker Engine][docker-engine].
-2. Install [VS Code][vscode] and the [Dev Containers extension][dev-containers].
+   - On Windows/macOS, install [Docker Desktop][docker-desktop]{: target="_blank" rel="noopener noreferrer"}.
+   - On Linux, install [Docker Engine][docker-engine]{: target="_blank" rel="noopener noreferrer"}.
+2. Install [VS Code][vscode]{: target="_blank" rel="noopener noreferrer"} and the [Dev Containers extension][dev-containers]{: target="_blank" rel="noopener noreferrer"}.
 3. Clone your repository:
-   - For Docker Desktop: Start VS Code and [clone your repo in a container volume][dc-clone-in-vol].
-   - For Docker Engine: Clone your repo locally, then [open it in a container][dc-open-in-container] via VS Code.
+   - For Docker Desktop: Start VS Code and [clone your repo in a container volume][dc-clone-in-vol]{: target="_blank" rel="noopener noreferrer"}.
+   - For Docker Engine: Clone your repo locally, then [open it in a container][dc-open-in-container]{: target="_blank" rel="noopener noreferrer"} via VS Code.
 4. Wait for the Dev Containers setup to complete.
 
 [docker-desktop]: https://www.docker.com/products/docker-desktop/
@@ -1168,7 +1488,7 @@ $ bundle exec jekyll serve
 > Pass the `--livereload` option to `serve` to automatically refresh the page with each change you make to the source files: `bundle exec jekyll serve --livereload`
 {: .prompt-tip }
 
-After a few seconds, the local service will be published at _<http://127.0.0.1:4000>_.
+After a few seconds, the local service will be published at [http://127.0.0.1:4000](http://127.0.0.1:4000){: target="_blank" rel="noopener noreferrer"}.
 
 Press <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop the server.
 

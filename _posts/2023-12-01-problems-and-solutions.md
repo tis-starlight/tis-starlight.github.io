@@ -1,5 +1,6 @@
 ---
 title: 0 - Problems and Solutions
+description: Exploring different types of problems, the problem-solving process, and the role of algorithms in finding solutions.
 # author: Starlight
 date: 2023-12-01 04:00:00 +0500
 categories: [Programming Languages, -Programming 101]
@@ -93,15 +94,15 @@ These involve developing programs to regulate and optimize processes in various 
 
 ## Problem Solving
 
-[Problem Solving](https://en.wikipedia.org/wiki/Problem_solving) is the systematic process of identifying and resolving issues, a skill honed through a well-organized approach. We encounter diverse problems daily, each possesses unique characteristics, with some being particularly challenging, demanding careful attention for effective solutions.
+[Problem Solving](https://en.wikipedia.org/wiki/Problem_solving){: target="_blank" rel="noopener noreferrer"} is the systematic process of identifying and resolving issues, a skill honed through a well-organized approach. We encounter diverse problems daily, each possesses unique characteristics, with some being particularly challenging, demanding careful attention for effective solutions.
 
 **Solutions to problems** can vary in terms of speed, cost, and reliability, emphasizing the importance of selecting the most suitable option. Various strategies, techniques, and tools, including the use of computers, contribute to problem resolution.
 
-In [Computer Programming](https://en.wikipedia.org/wiki/Computer_programming) (coding), a programmer writes the instructions that a computer executes to address complex problems. Therefore, the ability to solve problems is integral to becoming a good programmer.
+In [Computer Programming](https://en.wikipedia.org/wiki/Computer_programming){: target="_blank" rel="noopener noreferrer"} (coding), a programmer writes the instructions that a computer executes to address complex problems. Therefore, the ability to solve problems is integral to becoming a good programmer.
 
 ## Algorithm
 
-An [algorithm](https://en.wikipedia.org/wiki/Algorithm) is a step-by-step procedure for solving a specific problem. It serves as a blueprint or a set of clear instructions that can be followed to accomplish a particular task. Algorithms are often independent of programming languages and are more focused on the logical sequence of steps needed for a solution. They provide a high-level view of the solution without specifying the exact syntax or structure required in a particular programming language. The process of solving a problem becomes simpler and easier with help of algorithm. lt is better to write an algorithm before writing the actual computer program.
+An [algorithm](https://en.wikipedia.org/wiki/Algorithm){: target="_blank" rel="noopener noreferrer"} is a step-by-step procedure for solving a specific problem. It serves as a blueprint or a set of clear instructions that can be followed to accomplish a particular task. Algorithms are often independent of programming languages and are more focused on the logical sequence of steps needed for a solution. They provide a high-level view of the solution without specifying the exact syntax or structure required in a particular programming language. The process of solving a problem becomes simpler and easier with help of algorithm. lt is better to write an algorithm before writing the actual computer program.
 
 <!-- 
 Mermaid Syntax:
@@ -165,7 +166,7 @@ Input: Two numbers, num1 and num2
 
 #### Pseudocode
 
-[Pseudocode](https://en.wikipedia.org/wiki/Pseudocode) is a high-level description of an algorithm that combines elements of natural language with some programming language-like constructs. It's not tied to a specific programming language and provides a clear, readable representation of the algorithm's logic.
+[Pseudocode](https://en.wikipedia.org/wiki/Pseudocode){: target="_blank" rel="noopener noreferrer"} is a high-level description of an algorithm that combines elements of natural language with some programming language-like constructs. It's not tied to a specific programming language and provides a clear, readable representation of the algorithm's logic.
 
 ```
 procedure BubbleSort(A: list of sortable items)
@@ -185,7 +186,7 @@ print "Sorted array:", array
 
 #### Flowchart
 
-[Flowchart](https://en.wikipedia.org/wiki/Flowchart) is combination of two words "flow" and "chart". A _chart_ consists of different symbols or shapes to represent an action or decision. _Flow_ indicates the direction of processing that takes place in the program.
+[Flowchart](https://en.wikipedia.org/wiki/Flowchart){: target="_blank" rel="noopener noreferrer"} is combination of two words "flow" and "chart". A _chart_ consists of different symbols or shapes to represent an action or decision. _Flow_ indicates the direction of processing that takes place in the program.
 
 A flowchart is a visual or graphical representation of a process or algorithm. It uses different shapes and arrows to depict the flow of control in a system. Each shape represents a specific action or decision, and the arrows show the direction of flow. Flowcharts are useful for visualizing the overall structure of a solution, making it easier to understand and communicate. They are particularly valuable in planning the logic of a program before actual coding begins.
 

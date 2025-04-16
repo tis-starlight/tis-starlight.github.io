@@ -56,9 +56,9 @@ The history of information security is a journey that has evolved alongside tech
 
 ## 📚 Books
 
-- **Computer Security: Art and Science** --- Matthew Bishop  [↗](https://www.amazon.com/dp/0201440997){: target="_blank" rel="noopener noreferrer"}
-- **Cryptography and Network Security: Principles and Practice** --- William Stalling  [↗](https://www.amazon.com/dp/0133354695){: target="_blank" rel="noopener noreferrer"}
-- **Principles of Information Security** --- Michael E. Whitman, Herbert J. Mattord  [↗](https://www.amazon.com/dp/1423901770){: target="_blank" rel="noopener noreferrer"}
+- **Computer Security: Art and Science** --- Matthew Bishop ([Amazon](https://www.amazon.com/dp/0321712331){: target="_blank" rel="noopener noreferrer"})  
+- **Cryptography and Network Security: Principles and Practice** --- William Stallings ([Amazon](https://www.amazon.com/dp/0133354695){: target="_blank" rel="noopener noreferrer"})  
+- **Principles of Information Security** --- Michael E. Whitman and Herbert J. Mattord ([Amazon](https://www.amazon.com/dp/035750643X){: target="_blank" rel="noopener noreferrer"})
 
 ## Why Do We need Information Security?
 

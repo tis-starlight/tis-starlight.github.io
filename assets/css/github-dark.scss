@@ -1,0 +1,213 @@
+.highlight .gp {
+  color: #87939d;
+}
+.highlight table td {
+  padding: 5px;
+}
+.highlight table pre {
+  margin: 0;
+}
+/* Code block background */
+.highlight,
+.highlight .w {
+  color: #d0d0d0;
+  background-color: #151515; /* #161b22 */
+}
+/* Error (@ or #) */
+.highlight .err {
+  color: var(--code-color); /* #151515, #f0f6fc */
+  background-color: #00000000; /* #ac4142 , #8e1519 */
+}
+.highlight .c,  /* Standard comment (Basic/Markup comment) */
+.highlight .ch, /* Comment heading */
+.highlight .cd, /* Comment documentation */
+.highlight .cm, /* Comment multiline (language paired/multi-line comment) */
+.highlight .c1, /* Comment single (language single-line comment) */
+.highlight .cs { /* Comment special */
+  color: #848484; /* #8b949e, #a1a1a1 */
+}
+/* Comment preprocessor (language header) */
+.highlight .cpf {
+  color: #a1a1a1;
+}
+/* Preprocessor directive */
+.highlight .cp {
+  color: #f4bf75;
+}
+/* markup tag name */
+.highlight .nt {
+  color: #f4bf75; /* #7ee787 */
+}
+.highlight .o,  /* Operators */
+.highlight .ow {  /* Word operators (e.g., 'and') */
+  color: #79c0ff; /* #d0d0d0 */
+}
+.highlight .p,  /* Punctuation */
+.highlight .pi {  /* Inline Punctuation */
+  color: #d0d0d0;
+}
+/* Diff line addition */
+.highlight .gi {
+  color: #aff5b4; /* #90a959 */
+  background-color: #033a16; /* #90a959 */
+}
+/* Diff line deletion */
+.highlight .gd {
+  color: #ffdcd7; /* #f08a8b */
+  background-color: #67060c; /* #320000 */
+}
+/* Diff/Git commit header */
+.highlight .gh {
+  color: #66a2ff; /* #1f6feb, #6a9fb5 */
+  background-color: #151515;
+  font-weight: bold;
+}
+.highlight .k, /* General keywords */
+.highlight .kn, /* Namespace keywords */
+.highlight .kp, /* Pseudo keywords */
+.highlight .kr, /* Reserved keywords */
+.highlight .kv {  /* Keyword variables */
+  color: #ff7b72; /* #aa759f */
+}
+/* Keyword constants (true/false/null) */
+.highlight .kc {
+  color: #79c0ff; /* #d28445 */
+}
+/* Type keywords (int, string) */
+.highlight .kt {
+  color: #ff7b72; /* #d28445 */
+}
+/* Declaration keywords (function, class) */
+.highlight .kd {
+  color: #ff7b72; /* #d28445 */
+}
+.highlight .s, /* Strings */
+.highlight .sb, /* Backtick strings */
+.highlight .sc, /* Single char strings */
+.highlight .dl, /* Delimiter */
+.highlight .sd, /* Documentation strings */
+.highlight .s2, /* Double quoted */
+.highlight .sh, /* Here-docs */
+.highlight .sx, /* Other strings */
+.highlight .s1 { /* Single quoted */
+  color: #a5d6ff; /* #8bc34a */
+}
+/* Symbols */
+.highlight .ss {
+  color: #a5d6ff; /* #8bc34a */
+}
+/* String attributes/interpolation */
+.highlight .sa {
+  color: #a5d6ff; /* #aa759f */
+}
+/* Regular expressions */
+.highlight .sr {
+  color: #7ee787; /* #75b5aa */
+}
+/* String interpolated values */
+.highlight .si {
+  color: #e78a57; /* #c9d1d9 */
+}
+/* Escape sequences */
+.highlight .se {
+  color: #a5d6ff; /* #b76d45 */
+}
+/* Namespace names */
+.highlight .nn {
+  color: #ffa657;
+}
+/* Class names */
+.highlight .nc {
+  color: #ffa657;
+}
+/* Constant names */
+.highlight .no {
+  color: #ffa657;
+}
+/* Attributes & functions */
+.highlight .na {
+  color: #71a9c1; /* #7ee787 */
+}
+.highlight .l,
+.highlight .ld,
+.highlight .m, /* Numbers */
+.highlight .mb, /* Binary */
+.highlight .mf, /* Float */
+.highlight .mh, /* Hex */
+.highlight .mi, /* Integer */
+.highlight .il, /* Imaginary */
+.highlight .mo, /* Octal */
+.highlight .mx { /* Hex */
+  color: #79c0ff; /* #8bc34a */
+}
+/* Generic output/result text */
+.highlight .gr {
+  color: #f0f6fc;
+}
+/* Namespace identifiers */
+.highlight .ni {
+  color: #c9d1d9;
+}
+/* Emphasized text (italic) */
+.highlight .ge {
+  color: #c9d1d9;
+  font-style: italic;
+}
+/* Strong text (bold) */
+.highlight .gs {
+  color: #c9d1d9;
+  font-weight: bold;
+}
+/* Built-in constants (null, true, false) */
+.highlight .nb {
+  color: #ffa657;
+}
+/* Built-in pseudo-variables (self, this) */
+.highlight .bp {
+  color: #79c0ff;
+}
+.highlight .nf, /* Function names */
+.highlight .fm { /* Method names */
+  color: #d2a8ff;
+}
+/* Decorator names */
+.highlight .nd {
+  color: #d2a8ff;
+}
+.highlight .nv, /* Variables */
+.highlight .vc, /* Class variables */
+.highlight .vg, /* Global variables */
+.highlight .vi, /* Instance variables */
+.highlight .vm { /* Module variables */
+  color: #79c0ff;
+}
+/* Exceptions/errors */
+.highlight .ne {
+  color: #79c0ff;
+}
+/* Labels */
+.highlight .nl {
+  color: #79c0ff;
+}
+/* Python built-ins */
+.highlight .py {
+  color: #79c0ff;
+}
+/* Git untracked/ignored */
+.highlight .gu {
+  color: #1f6feb;
+  font-weight: bold;
+}
+/* Git line numbers */
+.highlight .gl {
+  color: #8b949e;
+}
+/* Git metadata */
+.highlight .gt {
+  color: #8b949e;
+}
+/* Git emphasized status */
+.highlight .ges {
+  font-weight: bold;
+  font-style: italic;
+}

@@ -16,6 +16,10 @@
   icon: "fas fa-heart"
   url:  "https://linktr.ee/tis.starlight"
 
+# - type: discord
+#   icon: "fab fa-discord"
+#   url:  "https://discord.gg/invite-code"
+
 # - type: twitter
 #   icon: "fa-brands fa-x-twitter"
 

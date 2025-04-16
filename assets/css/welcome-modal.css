@@ -1,0 +1,288 @@
+.modal-overlay {
+  --timer-duration: 8s;
+  --primary-color: #3b82f6;
+  --bg-color: var(--main-bg);
+  --border-color: var(--sidebar-border-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  backdrop-filter: blur(4px);
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.modal-content {
+  background: var(--bg-color);
+  color: var(--text-color);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  max-width: 500px;
+  width: 90%;
+  margin: 1rem;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  position: relative;
+  border: 1px solid var(--border-color);
+  animation: modalEnter 0.3s ease-out;
+}
+
+@keyframes modalEnter {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes modalExit {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+}
+
+.modal-timer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--primary-color, #3b82f6);
+  transform-origin: left center;
+  transform: scaleX(1);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.modal-title {
+  font-size: 1.25rem;
+  line-height: 1.3;
+  padding-right: 1rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  padding: 0.25rem;
+  cursor: pointer;
+  color: var(--text-muted-color);
+  transition: opacity 0.2s;
+  flex-shrink: 0;
+}
+
+.modal-close:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+  border-radius: 0.2rem;
+}
+
+.close-icon {
+  width: 28px;
+  height: 28px;
+}
+
+.modal-close:hover {
+  opacity: 0.8;
+}
+
+.modal-actions {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+body.modal-open {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.nav-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.25rem;
+  padding: 0.75rem;
+  font-size: 1rem;
+  min-height: 80px;
+  word-wrap: break-word;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  background: var(--bg-color);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+}
+
+.nav-btn:focus {
+  outline: 2px solid var(--primary-color);
+}
+
+.nav-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background: var(--bg-color);
+}
+
+.nav-btn .fas {
+  transition: all 0.3s ease;
+}
+.nav-btn:hover .fa-heart {
+  animation: heartPulse 1.5s infinite;
+}
+.nav-btn:hover .fa-home {
+  animation: colorShift 2s infinite;
+}
+.nav-btn:hover .fa-user {
+  animation: colorSpin 1.8s infinite;
+}
+.nav-btn:hover .fa-file-alt {
+  animation: resumeGlow 1.8s infinite;
+}
+
+@keyframes heartPulse {
+  0% {
+    color: #ff4757;
+  }
+  50% {
+    color: #ff6b81;
+  }
+  100% {
+    color: #ff4757;
+  }
+}
+
+@keyframes colorShift {
+  0% {
+    color: #2ed573;
+  }
+  50% {
+    color: #7bed9f;
+  }
+  100% {
+    color: #2ed573;
+  }
+}
+
+@keyframes colorSpin {
+  0% {
+    color: #1e90ff;
+  }
+  50% {
+    color: #70a1ff;
+  }
+  100% {
+    color: #1e90ff;
+  }
+}
+
+@keyframes resumeGlow {
+  0% {
+    color: #ffa502;
+  }
+  50% {
+    color: #ffd700;
+  }
+  100% {
+    color: #ffa502;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-content {
+    padding: 1.25rem;
+    border-radius: 0.5rem;
+    max-width: 320px;
+  }
+
+  .modal-title {
+    font-size: 1.2rem;
+    line-height: 1.25;
+  }
+
+  .modal-message {
+    font-size: 1rem;
+  }
+
+  .nav-btn {
+    min-height: 70px;
+    padding: 0.75rem;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .modal-content {
+    max-width: 400px;
+    padding: 1.5rem;
+  }
+
+  .modal-title {
+    font-size: 1.3rem;
+  }
+
+  .modal-message {
+    font-size: 1.1rem;
+  }
+
+  .nav-btn {
+    min-height: 90px;
+    font-size: 1.25rem;
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .modal-content {
+    max-width: 500px;
+    padding: 2rem;
+  }
+
+  .modal-title {
+    font-size: 1.6rem;
+  }
+
+  .modal-message {
+    font-size: 1.2rem;
+  }
+
+  .nav-btn {
+    min-height: 100px;
+    font-size: 1.3rem;
+    gap: 0.5rem;
+  }
+}

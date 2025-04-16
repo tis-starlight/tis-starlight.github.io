@@ -1,0 +1,29 @@
+<div
+  class="modal-overlay"
+  id="welcomeModal"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="modalTitle">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2 class="modal-title" id="modalTitle">Welcome</h2>
+      <button class="modal-close" aria-label="Close dialog">
+        <svg class="close-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+    <div class="modal-timer">
+      <div class="progress-bar"></div>
+    </div>
+    <div class="modal-body">
+      <p class="modal-message">Quick navigation:</p>
+      <div class="modal-actions">
+        <a href="{{ '/' | relative_url }}" class="nav-btn"><i class="fas fa-home"></i> Home</a>
+        <a href="{{ '/about/' | relative_url }}" class="nav-btn"><i class="fas fa-user"></i> About</a>
+        <a href="{{ '/cv/' | relative_url }}" class="nav-btn"><i class="fas fa-file-alt"></i> CV/Resume</a>
+        <a href="https://linktr.ee/tis.starlight" class="nav-btn" target="_blank"><i class="fas fa-heart"></i> LinkTree</a>
+      </div>
+    </div>
+  </div>
+</div>
