@@ -188,23 +188,6 @@ details.details-beauty[open] {
   /* animation: gentle-bounce 0.3s ease; */
 }
 
-/* Theme handling */
-html:not([data-mode]), html[data-mode=light] {
-  --details-bg: #f6f8fa;
-  --details-text: #34343c;
-  --details-accent-1: #865ab7;
-  --details-accent-2: #ff6b6b;
-  --details-shadow: rgba(134, 90, 183, 0.1);
-}
-
-html:not([data-mode]), html[data-mode=dark] {
-  --details-bg: #151515;
-  --details-text: #afb0b1;
-  --details-accent-1: #8f7dc5;
-  --details-accent-2: #cc77a3;
-  --details-shadow: rgba(0, 0, 0, 0.3);
-}
-
 @media (prefers-reduced-motion: reduce) {
   details.details-beauty,
   details.details-beauty > summary {

@@ -10,7 +10,7 @@
 /* Append your custom style below */
 /* Append styles directly or import their files */
 
-/* Avoid using Prettier document formatting or saving (Ctrl+S)
+/* Avoid using Prettier for document formatting or on save (e.g., Ctrl+S / formatOnSave). Instead, add this file to .prettierignore to exclude it from formatting.
  * https://github.com/cotes2020/jekyll-theme-chirpy/issues/2353#issuecomment-2806871027
  * https://github.com/cotes2020/jekyll-theme-chirpy/discussions/2345#discussioncomment-12811297
  * https://github.com/cotes2020/jekyll-theme-chirpy/discussions/2172#discussioncomment-11867909
@@ -129,30 +129,52 @@ html:not([data-mode]) .highlight .err, html[data-mode=dark] .highlight .err {
 }
 */
 
-/* --- Code block syntax highlight themes from (rouge/rougify) for Dark mode --- */
+/* --- Code Block Syntax Highlight Themes (Rouge/Rougify) for Light and Dark Modes --- */
 /* https://github.com/cotes2020/jekyll-theme-chirpy/discussions/2298#discussioncomment-12614420 */
 
-// Enable only one of the following imports for dark mode at a time.
-// To use a theme, uncomment it and make sure the others are commented out.
+// Enable only one import per mode at a time.
+// To apply a theme, uncomment the desired line and ensure all others remain commented out.
+
+/* Applied when the system is in light mode or explicitly set to light */
+html[data-mode='light'],
+html:not([data-mode]) {
+  @import 'github-light.scss';
+  // @import 'gruvbox-light.scss';
+
+  --details-bg: #f6f8fa;
+  --details-text: #34343c;
+  --details-accent-1: #865ab7;
+  --details-accent-2: #ff6b6b;
+  --details-shadow: rgba(134, 90, 183, 0.1);
+}
+
+/* Applied when explicitly set to dark mode */
+html[data-mode='dark'] {
+  @import 'github-dark.scss';
+  // @import 'gruvbox-dark.scss';
+  // @import 'tulip.scss';
+
+  --details-bg: #151515;
+  --details-text: #afb0b1;
+  --details-accent-1: #8f7dc5;
+  --details-accent-2: #cc77a3;
+  --details-shadow: rgba(0, 0, 0, 0.3);
+}
+
+/* Fallback when the system preference is dark and no explicit mode is set */
 @media (prefers-color-scheme: dark) {
   html:not([data-mode]) {
     @import 'github-dark.scss';
     // @import 'gruvbox-dark.scss';
     // @import 'tulip.scss';
-  }
-}
 
-/* --- Code block syntax highlight themes from (rouge/rougify) for Light mode --- */
-/*
-// Enable only one of the following imports for light mode at a time.
-// To use a theme, uncomment it and make sure the others are commented out.
-@media (prefers-color-scheme: dark) {
-  html[data-mode=light] {
-    // @import 'github-light.scss';
-    // @import 'gruvbox-light.scss';
+    --details-bg: #151515;
+    --details-text: #afb0b1;
+    --details-accent-1: #8f7dc5;
+    --details-accent-2: #cc77a3;
+    --details-shadow: rgba(0, 0, 0, 0.3);
   }
 }
-*/
 
 /* ================================================== */
 
@@ -236,44 +258,14 @@ blockquote {
 */
 
 /*
-// Define custom colors for Light and Dark Mode or Override them
-
-//  Light Mode (Default + Explicit):
-//    - Applied when there is NO "data-mode" attribute (default to light mode).
-//    - Also applied when "data-mode=light" is explicitly set on the <html> tag.
-//    - This ensures that users see light mode unless they manually choose dark mode
-//      or their system is set to dark and no manual override exists.
-
-html:not([data-mode]), html[data-mode=light] {
-  --highlighter-rouge-color: #de6b18;
-  --inline-code-bg: #f3f3f3;
-  --link-underline-color: #dee2e6;
-}
-
-//  Dark Mode (Explicitly Set):
-//    - Applied ONLY when "data-mode=dark" is explicitly set on the <html> tag.
-//    - This allows users to manually override the system setting and force dark mode.
-//    - If a user has set dark mode manually, it will apply regardless of their OS setting.
-
-html[data-mode=dark] {
+dark mode:
   --highlight-bg-color: #151515;
   --highlighter-rouge-color: #de6b18;
   --inline-code-bg: #272822;
   --link-underline-color: rgb(82, 108, 150);
-}
 
-//  Dark Mode (Auto based on System Preference):
-//    - Applied ONLY when the user has NOT manually set a "data-mode" attribute.
-//    - If the user's system is set to dark mode, this will apply automatically.
-//    - If "data-mode=light" or "data-mode=dark" is set, this rule is ignored.
-//    - This ensures the website respects the user's OS-level preference unless overridden.
-
-@media (prefers-color-scheme: dark) {
-  html:not([data-mode]) {
-    --highlight-bg-color: #151515;
-    --highlighter-rouge-color: #de6b18;
-    --inline-code-bg: #272822;
-    --link-underline-color: rgb(82, 108, 150);
-  }
-}
+light mode:
+  --highlighter-rouge-color: #de6b18;
+  --inline-code-bg: #f3f3f3;
+  --link-underline-color: #dee2e6;
 */
