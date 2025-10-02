@@ -33,8 +33,11 @@ order: 4
 > To live is to suffer, to survive is to find some meaning in the suffering
 > --- Friedrich Nietzsche
 <!-- He who has a why to live can bear almost any how — Friedrich Nietzsche -->
+<!-- Research is to see what everybody else has seen, and to think what nobody else has thought — Albert Szent -->
 
-I'm a passionate game developer and digital artist with a solid academic background in computer science. Here, you'll find a wealth of unified resources covering a wide range of topics, all curated to streamline referencing and enhance your learning experience.
+I'm a passionate **game developer** and **digital artist** with a solid academic background in **Computer Science**. Currently, I am pursuing my **MS** in **Computer Science** as a *graduate student* at **National Textile University ([NTU](https://www.ntu.edu.pk/index.php){: target="_blank" rel="noopener noreferrer"}), Faisalabad, Pakistan**, where my journey is focused on *research* in the field, with a commitment to advancing the **Sustainable Development Goals ([SDGs](https://ntu.edu.pk/sustainability/){: target="_blank" rel="noopener noreferrer"})** to serve humanity and contribute to a sustainable future.
+
+Here, you'll find a wealth of unified resources covering a wide range of topics, all curated to streamline referencing, support academic growth and enhance your learning experience.
 
 Below is a list of languages, tools & technologies that I'm familiar with. You can explore various tabs in the sidebar for quick navigation. The [categories](/categories) tab contains properly categorized content, while the [archives](/archives) tab provides a timeline of when each post was written. In the top right corner, you'll find a search bar to help you quickly find specific content. Additionally, you can toggle between light and dark mode to suit your preferences.
 
@@ -66,14 +69,27 @@ All logos, trademarks, and associated materials related to "Starlight" are
 the exclusive property of Starlight and are not covered under the Creative-
 Commons license. Use of these elements requires explicit permission from Starlight.
 
+All official research outputs associated with my name—including, but not 
+limited to, published or unpublished theses, dissertations, academic papers,
+and technical reports, have been produced without the use of AI-generated content 
+and are free from plagiarism.  
+
+If you reference or build upon any of my research work, you must provide proper 
+attribution by citing my full name and including a direct link to the original 
+source. Unauthorized reproduction, misrepresentation, or failure to provide 
+appropriate citation may constitute academic misconduct and/or a violation of 
+intellectual property rights.
+
 All content on this site, including but not limited to text, images, and
 artwork, is strictly prohibited from being used for AI training purposes
 or incorporated into AI models. Please respect the 'noai' policy.
 
-Some content on this site may have undergone post-processing using AI tools such
-as Copilot, ChatGPT, DeepSeek, QuillBot, or Stealth Writer to improve quality. This
-processing may include correcting linguistic errors, addressing grammatical mistakes,
-summarizing content, or adjusting tone for clarity and consistency.
+Some non-academic content on this site may have undergone post-processing using 
+AI tools such as Copilot, ChatGPT, DeepSeek, QuillBot, or Stealth Writer to 
+improve quality. This processing may include correcting linguistic errors, 
+addressing grammatical mistakes, summarizing content, or adjusting tone
+for clarity and consistency. All substantive ideas, research, and original 
+writing remain entirely my own.
 
 The information provided on this website is for general informational purposes
 only. While we strive to ensure the accuracy and reliability of the content, we
@@ -105,7 +121,7 @@ decisions, please verify technical or legal information independently.
 If you have any concerns, notice any mistakes, or believe your content has been
 used without proper attribution, please feel free to contact me directly, leave
 a comment on the relevant post, or create an issue in the associated repository.
-I’m happy to assist and address any matters promptly.
+I'm happy to assist and address any matters promptly.
 
 Thank you for your understanding and cooperation.
 ... - .- .-. .-.. .. --. .... -
