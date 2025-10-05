@@ -17,16 +17,12 @@ order: 4
 <link rel="stylesheet" type='text/css' href="/assets/css/about.css" />
 <script src="/assets/js/about.js" defer></script>
 
-<!-- Shields.io | https://shields.io -->
-[![Linktree](https://img.shields.io/badge/Linktree-black?style=for-the-badge&logo=linktree)](https://linktr.ee/tis.starlight){: target="_blank" style="border-radius: 5px; overflow: hidden"} 
-[![GitHub](https://img.shields.io/badge/GitHub-black?style=for-the-badge&logo=github)](https://github.com/tis-starlight){: target="_blank" style="border-radius: 5px; overflow: hidden"}
-[![YouTube](https://img.shields.io/badge/YouTube-black?style=for-the-badge&logo=youtube&logoColor=red)](https://www.youtube.com/@tis-starlight){: target="_blank" style="border-radius: 5px; overflow: hidden"} <br>
-[![Instagram](https://img.shields.io/badge/Instagram-black?style=for-the-badge&logo=instagram)](https://www.instagram.com/tis.starlight){: target="_blank" style="border-radius: 5px; overflow: hidden"}
-[![ArtStation](https://img.shields.io/badge/ArtStation-black?style=for-the-badge&logo=artstation)](https://www.artstation.com/tis-starlight){: target="_blank" style="border-radius: 5px; overflow: hidden"}
-[![Behance](https://img.shields.io/badge/Behance-black?style=for-the-badge&logo=behance&logoColor=blue)](https://www.behance.net/tis-starlight){: target="_blank" style="border-radius: 5px; overflow: hidden"} <br>
-[![DeviantArt](https://img.shields.io/badge/Deviantart-black?style=for-the-badge&logo=deviantart)](https://www.deviantart.com/tis-starlight){: target="_blank" style="border-radius: 5px; overflow: hidden"}
-[![CG-Trader](https://img.shields.io/badge/CG_Trader-black?style=for-the-badge&logo=anycubic&logoColor=blue)](https://www.cgtrader.com/tis-starlight){: target="_blank" style="border-radius: 5px; overflow: hidden"}
-[![Sketchfab](https://img.shields.io/badge/Sketchfab-black?style=for-the-badge&logo=sketchfab)](https://sketchfab.com/tis-starlight){: target="_blank" style="border-radius: 5px; overflow: hidden"}
+<link rel="stylesheet" href="/assets/css/social.css" />
+<script src="/assets/js/social.js" defer></script>
+
+<hr class="social">
+<div id="socials"></div>
+<hr class="social">
 
 ## 👋 Hi!
 
@@ -59,6 +55,26 @@ Below is a list of languages, tools & technologies that I'm familiar with. You c
 
 <hr class="about">
 
+<div class="callout-info" markdown="1">
+<div class="title"> My Public PGP Key </div>
+<p>If you wish to send me an <i>encrypted message</i> or verify a <i>digitally signed email or file</i>, please use my <strong>official OpenPGP public key</strong> below. Any other keys claiming to be mine should be considered untrusted and potentially fraudulent. For regular correspondence, please contact me through standard communication channels.</p>
+  <ul>
+    <li><strong>Key ID:</strong><code class="language-plaintext highlighter-rouge">0508 6418 AFD5 5BDB</code></li>
+    <li><strong>Fingerprint:</strong><code class="language-plaintext highlighter-rouge">2BE9 3D34 535F 3776 4FF0 342C 0508 6418 AFD5 5BDB</code></li>
+    <li><strong>Created:</strong><code class="language-plaintext highlighter-rouge">2024-01-26</code></li>
+    <li><strong>Type:</strong><code class="language-plaintext highlighter-rouge">RSA 4096</code></li>
+    <li><strong>Owner (UID):</strong><code class="language-plaintext highlighter-rouge">Starlight (Work Key) &lt;136495168+tis-starlight@users.noreply.github.com&gt;</code></li>
+    <li>Download my <strong>PGP Public Key</strong> 🔑 (<code class="language-plaintext highlighter-rouge">pubkey.asc</code>) from any of the following keyservers:
+      <ul>
+        <li><a href="https://keys.openpgp.org/vks/v1/by-fingerprint/2BE93D34535F37764FF0342C05086418AFD55BDB" target="_blank" rel="noopener noreferrer">keys.openpgp.org</a></li>
+        <li><a href="https://keyserver.ubuntu.com/pks/lookup?search=2BE93D34535F37764FF0342C05086418AFD55BDB&fingerprint=on&op=index" target="_blank" rel="noopener noreferrer">keyserver.ubuntu.com</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+<hr class="about">
+
 ```
 © 2023 - 2025 Starlight - Some Rights Reserved.
 
@@ -69,10 +85,11 @@ All logos, trademarks, and associated materials related to "Starlight" are
 the exclusive property of Starlight and are not covered under the Creative-
 Commons license. Use of these elements requires explicit permission from Starlight.
 
-All official research outputs associated with my name—including, but not 
-limited to, published or unpublished theses, dissertations, academic papers,
-and technical reports, have been produced without the use of AI-generated content 
-and are free from plagiarism.  
+All official research outputs and publications associated with my name—including, 
+but not limited to, theses, dissertations, academic papers, technical reports, 
+and related materials—have been produced with academic integrity. To the best 
+of my knowledge, these works are original, free from plagiarism, and do not 
+incorporate AI-generated content.
 
 If you reference or build upon any of my research work, you must provide proper 
 attribution by citing my full name and including a direct link to the original 
@@ -127,38 +144,3 @@ Thank you for your understanding and cooperation.
 ... - .- .-. .-.. .. --. .... -
 ```
 {: file="Terms of Use, Disclaimer and Copyright Policy" }
-
-<!--
-
-<style>
-  .image-container {
-    border-radius: 20px;
-    overflow: hidden;
-    background-image: url('data:image/webp;base64,UklGRn4CAABXRUJQVlA4WAoAAAAgAAAAEAAACQAASUNDUAwCAAAAAAIMbGNtcwIQAABtbnRyUkdCIFhZWiAH3AABABkAAwApADlhY3NwQVBQTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9tYAAQAAAADTLWxjbXMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAApkZXNjAAAA/AAAAF5jcHJ0AAABXAAAAAt3dHB0AAABaAAAABRia3B0AAABfAAAABRyWFlaAAABkAAAABRnWFlaAAABpAAAABRiWFlaAAABuAAAABRyVFJDAAABzAAAAEBnVFJDAAABzAAAAEBiVFJDAAABzAAAAEBkZXNjAAAAAAAAAANjMgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB0ZXh0AAAAAElYAABYWVogAAAAAAAA9tYAAQAAAADTLVhZWiAAAAAAAAADFgAAAzMAAAKkWFlaIAAAAAAAAG+iAAA49QAAA5BYWVogAAAAAAAAYpkAALeFAAAY2lhZWiAAAAAAAAAkoAAAD4QAALbPY3VydgAAAAAAAAAaAAAAywHJA2MFkghrC/YQPxVRGzQh8SmQMhg7kkYFUXdd7WtwegWJsZp8rGm/fdPD6TD//1ZQOCBMAAAAkAMAnQEqEQAKAD6RPJpIJaOioTAIALASCWUAnQAg0TH6Gb2CFgD330q6oI5egSBgzw+AKslNGh6vHedVyfBY5Ufg6M9hkSmWxTDgAA==');
-    background-size: cover;
-    padding-top: 56.25%;
-    position: relative;
-  }
-  .image-container img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
-    pointer-events: none;   /* makes the image unclickable */
-  }
-</style>
-
-<div class="image-container">
-  <img src="/assets/img/posts/Banner.PNG" alt="Banner">
-</div>
-
--->
-
-<!--
-
-![Banner](/assets/img/posts/Banner.PNG){: lqip="data:image/webp;base64,UklGRn4CAABXRUJQVlA4WAoAAAAgAAAAEAAACQAASUNDUAwCAAAAAAIMbGNtcwIQAABtbnRyUkdCIFhZWiAH3AABABkAAwApADlhY3NwQVBQTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9tYAAQAAAADTLWxjbXMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAApkZXNjAAAA/AAAAF5jcHJ0AAABXAAAAAt3dHB0AAABaAAAABRia3B0AAABfAAAABRyWFlaAAABkAAAABRnWFlaAAABpAAAABRiWFlaAAABuAAAABRyVFJDAAABzAAAAEBnVFJDAAABzAAAAEBiVFJDAAABzAAAAEBkZXNjAAAAAAAAAANjMgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB0ZXh0AAAAAElYAABYWVogAAAAAAAA9tYAAQAAAADTLVhZWiAAAAAAAAADFgAAAzMAAAKkWFlaIAAAAAAAAG+iAAA49QAAA5BYWVogAAAAAAAAYpkAALeFAAAY2lhZWiAAAAAAAAAkoAAAD4QAALbPY3VydgAAAAAAAAAaAAAAywHJA2MFkghrC/YQPxVRGzQh8SmQMhg7kkYFUXdd7WtwegWJsZp8rGm/fdPD6TD//1ZQOCBMAAAAkAMAnQEqEQAKAD6RPJpIJaOioTAIALASCWUAnQAg0TH6Gb2CFgD330q6oI5egSBgzw+AKslNGh6vHedVyfBY5Ufg6M9hkSmWxTDgAA==" style="pointer-events: none; border-radius: 20px; overflow: hidden"}
-
--->

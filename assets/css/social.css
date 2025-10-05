@@ -1,0 +1,45 @@
+hr.social {
+  margin: 1.0rem 0;
+}
+
+#socials {
+  text-align: center;
+}
+
+#socials a.social::after {
+  content: none !important;
+  background: none !important;
+}
+
+a.social {
+  display: inline-block;
+  padding: 0.5rem;
+  transition: transform 0.2s ease;
+}
+
+a.social:hover {
+  transform: scale(1.5);
+}
+
+i.social-icon::before {
+  font-size: 300%;
+  color: #696969;
+  opacity: 0.6;
+  transition: color 0.2s, opacity 0.2s;
+}
+
+i.social-icon.colored::before {
+  opacity: 1;
+  color: #1da1f2; /* default hover color */
+}
+
+/* Brand colors */
+a.social[title='GitHub'] i.social-icon.colored::before { color: #333; }
+a.social[title='YouTube'] i.social-icon.colored::before { color: #ff0000; }
+a.social[title='Instagram'] i.social-icon.colored::before { color: #e4405f; }
+a.social[title='ArtStation'] i.social-icon.colored::before { color: #13aff0; }
+a.social[title='Behance'] i.social-icon.colored::before { color: #1769ff; }
+a.social[title='DeviantArt'] i.social-icon.colored::before { color: #05cc47; }
+a.social[title='CGTrader'] i.social-icon.colored::before { color: #195996; }
+a.social[title='Sketchfab'] i.social-icon.colored::before { color: #1caad9; }
+a.social[title='Linktree'] i.social-icon.colored::before { color: #43e660; }

@@ -269,3 +269,12 @@ light mode:
   --inline-code-bg: #f3f3f3;
   --link-underline-color: #dee2e6;
 */
+
+/*
+// Limit code block height to 35 lines before enabling vertical scroll
+$max-lines: 35;
+.highlight {
+    overflow-y: auto;
+    max-height: $max-lines * 1em;
+}
+*/
