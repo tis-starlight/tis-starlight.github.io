@@ -64,12 +64,29 @@ Below is a list of languages, tools & technologies that I'm familiar with. You c
     <li><strong>Created:</strong><code class="language-plaintext highlighter-rouge">2024-01-26</code></li>
     <li><strong>Type:</strong><code class="language-plaintext highlighter-rouge">RSA 4096</code></li>
     <li><strong>Owner (UID):</strong><code class="language-plaintext highlighter-rouge">Starlight (Work Key) &lt;136495168+tis-starlight@users.noreply.github.com&gt;</code></li>
-    <li>Download my <strong>PGP Public Key</strong> 🔑 (<code class="language-plaintext highlighter-rouge">pubkey.asc</code>) from any of the following keyservers:
+    <li>Download my <strong>PGP Public Key</strong> 🔑 (<code class="language-plaintext highlighter-rouge"><a href="https://github.com/tis-starlight/tis-starlight.github.io/blob/main/assets/certs/starlight_pgp-pubkey.asc" target="_blank" rel="noopener noreferrer">pubkey.asc</a></code>) from any of the following keyservers:
       <ul>
         <li><a href="https://keys.openpgp.org/vks/v1/by-fingerprint/2BE93D34535F37764FF0342C05086418AFD55BDB" target="_blank" rel="noopener noreferrer">keys.openpgp.org</a></li>
         <li><a href="https://keyserver.ubuntu.com/pks/lookup?search=2BE93D34535F37764FF0342C05086418AFD55BDB&fingerprint=on&op=index" target="_blank" rel="noopener noreferrer">keyserver.ubuntu.com</a></li>
       </ul>
     </li>
+  </ul>
+</div>
+
+<div class="callout-info" markdown="1">
+<div class="title"> My X.509 Public Certificate </div>
+<p>If you need to verify a <i>digitally signed PDF or file</i> I created, please use my <strong>official X.509 public certificate</strong> below. Any other certificates claiming to be mine should be considered untrusted and potentially fraudulent.</p>
+  <ul>
+    <li><strong>Common Name (CN):</strong><code class="language-plaintext highlighter-rouge">Starlight</code></li>
+    <li><strong>Organization (O):</strong><code class="language-plaintext highlighter-rouge">tis-starlight.github.io</code></li>
+    <li><strong>Organizational Unit (OU)</strong><code class="language-plaintext highlighter-rouge">Work Key</code></li>
+    <li><strong>Country (C):</strong><code class="language-plaintext highlighter-rouge">PK</code></li>
+    <li><strong>Certificate Type:</strong><code class="language-plaintext highlighter-rouge">X.509 (RSA 4096-bit)</code></li>
+    <li><strong>Purpose:</strong><code class="language-plaintext highlighter-rouge">Document signing, identity verification</code></li>
+    <li><strong>Fingerprint (SHA-1):</strong><code class="language-plaintext highlighter-rouge">19:0D:D9:8C:65:5D:DF:43:44:99:F8:39:CE:3B:B1:35:1D:7B:13:0D</code></li>
+    <li><strong>Fingerprint (SHA-256):</strong><br><code class="language-plaintext highlighter-rouge">E7:6C:D0:79:85:A1:8A:0B:E9:62:5B:8D:96:7E:78:03:DE:97:27:32:7B:D2:A6:C2:00:5B:E6:20:90:74:28:82</code></li>
+    <li><strong>Fingerprint (SHA-512):</strong><br><code class="language-plaintext highlighter-rouge">E4:02:BF:E9:45:4D:38:89:53:3A:F1:73:DE:50:B3:51:90:FF:22:73:D7:98:A8:08:1B:24:E8:0D:51:05:FB:C6:9D:5D:A4:30:76:95:A5:4E:50:81:57:CA:2F:90:86:47:7D:5C:21:A8:6F:A2:74:67:BA:25:D6:6C:69:80:DD:03</code></li>
+    <li>Download my <strong>Public X.509 Certificate</strong> 📄 (<code class="language-plaintext highlighter-rouge"><a href="https://github.com/tis-starlight/tis-starlight.github.io/tree/main/assets/certs/starlight_x509-pubcertificate.crt" target="_blank" rel="noopener noreferrer">pubcertificate.crt</a></code>).</li>
   </ul>
 </div>
 

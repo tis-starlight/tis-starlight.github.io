@@ -1213,6 +1213,11 @@ The following table shows how to get the two parameters we need in a given video
 |----------------------------------------------------------------------------------------------------	|--------------	|---------------	|
 | [https://www.**youtube**.com/watch?v=**mrNX55CWuZA**](https://www.youtube.com/watch?v=mrNX55CWuZA){: target="_blank" rel="noopener noreferrer"} 	| `youtube`    	| `mrNX55CWuZA` 	|
 | [https://www.**twitch**.tv/videos/**2221198216**](https://www.twitch.tv/videos/2221198216){: target="_blank" rel="noopener noreferrer"}         	| `twitch`     	| `2221198216`  	|                                     
+| [https://www.open.**spotify**.com/track/**4Oih3RDrSFg3afaOphBVuy**](https://open.spotify.com/track/4Oih3RDrSFg3afaOphBVuy){: target="_blank" rel="noopener noreferrer"} | `spotify` | `4Oih3RDrSFg3afaOphBVuy` |
+
+Spotify supports some additional parameters:
+- `compact` - to display compact player instead (ex. `{% include embed/spotify.html id='4Oih3RDrSFg3afaOphBVuy' compact=1 %}`).
+- `dark` - to force dark theme (ex. `{% include embed/spotify.html id='4Oih3RDrSFg3afaOphBVuy' dark=1 %}`).
 
 #### Video Files
 
